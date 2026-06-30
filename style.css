@@ -1,0 +1,272 @@
+/* =================================================== */
+/* 1. PENGATURAN DASAR HALAMAN (DARK INTERFACE)         */
+/* =================================================== */
+body {
+    font-family: 'Segoe UI', 'Calibri', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 50px;
+    min-height: 100vh;
+    box-sizing: border-box;
+
+    /* Background Image dari User */
+    /*
+    background-image: url('ENGINEERING.jpeg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    */
+    
+    /* Overlay Gelap Transparan agar Teks Cerah Terlihat Kontras */
+    background-color: rgba(15, 23, 42, 0.85); 
+    background-blend-mode: overlay; 
+    color: #f1f5f9; 
+}
+
+/* Wadah Utama Aplikasi (Efek Kaca / Glassmorphism) */
+.container {
+    width: 95%;
+    max-width: 900px;
+    text-align: left; 
+    background: rgba(30, 41, 59, 0.7); /* Slate transparan */
+    padding: 40px;
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+}
+
+/* =================================================== */
+/* 2. SETINGAN TITLES & HEADING (KONTRAST & TAJAM)     */
+/* =================================================== */
+h1 {
+    font-size: 26px;
+    font-weight: 700;
+    margin: 0 0 40px 0;
+    color: #38bdf8; /* Biru langit menyala agar kontras dengan dark mode */
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+/* H2: Judul Menu / Nama Alat */
+h2, .tab-alat h2 {
+    color: #ffffff !important;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #38bdf8; /* Garis pembatas biru langit */
+    padding-bottom: 8px;
+    text-transform: uppercase;
+    display: block !important;
+}
+
+/* H3: Bab Utama Dokumen SOP (Kuning Emas) */
+h3 {
+    color: #fbbf24 !important; 
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 30px;
+    margin-bottom: 12px;
+    display: block !important;
+}
+
+/* H4: Sub-Langkah / Sub-Bab SOP (Biru Muda Soft) */
+h4 {
+    color: #7dd3fc !important;
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 8px;
+    display: block !important;
+}
+
+/* Teks Paragraf Isi Dokumen */
+p {
+    color: #e2e8f0; /* Dipertahankan abu terang agar masuk ke tema gelap */
+    font-size: 14.5px;
+    line-height: 1.6;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+/* Style Perintah Terminal / Kode Command */
+p strong code, code {
+    background-color: rgba(15, 23, 42, 0.8);
+    color: #f43f5e; /* Merah rose neon agar perintah command menonjol */
+    padding: 3px 6px;
+    border-radius: 4px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* =================================================== */
+/* 3. GRID 4 TOMBOL UTAMA (LEVEL 1)                    */
+/* =================================================== */
+.menu-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px 40px; 
+}
+
+.btn-utama {
+    background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+    color: #ffffff; 
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 40px 20px; 
+    font-size: 16px;
+    text-transform: uppercase;
+    border-radius: 12px; 
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    transition: all 0.2s ease-in-out;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.btn-utama:hover {
+    background: linear-gradient(135deg, #60a5fa 0%, #2563eb 100%);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
+}
+
+/* =================================================== */
+/* 4. DETAIL LIST SUB-MENU & BRAND (LEVEL 2, 3, 4)     */
+/* =================================================== */
+.tab-alat {
+    display: none; 
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.sub-grup-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+    max-width: 100%;
+    counter-reset: menu-counter; 
+}
+
+.btn-sub {
+    background-color: rgba(15, 23, 42, 0.6);
+    color: #cbd5e1;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 14px 20px;
+    font-size: 15px;
+    text-align: left; 
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    width: 100%; 
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+
+/* Counter Nomor Urut Otomatis Milik User */
+.btn-sub::before {
+    counter-increment: menu-counter;
+    content: counter(menu-counter) ". ";
+    font-weight: bold;
+    color: #38bdf8;
+    margin-right: 12px;
+    width: 25px;
+    display: inline-block;
+}
+
+.btn-sub:hover {
+    background-color: rgba(56, 189, 248, 0.15);
+    border-color: #38bdf8;
+    color: #ffffff;
+    padding-left: 25px;
+}
+
+/* =================================================== */
+/* 5. TOMBOL KEMBALI & MEDIA ELEMEN                   */
+/* =================================================== */
+.btn-kembali {
+    background-color: #ef4444;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 30px;
+    display: inline-block;
+    transition: background-color 0.2s, transform 0.1s;
+    font-weight: 600;
+}
+
+.btn-kembali:hover {
+    background-color: #dc2626;
+    transform: scale(1.02);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(5px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Container Foto SOP */
+.foto-sop-container {
+    text-align: center;
+    margin: 20px 0;
+    background-color: rgba(15, 23, 42, 0.8);
+    padding: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    display: inline-block; 
+    max-width: 550px; 
+}
+
+.foto-sop {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
+
+.caption-foto {
+    display: block;
+    font-size: 13px;
+    color: #94a3b8;
+    font-style: italic;
+    margin-top: 8px;
+}
+
+/* =================================================== */
+/* 6. PENGATURAN TABEL (7 BARIS 2 KOLOM - DARK THEME)  */
+/* =================================================== */
+table {
+    width: 100%; /* Diubah ke 100% agar responsif mengikuti wadah kontainer */
+    max-width: 600px;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgba(15, 23, 42, 0.6); /* Transparan gelap matching dengan tema */
+}
+
+th, td {
+    border: 1px solid rgba(255, 255, 255, 0.15); 
+    padding: 12px;
+    text-align: center !important; /* Ditambah !important agar memaksa tulisan rata tengah dan tidak ditimpa kode lain */
+    color: #e2e8f0; 
+    font-size: 14px;
+}
+
+
+th {
+    background-color: rgba(56, 189, 248, 0.15); /* Latar belakang header biru transparan transparan */
+    color: #38bdf8; /* Teks header biru langit */
+    font-weight: 600;
+}
