@@ -1,0 +1,3158 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-SOP CNSD FACILITY</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- ========================================================================= -->
+        <!-- LEVEL 1: DASHBOARD UTAMA -->
+        <!-- ========================================================================= -->
+        <h1 id="judul-utama">SELAMAT DATANG DI E-SOP CNSD FACILITY</h1>
+
+        <div id="menu-utama" class="menu-buttons">
+            <button class="btn-utama" onclick="pindahKeHalaman('fasilitas-communication')">COMMUNICATION</button>
+            <button class="btn-utama" onclick="pindahKeHalaman('fasilitas-navigation')">NAVIGATION</button>
+            <button class="btn-utama" onclick="pindahKeHalaman('fasilitas-surveillance')">SURVEILLANCE</button>
+            <button class="btn-utama" onclick="pindahKeHalaman('fasilitas-dataprocessing')">DATA PROCESSING</button>
+			
+			<h4><code>CREATED BY : CNSD ENGINGEERING BALIKPAPAN</code></h4>
+        </div>
+
+        <!-- ========================================================================= -->
+        <!-- LEVEL 2: DAFTAR FASILITAS / ALAT -->
+        <!-- ========================================================================= -->
+        <!-- ========================================================================= -->
+        <div id="halaman-fasilitas">
+             
+            <!-- LIST ALAT: COMMUNICATION -->
+            <div id="fasilitas-communication" class="tab-alat">
+                <h2>FACILITY: COMMUNICATION</h2>
+                <div class="sub-grup-buttons">
+                    <button class="btn-sub" onclick="pindahKeHalaman('halaman-merk-vhf')">VHF Air Ground Communication (VHF A/G)</button>
+                    <button class="btn-sub" onclick="pindahKeHalaman('halaman-merk-vscs')">Voice Switching Communication System (VSCS/VCCS)</button>
+                    <button class="btn-sub" onclick="pindahKeHalaman('halaman-merk-DTIS')">Data Link Automatic Terminal Information System (D-ATIS)</button>
+                    <button class="btn-sub" onclick="pindahKeHalaman('halaman-merk-HF')">HF Air Ground Communication (HF)</button>
+                    <button class="btn-sub" onclick="pindahKeHalaman('halaman-merk-recorder')">Voice Recorder</button>
+                    <!-- <button class="btn-sub" onclick="pindahKeHalaman('halaman-merk-trunking')">Ground to Ground (Trunking & HT)</button> -->
+                </div>
+                <button class="btn-kembali" onclick="kembaliKeHalaman()">← Kembali ke Menu Awal</button>
+            </div>
+
+            <!-- LIST ALAT: NAVIGATION -->
+            <div id="fasilitas-navigation" class="tab-alat">
+                <h2>FACILITY: NAVIGATION</h2>
+                <div class="sub-grup-buttons">
+                    <button class="btn-sub" onclick="pindahKeHalaman('halaman-merk-VOR')">VOR (Very High Frequency Omnidirectional Range)</button>
+                    <button class="btn-sub" onclick="pindahKeHalaman('halaman-merk-DME')">DME (Distance Measuring Equipment)</button>
+                    <button class="btn-sub" onclick="pindahKeHalaman('halaman-merk-ILS')">ILS (Instrument Landing System)</button>
+                </div>
+                <button class="btn-kembali" onclick="kembaliKeHalaman()">← Kembali ke Menu Awal</button>
+            </div>
+
+            <!-- LIST ALAT: SURVEILLANCE -->
+            <div id="fasilitas-surveillance" class="tab-alat">
+                <h2>FACILITY: SURVEILLANCE</h2>
+                <div class="sub-grup-buttons">
+                    <button class="btn-sub" onclick="pindahKeHalaman('halaman-merk-MSSR')">MSSR (Monopulse Secondary Surveillance Radar)</button>
+                    <button class="btn-sub" onclick="pindahKeHalaman('halaman-merk-ADSB')">ADS-B (Automatic Dependent Surveillance Broadcast)</button>
+                </div>
+                <button class="btn-kembali" onclick="kembaliKeHalaman()">← Kembali ke Menu Awal</button>
+            </div>
+
+            <!-- LIST ALAT: DATA PROCESSING -->
+            <div id="fasilitas-dataprocessing" class="tab-alat">
+                <h2>FACILITY: DATA PROCESSING</h2>
+                <div class="sub-grup-buttons">
+                    <button class="btn-sub" onclick="pindahKeHalaman('halaman-merk-ATMAS')">ATC SYSTEM</button>
+                    <button class="btn-sub" onclick="pindahKeHalaman('halaman-merk-AMSC')">AMSC</button>
+					<button class="btn-sub" onclick="pindahKeHalaman('halaman-merk-IAIS')">IAIS</button>
+                </div>
+                <button class="btn-kembali" onclick="kembaliKeHalaman()">← Kembali ke Menu Awal</button>
+            </div>
+        </div>
+		
+        <!-- ========================================================================= -->
+        <!-- LEVEL 3 & 4: SELEKSI MERK & MENU UTAMA SOP -->
+        <!-- ========================================================================= -->
+		
+        <!-- SUB-FACILITY: VHF -->
+		<div id="halaman-merk-vhf" class="tab-alat">
+            <h2>SUB-FACILITY: VHF AIR GROUND COMMUNICATION</h2>
+            <div class="sub-grup-buttons">
+                <button class="btn-sub" onclick="pindahKeHalaman('halaman-sop-pae-t6')">PAE T6</button>
+                <button class="btn-sub" onclick="pindahKeHalaman('halaman-sop-pae-sapphire')">PAE SAPPHIRE</button>
+                <!-- <button class="btn-sub" onclick="pindahKeHalaman('halaman-sop-becker')">BECKER</button> -->
+            </div>
+            <button class="btn-kembali" onclick="kembaliKeHalaman()">← Kembali ke List Alat</button>
+		</div>
+		
+        <!-- SOP MENU: PAE T6 -->
+        <div id="halaman-sop-pae-t6" class="tab-alat">
+            <h2>SOP FASILITAS: PAE T6 (VHF AIR GROUND)</h2>
+            <div class="sub-grup-buttons">
+                <button class="btn-sub" onclick="pindahKeHalaman('rinci-t6-vfp')">Upload Konfigurasi menggunakan VFP</button>
+                <button class="btn-sub" onclick="pindahKeHalaman('rinci-t6-ip')">Cara Settings IP Radio</button>
+            </div>
+            <button class="btn-kembali" onclick="kembaliKeHalaman()">← Kembali ke Pilihan Merk</button>
+        </div>
+
+        <!-- SOP MENU: PAE SAPPHIRE -->
+        <div id="halaman-sop-pae-sapphire" class="tab-alat">
+            <h2>SOP FASILITAS: PAE SAPPHIRE</h2>
+            <div class="sub-grup-buttons">
+                <button class="btn-sub" onclick="pindahKeHalaman('rinci-radio-s4')">RADIO CONNECT S4 PROCEDURE</button>
+            </div>
+            <button class="btn-kembali" onclick="kembaliKeHalaman()">← Kembali ke Pilihan Merk</button>
+        </div>
+        
+        <!-- SOP MENU: BECKER (BELUM DIISI) -->
+        <div id="halaman-sop-becker" class="tab-alat">
+            <h2>SOP FASILITAS: BECKER</h2>
+            <div class="sub-grup-buttons">
+                <button class="btn-sub" onclick="alert('SOP Becker belum diisi')">PROSEDUR MAINTENANCE BECKER</button>
+            </div>
+            <button class="btn-kembali" onclick="kembaliKeHalaman()">← Kembali ke Pilihan Merk</button>
+        </div>
+
+        <!-- SUB-FACILITY: VSCS -->
+        <div id="halaman-merk-vscs" class="tab-alat">
+            <h2>MERK : VOICE SWITCHING COMMUNICATION SYSTEM</h2>
+            <div class="sub-grup-buttons">
+               <!--  <button class="btn-sub" onclick="pindahKeHalaman('halaman-sop-vscs-harris')">HARRIS</button> -->
+                <button class="btn-sub" onclick="pindahKeHalaman('halaman-sop-vscs-garex')">GAREX</button>
+            </div>
+            <button class="btn-kembali" onclick="kembaliKeHalaman()">← Kembali ke List Alat</button>
+        </div>	
+		
+
+        <!-- SOP MENU: VSCS GAREX -->
+        <div id="halaman-sop-vscs-garex" class="tab-alat">
+            <h2>SOP FASILITAS: VSCS GAREX 300</h2>
+            <div class="sub-grup-buttons">
+				<button class="btn-sub" onclick="pindahKeHalaman('rinci-garex-us')">USER, PASSWORD, SSH</button>
+                <button class="btn-sub" onclick="pindahKeHalaman('rinci-garex-analog')">ADD RADIO ANALOG</button>
+                <button class="btn-sub" onclick="pindahKeHalaman('rinci-garex-ip')">ADD RADIO IP</button>
+                <button class="btn-sub" onclick="pindahKeHalaman('rinci-garex-ds')">ADD ANALOG TELEPHONE/DIRECT SPEECH</button>
+				<button class="btn-sub" onclick="pindahKeHalaman('rinci-garex-tmcs')">RESTORE DATABASE BETWEEN TMCS 1 TO TMCS 2</button>
+				<button class="btn-sub" onclick="pindahKeHalaman('rinci-garex-backuptmcs')">BACKUP TMCS</button>
+				<button class="btn-sub" onclick="pindahKeHalaman('rinci-garex-ipcwp')">CONFIG IP CWP</button>
+				<button class="btn-sub" onclick="pindahKeHalaman('rinci-garex-stuck')">CWP STUCK</button>
+            </div>
+            <button class="btn-kembali" onclick="kembaliKeHalaman()">← Kembali ke Pilihan Merk</button>
+        </div>
+
+        <!-- SOP MENU: VSCS HARRIS -->
+        <div id="halaman-sop-vscs-harris" class="tab-alat">
+            <h2>SOP FASILITAS: VSCS HARRIS</h2>
+            <div class="sub-grup-buttons">
+                <button class="btn-sub" onclick="alert('SOP Harris belum diisi')">PROSEDUR MAINTENANCE HARRIS</button>
+            </div>
+            <button class="btn-kembali" onclick="kembaliKeHalaman()">← Kembali ke Pilihan Merk</button>
+        </div>
+		
+        <!-- SUB-FACILITY LAINNYA (COMMUNICATION) -->
+		<div id="halaman-merk-DTIS" class="tab-alat">
+            <h2>SUB-FACILITY: DIGITAL ATIS</h2>
+            <div class="sub-grup-buttons">
+                <button class="btn-sub" onclick="alert('SOP SkyTrax belum diisi')">SkyTrax</button>
+            </div>
+            <button class="btn-kembali" onclick="kembaliKeHalaman()">← Kembali ke List Alat</button>
+        </div>
+		
+		<div id="halaman-merk-HF" class="tab-alat">
+            <h2>SUB-FACILITY: HF-RDARA</h2>
+            <div class="sub-grup-buttons">
+                <button class="btn-sub" onclick="pindahKeHalaman('halaman-sop-HF')">ROHDE & SCHWARZ</button>
+            </div>
+            <button class="btn-kembali" onclick="kembaliKeHalaman()">← Kembali ke Alat Communication</button>
+        </div>
+			
+				<div id="halaman-sop-HF" class="tab-alat">
+				<h2>SUB-FACILITY: HF-RDARA</h2>
+				<div class="sub-grup-buttons">
+					<button class="btn-sub" onclick="pindahKeHalaman('rinci-sop-addntp')">MENAMBAH SOURCE NTP PADA CWP </button>
+					<button class="btn-sub" onclick="pindahKeHalaman('rinci-sop-adams')">KONFIGURASI ADAMS </button>
+				</div>
+				<button class="btn-kembali" onclick="kembaliKeHalaman()">← Kembali ke Merk Alat</button>
+				</div>
+				
+					<div id="rinci-sop-addntp" class="tab-alat dokumen-sop">
+					<h2>SOP MENAMBAHKAN SOURCE NTP SERVER PLAYBACK RECORDER VERSADIAL UNTUK CWP RS DI FSS</h2>
+					<div class="isi-dokumen">
+						<h3>A. Menambahkan Source NTP Server</h3>
+						<ol class="sop-list">
+							<li>Install aplikasi Network Time Synchrone (agar time CWP dapat sinkron dengan time komputer Playback recorder(diasumsikan Playback recorder sebagai NTP Server dengan IP 172.18.20.170))</li>
+							<li>Hubungkan Komputer Playback Versadial dengan NTP Server Recorder Versadial menggunakan Lan 1
+								<br>IP NTP Server Recorder Versadial : <code>192.168.3.138</code>
+							</li>
+							<li>Hubungkan Lan 2 Komputer Playback Versadial (<code>172.18.20.170</code>) dengan Hub CWP RS HF</li>
+							<li>Buka VCMS melalui Browser dengan IP <code>172.18.20.18</code>
+								<br>Username : <code>admin</code> | Password : <code>99admin11</code>
+							</li>
+							<li>Pilih System &ndash; NTP Sources</li>
+							<li>Klik di menu IP Name Balikpapan_ dan setting IP menjadi <code>172.18.20.170</code></li>
+						</ol>
+
+						<h3>B. Manual Sinkronisasi NTP Server</h3>
+						<ol class="sop-list">
+							<li>Buka aplikasi Putty untuk login ssh ke CWP dengan IP <code>172.18.20.66</code></li>
+							<li>Login : <code>root</code> | Password : <code>123456</code></li>
+							<li>Ketik <code>rw</code> untuk membuat system menjadi writable</li>
+							<div class="foto-sop-container">
+									<img src="ntphf.JPG" class="foto-sop">
+								</div>
+							<li>Lakukan stop running NTP Server dengan perintah:
+								<pre class="code-box"><code>/etc/init.d/ntpd stop</code></pre>
+								<div class="foto-sop-container">
+									<img src="ntphf1.JPG" class="foto-sop">
+								</div>
+								<li>tunggu sampai ada keterangan OK</li>
+							</li>
+							<li>Maka lakukan start NTP server dengan perintah:
+								<pre class="code-box"><code>/etc/init.d/ntpd start</code></pre>
+								<div class="foto-sop-container">
+									<img src="ntphf2.JPG" class="foto-sop">
+								</div>
+								<li>tunggu sampai ada keterangan OK</li>
+							</li>
+							<li>Cek kembali sinkronisasinya dengan perintah:
+								<pre class="code-box"><code>ntpq -pn</code></pre>
+								<div class="foto-sop-container">
+									<img src="ntphf3.JPG" class="foto-sop">
+								</div>
+							</li>
+						</ol>
+					</div>
+					<button class="btn-kembali" onclick="kembaliKeHalaman()">← Kembali ke List SOP</button>
+				</div>
+					
+					
+					<div id="rinci-sop-adams" class="tab-alat dokumen-sop">
+						<h2>SOP KONFIGURASI ADAMS</h2>
+						<div class="isi-dokumen">
+							<ol class="sop-list">
+								<li>Siapkan laptop yang sudah terinstal aplikasi ADAM/APAX Utility dan kabel lan</li>
+								<li>Hubungkan laptop ke switch hub di atas radio server rack 1 dengan kabel lan</li>
+								<li>Ubah kabel jumper dari relay yang terhubung ke ADAM. Misal dari port RL 0+ dan RL 0-, dipindah ke RL 3+ dan RL 3-</li>
+								<li>Buka aplikasi ADAM/APAX Utility, pilih tool &ndash; scan device, maka akan terdeteksi tipe ADAM yang terhubung (ADAM 6066)
+									<p><br><em>RL 3+ dan RL 3-</em></p>
+									
+									<div class="foto-sop-container">
+									<img src="adams.JPG" class="foto-sop">
+								</div>
+								</li>
+								<li>Pilih Ethernet dan akan terbaca IP ADAM, pilih IP tersebut dan akan muncul tampilan sebagai berikut. Apabila muncul minta password (<code>00000000</code>)</li>
+								<div class="foto-sop-container">
+									<img src="adam1.JPG" class="foto-sop">
+								</div>
+								<li>Pilih DO 3 (karena pada device ADAM dipindah ke Port RL 3+ dan RL 3-), apabila DO 3 di klik maka relay akan bekerja, pindah ke radio yang standby.</li>
+								<li>Buka browser, masuk ke IP VCMS (<code>172.18.20.18</code>) untuk melakukan konfigurasi port ADAM (SCADA)
+									<br>User : <code>admin</code> | Password : <code>99admin11</code>
+								</li>
+								<li>Masuk ke menu Position Map &ndash; Coverage Group</li>
+								<div class="foto-sop-container">
+									<img src="adam2.JPG" class="foto-sop">
+								</div>
+								<li>Pilih Ba_TX1_High, maka akan muncul tampilan seperti berikut. Pilih Scada Port Out dan pilih SB9/3 (karena ADAM pada port RL 3+ dan RL 3-)</li>
+								<div class="foto-sop-container">
+									<img src="adam3.JPG" class="foto-sop">
+								</div>
+								<li>Reboot CWP dan test changeover transmitter serta test transmit.</li>
+							</ol>
+						</div>
+						<button class="btn-kembali" onclick="kembaliKeHalaman()">← Kembali ke List SOP</button>
+					</div>
+					
+		
+		
+			
+		
+		
+		<div id="halaman-merk-recorder" class="tab-alat">
+            <h2>SUB-FACILITY : VOICE RECORDER</h2>
+            <div class="sub-grup-buttons">
+               <!-- <button class="btn-sub" onclick="pindahKeHalaman('halaman-sop-recorder-versadial')">VERSADIAL</button> -->
+				<button class="btn-sub" onclick="pindahKeHalaman('halaman-sop-recorder-neptuno')">NEPTUNO</button>
+            </div>
+            <button class="btn-kembali" onclick="kembaliKeHalaman()">← Kembali ke List Alat</button>
+        </div>
+		
+		<!-- SOP MENU: RECORDER VERSADIAL -->
+        <div id="halaman-sop-recorder-versadial" class="tab-alat">
+            <h2>SOP FASILITAS: RECORDER VERSADIAL</h2>
+            <div class="sub-grup-buttons">
+                <button class="btn-sub" onclick="alert('SOP VERSADIAL belum diisi')">PROSEDUR MAINTENANCE VERSADIAL</button>
+            </div>
+            <button class="btn-kembali" onclick="kembaliKeHalaman()">← Kembali ke Pilihan Merk</button>
+        </div>
+		
+		
+		<!-- SOP MENU: RECORDER NEPTUNO -->
+        <div id="halaman-sop-recorder-neptuno" class="tab-alat">
+            <h2>SOP FASILITAS: RECORDER NEPTUNO</h2>
+            <div class="sub-grup-buttons">
+				<button class="btn-sub" onclick="pindahKeHalaman('rinci-neptuno-us')">USER, PASSWORD, SSH</button>
+                <button class="btn-sub" onclick="pindahKeHalaman('rinci-neptuno-alarm')">VRP STATUS ALARM</button>
+           </div>
+            <button class="btn-kembali" onclick="kembaliKeHalaman()">← Kembali ke Pilihan Merk</button>
+        </div>		
+		
+		
+		
+		
+		<div id="halaman-merk-trunking" class="tab-alat">
+			<h2>SUB-FACILITY: GROUND TO GROUND (TRUNKING & HT)</h2>
+            <div class="sub-grup-buttons">
+                <button class="btn-sub" onclick="alert('SOP Trunking belum diisi')">Trunking System</button>
+                <button class="btn-sub" onclick="alert('SOP HT belum diisi')">Handy Talkie (HT)</button>
+            </div>
+            <button class="btn-kembali" onclick="kembaliKeHalaman()">← Kembali ke List Alat</button>
+		</div>
+	
+        <!-- SUB-FACILITY: NAVIGATION -->
+        <div id="halaman-merk-VOR" class="tab-alat">
+            <h2>Merk : VOR</h2>
+            <div class="sub-grup-buttons">
+			<button class="btn-sub" onclick="pindahKeHalaman('halaman-merk-vor')">SELEX</button>
+            </div>
+            <button class="btn-kembali" onclick="kembaliKeHalaman()">← Kembali ke Menu Alat Navigasi</button>
+        </div>	
+		
+		<div id="halaman-merk-vor" class="tab-alat">
+            <h2>SOP: DVOR</h2>
+            <div class="sub-grup-buttons">
+		<button class="btn-sub" onclick="pindahKeHalaman('sop-vor-gc')">PROSEDUR GROUND CHECK PMDT DVOR</button>
+		<button class="btn-sub" onclick="pindahKeHalaman('sop-vor-test')">PROSEDUR MAINTENANCE CHECK</button>
+		</div>
+            <button class="btn-kembali" onclick="kembaliKeHalaman()">← Kembali ke List Merk</button>
+        </div>	
+		
+		<div id="sop-vor-gc" class="tab-alat dokumen-sop">
+			<h2>PROSEDUR GROUND CHECK PMDT DVOR</h2>
+		<div class="isi-dokumen"> 
+				<ol>
+			<h3>SOP GROUND CHECK DVOR</h3>
+			<ol class="sop-list">
+				<li>Tekan Local Control > Bypass pada LCU</li>
+				<li>Login PMDT dengan username <strong>SEC3</strong> pass : <strong>THREE</strong></li>
+				<li>Masuk ke Transmitter - Data - Ground Check TX 1(Untuk TX 1)</li>
+				<li>Run (Tunggu selama tulisan Run muncul kembali)</li>
+				<li>Screen shot hasil pembacaan TX1</li>
+				<li>Terdapat beberapa parameter yang discreenshot yaitu pada 
+				<ul>
+				<li>(Graph option di FFT Error (Keseluruhan ada 4 bentuk gelombang berwarna hijau, biru, merah pink)</li>
+				<li>FFT SUM(hanya 1 gelombang yang berwarna biru) Station Error (hanya 1 gelombang berwarna pink) </li>
+				<li> Checklist Legend terus jangan diubah-ubah, kemudian tiap Graph Station di Screen Shot</li>
+				</ul>
+				<li>Change over transmitter</li>
+				<li>Masuk Transmitter - Data - Ground Check TX 2(Untuk TX 2)</li>
+				<li>Run (Tunggu selama tulisan Run muncul kembali)</li>
+				<li>Screen shot hasil pembacaan TX 2</li>
+				<ul>
+				<li>(Graph option di FFT Error (Keseluruhan ada 4 bentuk gelombang berwarna hijau, biru, merah pink)</li>
+				<li>FFT SUM(hanya 1 gelombang yang berwarna biru) Station Error (hanya 1 gelombang berwarna pink) </li>
+				<li> Checklist Legend terus jangan diubah-ubah, kemudian tiap Graph Station di Screen Shot</li>
+				</ul>
+				<li>Selesai</li>
+				<li>Tekan lagi BYPASS > LOCAL CONTROL pada LCU</li>
+			</ol>
+			 </div>
+            <button class="btn-kembali" onclick="kembaliKeHalaman()">← Kembali ke List SOP</button>
+        </div>	
+		
+	<div id="sop-vor-test" class="tab-alat dokumen-sop">
+    <h2>PROSEDUR MAINTENANCE DVOR</h2>
+    <div class="isi-dokumen"> 
+        <ol class="sop-list">
+                <li>Synthesizer menghasilkan frekuensi carier (<code>117.2</code>), LSB <code>-9960 Hz</code> &amp; USB <code>+9960 Hz</code></li>
+                <li>Audio Generator menghasilkan <code>30 Hz</code> referance, <code>1020 hz</code> audio, <code>360</code> Sin Cos dan DC Level</li>
+                <div class="foto-sop-container">
+				<img src="vor1.JPG" class="foto-sop" alt="SOP DVOR Signal">
+				<div class="caption-foto">
+					<div>1. TP1 Carrier (Hijau) = 30 Hz Reference</div>
+					<div>2. TP2 Voice (Biru) = 1020 Hz</div>
+					<div>3. TP3 Sync (Oranye) = DC Level</div>
+				</div>
+				</div>
+            <li>
+                <strong>Jalur Pancaran:</strong>
+                <ul>
+                    <li>Jalur pancarannya frekuensi carrier:  Synthesizer di modulasikan dengan audio generator pada CSB power amplifier --&gt; antena carrier</li>
+                    <li>Jalur <code>30 Hz</code> yaitu dari audio generator --&gt; modul sideband (terjadi blunding fungtion) --&gt; commutator power (berfungsi sebagai switching USB &amp; LSB) --&gt; antena SB</li>
+                </ul>
+            </li>
+				<div class="foto-sop-container">
+					<img src="vor2.jpeg" class="foto-sop" alt="SOP DVOR Signal">
+						<div class="caption-foto">
+							<div>1. Pada modul sideband sebelah kiri itu -sin LSB dan -cos LSB</div>
+							<div>2. Pada modul sideband sebelah kanan itu +sin USB dan +cos USB</div>
+						</div>
+				</div>
+            <li> 
+			<div class="foto-sop-container">
+				<img src="vor3.jpeg" class="foto-sop" alt="SOP DVOR Signal">
+				<div class="caption-foto">
+					<div>1. P1 CSB Sample (Kuning) = Untuk mengukur hasil modulasi RF Synthesizer dan Audio Generator</div>
+					<div>2. P2 Detected CSB (Merah) = Untuk mengukur 30 Hz reference</div>
+				</div>
+				</div>
+			
+               <li> Pada antenna SB ganjil ke ganjil periodenya yaitu (tsp) <code>1/720 hz</code> sedangkan antenna ganjil ke genap (tcsp) <code>1/1440 hz</code>. Proses ini disebut <em>blunding fungcution</em>
+            </li>
+			<div class="foto-sop-container">
+				<img src="vor4.JPG" class="foto-sop" alt="SOP DVOR Signal">
+				<div class="caption-foto">
+					<div>1. Kuning = Antena Ganjil</div>
+					<div>2. Hijau = Antena Genap</div>
+				</div>
+				</div>
+            <li>
+			<div class="foto-sop-container">
+                    <img src="vor5.JPG" class="foto-sop">
+                </div>
+                <li> Pada test <code>J3</code> untuk melihat/membaca hasil pancaran yang di terima oleh antenna field monitor, hasilnya seperti berikut :
+            </li>
+			<div class="foto-sop-container">
+                    <img src="vor6.JPG" class="foto-sop">
+                </div>
+            <li>
+                <strong>Untuk mengatur <em>SWR</em> pada:</strong>
+                <ol>
+                    <li>Antena carrier itu diatur pada capasitor dan stubing (antenna tuning stub)</li>
+                    <li>Antena sideband, hanya pada sisi bawa antena sideband</li>
+                </ol>
+            </li>
+        </ol>
+    </div>
+    <button class="btn-kembali" onclick="kembaliKeHalaman()">← Kembali ke List Alat</button>
+</div>
+
+        <div id="halaman-merk-DME" class="tab-alat">
+            <h2>SUB-FACILITY: DME</h2>
+            <div class="sub-grup-buttons">
+                <button class="btn-sub" onclick="alert('SOP DME Selex belum diisi')">SELEX</button>
+                <button class="btn-sub" onclick="alert('SOP DME Skymaru belum diisi')">SKYMARU</button>
+            </div>
+            <button class="btn-kembali" onclick="kembaliKeHalaman()">← Kembali ke List SOP</button>
+        </div>		
+	
+		<div id="halaman-merk-ILS" class="tab-alat">
+            <h2>SUB-FACILITY: ILS</h2>
+            <div class="sub-grup-buttons">
+                <button class="btn-sub" onclick="pindahKeHalaman('halaman-merk-LOCALIZER')">LOCALIZER</button>
+                <button class="btn-sub" onclick="pindahKeHalaman('halaman-merk-GP')">GLIDE PATH</button>
+                <button class="btn-sub" onclick="pindahKeHalaman('halaman-merk-TDME')">TDME</button>
+                <button class="btn-sub" onclick="pindahKeHalaman('halaman-merk-MM')">MIDDLE MARKER</button>
+            </div>
+            <button class="btn-kembali" onclick="kembaliKeHalaman()">← Kembali ke List Alat</button>
+		</div>		
+		
+		<div id="halaman-merk-LOCALIZER" class="tab-alat">
+            <h2>MERK LOCALIZER</h2>
+            <div class="sub-grup-buttons">
+                <button class="btn-sub" onclick="pindahKeHalaman('halaman-sop-selex-loc')">SELEX</button>
+                <button class="btn-sub" onclick="alert('SOP Skymaru LOC belum diisi')">SKYMARU</button>
+            </div>
+            <button class="btn-kembali" onclick="kembaliKeHalaman()">← Kembali ke Pilihan Merk</button>
+		</div>
+		
+		<div id="halaman-sop-selex-loc" class="tab-alat">
+            <h2>SOP: LOCALIZER SELEX</h2>
+            <div class="sub-grup-buttons">
+                <button class="btn-sub" onclick="pindahKeHalaman('rinci-loc-selex-ddm')">WIDTH DDM LOW</button>
+                <button class="btn-sub" onclick="pindahKeHalaman('sop-localizer-pmdt-issue')">LOCALIZER CAN'T NOT TRANSMIT, CAN'T LOGIN PMDT, MAINTENANCE ALERT INDICATOR FLASHING</button>
+            </div>
+            <button class="btn-kembali" onclick="kembaliKeHalaman()">← Kembali ke Pilihan Merk</button>
+		</div>	
+		
+		<div id="rinci-loc-selex-ddm" class="tab-alat dokumen-sop">
+		<h2>PROSEDUR JIKA WIDTH DDM LOW</h2>
+		<div class="isi-dokumen">
+        <ol class="sop-list">
+            <li>
+                <strong>Langkah Setting Monitor Width DDM:</strong>
+                <ul>
+                    <li>Buka PMDT > pilih monitor 1&amp;2 > Plih <strong>Offset and Scale</strong> kemudian setting sampai width DDM sesuai</li>
+                    <li>Ketika tahap di atas belum berubah maka harus ada perubahan pada fasilitas Localizer</li>
+                    <li>Buka rack Recombiner Unit</li>
+                    <li>Trim R55 nya putar perlahan secara CW da CCW dan sambil di monitor</li>
+                    <li>Apabila belum naik, Putar komponen C2 pada recombiner unit</li>
+                    <li>Biasanya dari tahap di atas monitor Width DDM dapat di setting dan dapat berubah sesuai keinginan</li>
+                    <li><em>Settingan di atas hanya monitornya saja bukan pancaran</em></li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Jika belum ada perubahan pada Width DDM yang selalu turun, dan tidak bisa lagi adjust lagi di R55 dan C2</strong>
+                <br><em>Tindakan :</em>
+                <ul>
+					<li>Melakukan silikon pada antena depan ADU</li>
+                    <li>Lakukan sesuai manual book chapter 9 hal 9-25</li>
+					<li>Monitor 1 alarm dan monitor 2 normal, dicek power transmitter normal</li>
+                    <li>Mengupload konfigurasi terakhir. Hasil Normal Operasi pada monitor 1 dan 2 normal hanya width ddm masih drop</li>
+                    </ul>
+					<li>Dilakukan test pada TP 11,12,13,14 di modul MRU dengan osciloscop hasil nilai tegangan :
+                        <ul>
+                            <li>TP 11 1,23v</li>
+                            <li>TP 12 1,95v</li>
+                            <li>TP 13 0,90v</li>
+                            <li>TP 14 0,89v</li>
+                        </ul>
+                    </li>
+					<li>Melakukan setting/adjust tegangan pada TP 11, 12, 13, 14</li>
+                    <li>Parameter
+                        <ul>
+                            <li>TP11 awal 0.79V menjadi 1.16V</li>
+                            <li>TP12 awal 0.78V menjadi 1.22V</li>
+                            <li>TP13 awal 0.80V menjadi 0.86V</li>
+                            <li>TP14 awal 0.80V menjadi 0.95V</li>
+                        </ul>
+                    </li>
+					<p><strong>Ket:</strong></p>
+					<ul>
+						<li>TP11 adjust di R65</li>
+						<li>TP12 adjust di R66</li>
+						<li>TP13 adjust di R67</li>
+						<li>TP 14 adjust di R68</li>
+					</ul>
+                    <li>Adjust pada MRU R55 dan C2 (clockwise)</li>
+                    <li>Setelah dilakukan setting parameter CW awal 0.133 DDM menjadi 0.155 DDM, Localizer</li>
+                </ul>
+            </li>
+                </ul>
+            </li>
+             </ul>
+            </li>
+        </ol>
+    </div>
+    <button class="btn-kembali" onclick="kembaliKeHalaman()">← Kembali ke List Alat</button>
+</div>
+
+		<div id="sop-localizer-pmdt-issue" class="tab-alat dokumen-sop">
+    <h2>SOP TROUBLESHOOTING LOCALIZER (PMDT &amp; CLEARANCE DROP)</h2>
+    <div class="isi-dokumen">
+        <ol class="sop-list">
+            <li>
+                <strong>Localizer Tidak Bisa Login PMDT, Indikator Maintenance Alert Flashing, Localizer Tidak bisa Transmit:</strong>
+                <ul>
+                    <li>Localizer ditemukan tidak bisa Login PMDT, Pada LCU tekan reset setelah itu Localizer tidak bisa mancar</li>
+                    <li>Local > Bypass kemudian change over dari TX 2 ke TX 1, hasil Power Forward Clearance Drop</li>
+                    <li>Parameter Clearance RF Level : <code>0</code> dan 150 Hz Mod % : <code>0</code></li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Langkah Penanganan / Troubleshooting:</strong>
+                <ul>
+                    <li>Matikan localizer ± 10 menit kemudian nyalakan kembali</li>
+					<li>PMDT sudah bisa Login <li>
+					<ul>
+					<li> Username : SEC3 </li>
+					<li> Password : THREE </li>
+					</ul>
+                    <li>Saat posisi ON, indikator maintenance alert blinking dan jika posisi local dilepas Localizer tidak memancar pada TX 2 dan TX 1</li>
+                    <li>Pada PMDT, masuk menu <strong>RMS -&gt; CONFIG</strong></li>
+                    <li>Unchecklist <strong>RCSU Present</strong> dan klik <strong>Apply (F7)</strong> Hasil indikator Maintenance Alert Off</li>
+                    <li>Checklist kembali pada <strong>RCSU Present</strong> - klik <strong>Apply (F7)</strong> dan Save Configuration</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Hasil Akhir:</strong>
+                <ul>
+                    <li>Change over Localizer dari TX1 ke TX 2, dan sebaliknya normal</li>
+                    <li>Cek parameter Localizer, Hasil normal</li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+    <button class="btn-kembali" onclick="kembaliKeHalaman()">← Kembali ke List Alat</button>
+</div>
+		
+		<div id="halaman-merk-GP" class="tab-alat">
+            <h2>MERK GLIDE PATH</h2>
+            <div class="sub-grup-buttons">
+                <button class="btn-sub" onclick="pindahKeHalaman('halaman-sop-selex-gp')">SELEX</button>
+                <button class="btn-sub" onclick="alert('SOP GP Skymaru belum diisi')">SKYMARU</button>
+            </div>
+            <button class="btn-kembali" onclick="pindahKeHalaman('halaman-merk-ILS')">← Kembali ke Menu ILS</button>
+		</div>
+		
+		<div id="halaman-sop-selex-gp" class="tab-alat">
+            <h2>SOP: GLIDE PATH</h2>
+            <div class="sub-grup-buttons">
+            <button class="btn-sub" onclick="pindahKeHalaman('sop-gp-pmdt-issue')">GLIDE PATH CAN'T NOT TRANSMIT, CAN'T LOGIN PMDT, MAINTENANCE ALERT INDICATOR FLASHING</button>
+            </div>
+			<button class="btn-kembali" onclick="pindahKeHalaman('halaman-merk-ILS')">← Kembali ke Menu ILS</button>
+		</div>
+			
+		
+		<div id="sop-gp-pmdt-issue" class="tab-alat dokumen-sop">
+    <h2>SOP TROUBLESHOOTING GLIDE PATH (PMDT &amp; CLEARANCE DROP)</h2>
+    <div class="isi-dokumen">
+        <ol class="sop-list">
+            <li>
+                <strong>Glide Path Tidak Bisa Login PMDT, Indikator Maintenance Alert Flashing, Glide Path Tidak bisa Transmit:</strong>
+                <ul>
+                    <li>Glide Path ditemukan tidak bisa Login PMDT, Pada LCU tekan reset setelah itu Glide Path tidak bisa mancar</li>
+                    <li>Local > Bypass kemudian change over dari TX 2 ke TX 1, hasil Power Forward Clearance Drop</li>
+                    <li>Parameter Clearance RF Level : <code>0</code> dan 150 Hz Mod % : <code>0</code></li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Langkah Penanganan / Troubleshooting:</strong>
+                <ul>
+                    <li>Matikan Glide Path ± 10 menit kemudian nyalakan kembali</li>
+					<li>PMDT sudah bisa Login <li>
+					<ul>
+					<li> Username : SEC3 </li>
+					<li> Password : THREE </li>
+					</ul>
+                    <li>Saat posisi ON, indikator maintenance alert blinking dan jika posisi local dilepas Glide Path tidak memancar pada TX 2 dan TX 1</li>
+                    <li>Pada PMDT, masuk menu <strong>RMS -&gt; CONFIG</strong></li>
+                    <li>Unchecklist <strong>RCSU Present</strong> dan klik <strong>Apply (F7)</strong> Hasil indikator Maintenance Alert Off</li>
+                    <li>Checklist kembali pada <strong>RCSU Present</strong> - klik <strong>Apply (F7)</strong> dan Save Configuration</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Hasil Akhir:</strong>
+                <ul>
+                    <li>Change over Glide Path dari TX1 ke TX 2, dan sebaliknya normal</li>
+                    <li>Cek parameter Glide Path, Hasil normal</li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+    <button class="btn-kembali" onclick="kembaliKeHalaman()">← Kembali ke List Alat</button>
+</div>
+
+		<div id="halaman-merk-TDME" class="tab-alat">
+            <h2>MERK TDME</h2>
+            <div class="sub-grup-buttons">
+                <button class="btn-sub" onclick="alert('SOP TDME Selex belum diisi')">SELEX</button>
+                <button class="btn-sub" onclick="alert('SOP TDME Skymaru belum diisi')">SKYMARU</button>
+            </div>
+            <button class="btn-kembali" onclick="pindahKeHalaman('halaman-merk-ILS')">← Kembali ke Menu ILS</button>
+		</div>
+		
+		
+	
+	    <div id="halaman-merk-MM" class="tab-alat">
+            <h2>MERK MIDDLE MARKER</h2>
+            <div class="sub-grup-buttons">
+                <button class="btn-sub" onclick="pindahKeHalaman('halaman-sop-selex-MM')">SELEX</button>
+            </div>
+            <button class="btn-kembali" onclick="pindahKeHalaman('halaman-merk-ILS')">← Kembali ke Menu ILS</button>
+		</div>
+
+        <div id="halaman-sop-selex-MM" class="tab-alat">
+            <h2>SOP: MIDDLE MARKER SELEX</h2>
+            <div class="sub-grup-buttons">
+                <button class="btn-sub" onclick="pindahKeHalaman('rinci-mm-selex-check')">Langkah Check Parameter Rutin</button>
+            </div>
+            <button class="btn-kembali" onclick="kembaliKeHalaman()">← Kembali ke Pilihan Merk</button>
+        </div>
+	
+	    <!-- SUB-FACILITY: SURVEILLANCE -->
+	    <div id="halaman-merk-MSSR" class="tab-alat">
+            <h2>MERK MSSR </h2>
+            <div class="sub-grup-buttons">
+                <button class="btn-sub" onclick="pindahKeHalaman('halaman-sop-eldis')">ELDIS</button>
+				<!-- <button class="btn-sub" onclick="pindahKeHalaman('halaman-sop-indra')">INDRA</button> -->
+            </div>
+            <button class="btn-kembali" onclick="kembaliKeHalaman()">← Kembali ke List Alat</button>
+        </div>	
+		
+		<div id="halaman-sop-eldis" class="tab-alat">
+    <h2>SOP FASILITAS: RADAR ELDIS</h2>
+    <div class="sub-grup-buttons">
+        <button class="btn-sub" onclick="pindahKeHalaman('rinci-eldis-updateunc')">UPDATE UNC FCOMD</button>
+		<button class="btn-sub" onclick="pindahKeHalaman('rinci-eldis-pps')">SETTINGS PPS GPS RADAR ELDIS</button>
+		<button class="btn-sub" onclick="pindahKeHalaman('rinci-eldis-extendedlabel')">EXTENDED LABEL FOR ATMAS</button>
+		<button class="btn-sub" onclick="pindahKeHalaman('rinci-eldis-apoid')">INSTALASI APOID SCAN AND CONVERT</button>
+		<button class="btn-sub" onclick="pindahKeHalaman('rinci-eldis-record')">PLAYBACK RMM2</button>
+		</div>
+        <button class="btn-kembali" onclick="kembaliKeHalaman()">← Kembali ke List Alat</button>
+    </div>
+
+<div id="rinci-eldis-updateunc" class="tab-alat dokumen-sop">
+    <h2>PANDUAN UPDATE DAN KONFIGURASI MODUL FCOMD</h2>
+    <div class="isi-dokumen">    
+        <h3>Langkah 1: Persiapan dan Mount Flashdisk</h3>
+        <p>1. Hubungkan Laptop RADAR dengan Modul FCOMD, lalu hubungkan GPS 16x/19x ke modul FCOMD.</p>
+        <p>2. Siapkan file <code>unc-1_1_1</code> (file ada di Laptop Radar) <code>Directory /home/</code>.</p>
+        <p>3. Jika belum ada maka ada di flashdisk file ada di email, flashdisk iais, dan computer cns</P> 
+		</P>4. Buka Terminal <code>CTRL + ALT + T</code>, ketik perintah berikut untuk melihat nama device flashdisk tersebut (biasanya terdeteksi dengan nama sdb atau sdc):</p>
+        <ul>
+            <li><code>fdisk –l</code></li>
+        </ul>
+        <p>5. Buat direktori untuk lokasi mount nanti:</p>
+        <ul>
+            <li><code>mkdir –p /mnt/flashdisk</code></li>
+        </ul>
+        <p>6. Lakukan mount dengan perintah berikut (sesuaikan nama sdb/sdc dengan device yang muncul):</p>
+        <ul>
+            <li><code>mount /dev/sdb /mnt/flashdisk</code></li>
+        </ul>
+        <p>7. Cek direktori tersebut untuk memastikan flashdisk sudah berhasil ter-mount.</p>
+        
+        <h3>Langkah 2: Koneksi dan Backup File FCOMD</h3>
+        <p>1. Hubungkan laptop radar dengan modul FCOMD melalui LAN. Colok di Port Lan A saja (jadi yang hijau nanti FCOMD-A-A atau FCOMD-A-B).</p>
+        <p>2. Buka Terminal Baru, lakukan SSH ke Modul FCOMD. <code>ssh fcomd-a-a</code> atau <code>ssh fcomd-a-b</code></p>
+        <p>3. Buka direktori flash dengan mengetik:</p>
+        <ul>
+            <li><code>cd /flash</code></li>
+        </ul>
+		
+        <p>4. Sebelum mengcopy file baru, buat backup file unc yang original dengan nama berbeda:</p>
+        <ul>
+            <li><code>cp unc_original unc_original_5okt22</code></li>
+        </ul>
+        <p>5. Hentikan proses unc yang sedang berjalan dengan perintah:</p>
+        <ul>
+            <li><code>killall unc</code></li>
+        </ul>
+
+        <h3>Langkah 3: Copy dan Update Versi UNC</h3>
+        <p>1. Kembali ke terminal sebelumnya (direktori flashdisk yang tadi dibuka).</p>
+        <p>2. Copy file <code>unc-1_1_1</code> ke FCOMD direktori /flash dengan mengetik:</p>
+        <ul>
+            <li><code>scp unc-1_1_1 FCOMD-A-A:/flash</code></li>
+        </ul>
+        <p>3. Kembali lagi ke terminal SSH FCOMD, pastikan file <code>unc-1_1_1</code> sudah tercopy dengan mengetik:</p>
+        <ul>
+            <li><code>ls</code></li>
+        </ul>
+        <p>4. Timpa file lama dengan file baru menggunakan perintah:</p>
+        <ul>
+            <li><code>cp unc-1_1_1 unc</code></li>
+        </ul>
+		
+        <p>5. Masukkan perintah berikut untuk memastikan versi unc sudah terupdate dari version 1.1.0 menjadi 1.1.1:</p>
+        <ul>
+            <li><code>./unc –version</code></li>
+			<div class="foto-sop-container">
+                    <img src="unc.JPG" class="foto-sop">
+                </div>
+        </ul>
+        <p>6. Setelah itu reboot FCOMD dan cek statusnya di LCMS setelah selesai reboot.</p>
+
+        <h3>Langkah 4: Edit Konfigurasi <strong>output.conf</strong></h3>
+        <p>1. Masuk ke direktori /flash lagi untuk mengedit file output.conf:</p>
+        <ul>
+            <li><code>cd /flash</code></li>
+        </ul>
+        <p>2. Sebelum mengubah, backup dulu file output.conf dengan perintah:</p>
+        <ul>
+            <li><code>cp output.conf output.conf_05okt22</code></li>
+        </ul>
+        <p>3. Edit file output.conf dengan perintah:</p>
+        <ul>
+            <li><code>vi output.conf</code></li>
+        </ul>
+        <p>4. Pada baris ketiga yang dilingkari, ubah nilainya menjadi:</p>
+       
+		<div class="foto-sop-container">
+                    <img src="unc1.JPG" class="foto-sop">
+                </div>
+				 <ul>
+            <li><code>0x4005:0x020A0A</code></li>
+        </ul>
+		
+				<p>5. Petunjuk edit menggunakan <code>vi</code>: Tekan tombol <code>i</code> untuk perintah insert. Setelah selesai edit, tekan tombol <code>Esc</code>, lalu tekan tombol <code>:wq</code> (write and quit) untuk menyimpan.</p>
+				<div class="foto-sop-container">
+							<img src="unc2.JPG" class="foto-sop">
+						</div>
+				<p>6. Setelah selesai, lakukan reboot kembali pada FCOMD.</p>
+				<p>7. Pastikan status pada LCMS berwarna hijau dan Data pada RMM sudah Valid.</p>
+
+				<h3><code>NOTE / TROUBLESHOOTING:</code></h3>
+				<p>Pada saat konfigurasi FCOMD channel A, jika setelah dilakukan prosedur diatas indikator PPS input pada tab Extractor LCMS masih berwarna merah/alarm (menandakan tegangan reference lebih besar dari tegangan input ppsnya):</p>
+				<p>Solusinya adalah melakukan adjustment pada RP1 di modul FCOMD. Prosedur lengkapnya dapat dilihat pada file SETTINGS PPS GPS RADAR ELDIS yang sudah pernah dibagikan.</p>
+			</div>
+			<button class="btn-kembali" onclick="kembaliKeHalaman()">← Kembali ke List Alat</button>
+        </div>	
+			
+			
+
+			<div id="rinci-eldis-extendedlabel" class="tab-alat dokumen-sop">
+				<h2>SOP MENAMPILKAN EXTENDED LABEL NEW ATMAS INDRA</h2>
+				<div class="isi-dokumen">
+					<h3>Langkah 1: Akses ke SMP1</h3>
+					<p>1. Buka terminal dengan menekan tombol kombinasi <code>Ctrl+Alt+T</code> dan lakukan koneksi SSH ke <strong>smp1</strong> melalui RCMS ruang Otomasi.</p>
+					<p>2. Cek isi direktori saat ini dan pastikan terdapat folder atau file bernama <code>dufino</code>.</p>
+
+					<h3>Langkah 2: Mengedit Konfigurasi <code>s_mode_reg_cfg</code></h3>
+					<p>1. Masuk ke direktori konfigurasi dengan menjalankan perintah:</p>
+					<ul>
+						<li><code>cd dufino/etc/</code></li>
+						<div class="foto-sop-container">
+							<img src="label.JPG" class="foto-sop">
+						</div>
+					</ul>
+					<p>2. Cek daftar file di dalam direktori tersebut dengan mengetik perintah:</p>
+					<ul>
+						<li><code>ls</code></li>
+					</ul>
+					<p>3. Jalankan aplikasi Midnight Commander (MC) untuk mengedit konfigurasi dengan perintah:</p>
+					<ul>
+						<li><code>mc</code></li>
+						<div class="foto-sop-container">
+							<img src="label1.JPG" class="foto-sop">
+						</div>
+					</ul>
+					<p>4. Di dalam tampilan MC, pilih file <code>s_mode_reg_cfg</code> menggunakan tombol kursor bawah, kemudian tekan tombol <code>F4</code> untuk mulai mengedit file tersebut.</p>
+					<div class="foto-sop-container">
+							<img src="label2.JPG" class="foto-sop">
+						</div>
+					<p>5. Cari baris-baris konfigurasi lama berikut:</p>
+					<ul>
+					<p><code>9 20 yes no</code></li>
+					<p><code>10 20 yes no</code></li>
+					<p><code>17 20 yes no</code></li>
+					<p><code>20 20 yes no</code></li>
+					<p><code>21 30 yes no</code></li>
+					<p><code>51 6 yes no</code></li>
+					<p><code>52 6 yes no</code></li>
+					</ul>
+					<div class="foto-sop-container">
+							<img src="label3.JPG" class="foto-sop">
+						</div>
+					<p>6. Ubah isi file tersebut sesuai dengan rekomendasi versi terbaru dari expert Eldis </p>
+					</p>(Gunakan panduan: <strong>angka 1 = yes, angka 0 = no</strong>):</p>
+					<ul>
+					<p><code>40 8 1 0 </code></li>
+					<p><code>10 120 1 0 </code></li>
+					<p><code>17 120 1 0 </code></li>
+					<p><code>20 120 1 0 </code></li>
+					<p><code>50 8 1 0 </code></li>
+					<p><code>51 20 1 1 </code></li>
+					<p><code>60 8 1 0 </code></li>
+					</ul>
+					<div class="foto-sop-container">
+							<img src="label4.JPG" class="foto-sop">
+						</div>
+					<p>7. Simpan perubahan dengan menekan tombol <code>F2</code>, lalu tekan tombol <code>F10</code> untuk keluar dari editor MC dan kembali ke terminal.</p>
+					<div class="foto-sop-container">
+							<img src="label5.JPG" class="foto-sop">
+						</div>
+					<h3>Langkah 3: Reboot dan Verifikasi</h3>
+					<p>1. Lakukan <strong>reboot</strong> pada perangkat <strong>smp1</strong> setelah selesai menyimpan file konfigurasi dengan mengetik perintah:</p>
+					<ul>
+						<li><code>reboot</code></li>
+					</ul>
+					<p>2. Setelah proses restart selesai, periksa kembali sistem untuk memastikan <strong>BDS List 40 60</strong> sudah tersedia data informasi serta nilainya (*Information and Value*).</p>
+					<div class="foto-sop-container">
+							<img src="label6.JPG" class="foto-sop">
+						</div>
+					<p>3. Lakukan verifikasi akhir pada layar SDD New ATMAS INDRA untuk memastikan <strong><code>Extended Label</code></strong> sudah muncul dan aktif.</p>
+				</div>
+				<button class="btn-kembali" onclick="kembaliKeHalaman()">← Kembali ke List Alat</button>
+			</div>
+			
+			<div id="rinci-eldis-apoid" class="tab-alat dokumen-sop">
+				<h2>SOP INTALASI APOID</h2>
+				<div class="isi-dokumen">
+				<h3>PERSIAPAN</h3>
+				<ul>
+				<P>1. LAPTOP RADAR</P>
+				<p>2. Kabel LAN Straight</p>
+				</ul>
+				<h4>A. APOID A, B untuk sync data di SERVER RADAR Head</h4>
+				<ul>
+				<li><p>Siapkan Modul APOID, lalu jumper board pcb sesuai dengan keperluan APOID</p></li>
+				<div class="foto-sop-container">
+							<img src="apoid.JPG" class="foto-sop">
+						</div>
+						</ul>
+				<h4>B. APOID 1,2 untuk convert data asterix di ATC SYS, dan APOID 3,4 data ke MKS</h4>
+				<ul>
+				<li><p>Siapkan Modul APOID, lalu jumper board pcb sesuai dengan keperluan APOID</p></li>
+				<div class="foto-sop-container">
+					<img src="apoid1.JPG" class="foto-sop">
+						</div>
+				</ul>
+				<h5> <strong>LANGKAH-LANGKAH INSTALASI</strong></h5>				
+				<p>Sambungkan kabel lan dari laptop ke port lan apoid</p>
+				</UL>
+				<p>1. Masuk ke terminal</p>
+				<p>2. Ketik <code>more/etc/hosts</code> untuk mengetahui ip address masing – masing modul</p>
+				<div class="foto-sop-container">
+					<img src="apoid2.JPG" class="foto-sop">
+						</div>
+				<p>3. <code>ifconfig</code> untuk cek ip komputer radar</p>
+				<div class="foto-sop-container">
+					<img src="apoid3.JPG" class="foto-sop">
+						</div>
+				<p>6. Samakan segmen ip address modul dan laptop radar.</p>
+				<p>7. Ketik <code>ifconfig eth0 192.168.6.252 netmask 255.255.255.0</code> untuk mengubah ip address komputer radar</p>
+				<div class="foto-sop-container">
+					<img src="apoid4.JPG" class="foto-sop">
+						</div>
+				<p>8. Untuk memastikan koneksi laptop dan modul tersambung, coba <code>ping</code> ke modul tersebut</p>
+				<p>9. Buka aplikasi <code>install-CCXP</code> untuk install fcomd</p>
+				<p>10. Buka aplikasi <code>install-UNC</code> untuk install apoid</p>
+				<div class="foto-sop-container">
+					<img src="apoid5.JPG" class="foto-sop">
+						</div>
+				<p>11. Pilih software yang akan di install, contohnya install apoid4 ketik <code>12</code>, lalu ENTER.</p>
+				<p>12. Kalau muncul <code>“switch unc off, connect unc, and switch unc on” </code> matikan modul APOID dengan mencabut kabel supply, kemudian nyalakan kembali.</p>
+				<p>13. Tunggu sampai proses instalasi selesai, seperti pada gambar dibawah</p>
+				<div class="foto-sop-container">
+					<img src="apoid6.JPG" class="foto-sop">
+						</div>
+				<p>14. Untuk memastikan MODUL sesuai dengan instalan software yang dipilih, lakukan <code>ping</code> ke MODUL tersebut.</p>
+				<p>15. Setelah proses instalasi selesai, lanjut ke settingan konfigurasi APOID, masuk ke aplikasi firefox lalu ketika doamin name APOID atau IP Address APOID.</p>
+				<ul>
+				<li><p>Settingan APOID 1 dan APOID 2 untuk ATC SYSTEM. Setting sesuai gambar dibawah lalu send masing – masing point, setelah itu reset ulang Modul APOID.</p></li>
+				<div class="foto-sop-container">
+					<img src="apoid7.JPG" class="foto-sop">
+						</div>
+				<li><p>Settingan APOID 3 dan APOID 4 untuk DATA RADAR MKS. Setting sesuai gambar dibawah lalu send masing – masing point, setelah itu reset ulang Modul APOID.</p></li>
+				<div class="foto-sop-container">
+					<img src="apoid8.JPG" class="foto-sop">
+						</div>
+				</ul>
+				<p>16. Proses Instalasi telah selesai</p>
+				</UL>
+			</div>
+				<button class="btn-kembali" onclick="kembaliKeHalaman()">← Kembali ke List Alat</button>
+			</div>
+			
+			<div id="rinci-eldis-pps" class="tab-alat dokumen-sop">
+				<h2>PROSEDUR PENYETELAN SINYAL PPS GPS GARMIN<br>PADA MODUL FCOMD RADAR ELDIS</h2>
+				<div class="isi-dokumen">
+				<h3>1. PERSIAPAN</h3>
+				<UL>
+				<li><p>a. Oscilloscope beserta probe.</p></li>
+				<li><p>b. Extended Board yang kompatibel untuk modul FCOMD.</p></li>
+				<li><p>c. Obeng trimmer / obeng minus (-) kecil.</p>
+				</ul>
+				
+				<p>2. Pastikan modul FCOMD yang akan dicek berada pada posisi STANDBY channel. Jika masih dalam posisi MAIN, lakukan changeover channel.</p>
+				<p>3. Pada channel yang dicek, matikan power supply ISSR pada modul ZSV7.</p>
+				<p>4. Lepaskan semua kabel yang terhubung dari modul FCOMD.</p>
+				<p>5. Lepaskan modul FCOMD dari rak ISSR.</p>
+				<p>6. Pasang Extended Board ke rak ISSR, kemudian pasang modul FCOMD ke Extended Board.</p>
+				<p>7. Hubungkan kembali kabel GPS ke port <code>XC3</code> modul FCOMD. Abaikan kabel yang lain.</p>
+				<p>8. Nyalakan kembali power supply ISSR pada modul ZSV7.</p>
+				<p>9. Posisi IC <code>U10</code> (<code>AD8561</code>) pada modul FCOMD berada seperti pada gambar berikut.</p>
+				<div class="foto-sop-container">
+					<img src="gpsradar.JPG" class="foto-sop">
+						</div>
+				<p><strong>10.</strong> Nyalakan oscilloscope, lalu atur vertical scale <code>1 volt/div</code> dan horizontal scale <code>1 sec/div</code>.</p>
+				<div class="foto-sop-container">
+					<img src="gpsradar1.JPG" class="foto-sop">
+						</div>	
+				<p><strong>11.</strong> Ukur sinyal PPS input pada kaki no <code>2</code> <code>U10</code> menggunakan oscilloscope, lalu catat tegangan PPS input.</p>
+				<p><strong>12.</strong> Ukur tegangan reference pada kaki no <code>3</code> <code>U10</code>, lalu catat hasilnya dan bandingkan dengan tegangan PPS input di kaki no <code>2</code>.</p>
+				<p><strong>13.</strong> Jika tegangan reference lebih besar daripada tegangan PPS input, lakukan adjustment tegangan reference pada <code>RP1</code> modul FCOMD menggunakan obeng trimmer. Turunkan tegangan reference dengan meng-adjust <code>RP1</code> ke arah counter clockwise sampai tegangan reference lebih rendah daripada tegangan PPS input.</p>
+				<p><strong>14.</strong> Ukur sinyal PPS output pada kaki no <code>7</code> <code>U10</code>, pastikan bahwa sinyal PPS muncul dan tegangannya terukur lebih dari <code>4 volts</code>.</p>
+				<p><strong>15.</strong> Matikan <strong>power supply ISSR</strong>, lepas Extended Board dan pasang kembali modul FCOMD.</p>
+				<p><strong>16.</strong> Hubungkan kembali semua kabel yang terhubung ke FCOMD, lalu nyalakan ISSR.</p>		
+			</div>
+				<button class="btn-kembali" onclick="kembaliKeHalaman()">← Kembali ke List Alat</button>
+			</div>
+
+				<div id="rinci-eldis-record" class="tab-alat dokumen-sop">
+				<h2>PLAYBACK RADAR DI RMM2</h2>
+				<div class="isi-dokumen">
+				<p><strong>1.</strong> Klik button <code> DVAZ</code> Pada RMM</p>
+				<p><strong>2.</strong> <code>Pilih Replay</code> -> <code> Release</code></p>	
+				<p><strong>3.</strong> Kemudian <code>Pilih Replay</code>  lagi -> <code> Load Interval</code></p>
+				<p><strong>4.</strong> Pilih <code> DVAZ ID 3</code> (Kalau mau diubah unchecklist button)</p>
+				<p><strong>5.</strong> Isi Begin and End Time sesuai kebutuhan</p>
+				<p><strong>6.</strong> Klik <code> Start Load Interval</code></p>
+				<p><strong>7.</strong> Maka akan muncul display replay</p>
+				<p><strong>8.</strong> Kemudian klik <strong> STOP dan SAVE </strong>file rekaman serta tulislah nama file sesuai keinginan (File rekaman berada pada <code> /var/dvaz/user</code>)</p>
+				
+			</div>
+				<button class="btn-kembali" onclick="kembaliKeHalaman()">← Kembali ke List Alat</button>
+			</div>
+	
+	    <div id="halaman-merk-ADSB" class="tab-alat">
+            <h2>MERK ADSB</h2>
+            <div class="sub-grup-buttons">
+               <button class="btn-sub" onclick="pindahKeHalaman('halaman-sop-thales')">THALES</button>
+			<!--	<button class="btn-sub" onclick="alert('SOP ADSB Gecci belum diisi')">GECCI</button>
+				<button class="btn-sub" onclick="alert('SOP ADSB Intelcan belum diisi')">INTELCAN</button>
+				<button class="btn-sub" onclick="alert('SOP ADSB Era belum diisi')">ERA</button> -->
+            </div>
+            <button class="btn-kembali" onclick="kembaliKeHalaman()">← Kembali ke List Alat</button>
+        </div>	
+		
+		<div id="halaman-sop-thales" class="tab-alat">
+    <h2>SOP FASILITAS: ADSB THALES AX682</h2>
+    <div class="sub-grup-buttons">
+        <button class="btn-sub" onclick="pindahKeHalaman('rinci-thales-install')">SOP INSTALL RCMS ADSB</button>
+		<button class="btn-sub" onclick="pindahKeHalaman('rinci-thales-lancard')">SOP INSTALL INTERFACE LAN CARD & PROBLEM SOLVING FAIL CONNECT PORT 50000</button>
+		<button class="btn-sub" onclick="pindahKeHalaman('rinci-thales-fsck')">RCMS ADSB RUN FSCK MANUALLY</button>
+		</div>
+        <button class="btn-kembali" onclick="kembaliKeHalaman()">← Kembali ke List Alat</button>
+    </div>
+		<div id="rinci-thales-install" class="tab-alat dokumen-sop">
+				<h2>SOP INSTALL RCMS ADSB</h2>
+				<div class="isi-dokumen">
+				<p><strong>1. </strong> Siapkan CD Berlabel <code>“KICKSTART THALIX”</code> dan Sebuah Flash Disk</p>
+				<div class="foto-sop-container">
+					<img src="adsb1.JPG" class="foto-sop">
+						</div>
+				<p><strong>2.</strong> Copy semua file yang ada di dalam CD ke Flashdisk</p>
+				<div class="foto-sop-container">
+					<img src="adsb2.JPG" class="foto-sop">
+						</div>
+				<p><strong>3.</strong> Siapkan sebuah PC, Colok Flashdisk tadi dan masukan CD <code>“MAGS OPERATING SYSTEM SW THALIX V11.0”</code></p>
+				<p><strong>4.</strong> Reboot PC, setelah reboot tunggu sampai ada halaman installasi berbackground ungu</p>
+				<p><strong>5.</strong> Lalu tekan tombol <code>ESC</code> akan masuk ke layar hitam dengan tulisan “boot:”</p>
+				<p><strong>6.</strong> Ketik “<code>linux ks=hd:sda:/bpn_rcms.cfg</code>”</p>
+				<p><strong>7.</strong> Setelah itu tunggu proses installasinya berjalan otomatis</p>
+				<div class="foto-sop-container">
+					<img src="adsb3.JPG" class="foto-sop">
+						</div>
+				<p><strong>8.</strong> Setelah selesai PC akan reboot dan CD akan teriject sendirinya</p>
+				<p><strong>9.</strong> Lalu akan diminta insert CD <code>“MAGS OPERATING SYSTEM SW THALIX EXTENSION V1.00”</code> ketik enter, tunggu proses installnya.</p>
+				<p><strong>10.</strong> Setelah itu diminta insert CD <code>“MAGS OPERATING SYSTEM SW NVIDIA DRIVERS V304.116”</code> ketik enter, tunggu proses installnya</p>
+				<p><strong>11.</strong> Setelah itu diminta insert CD <code>“MAGS APPLICATION SW CPS/CMS Server applications”</code> ketik enter, tunggu proses installnya</p>
+				<p><strong>12.</strong> Setelah itu diminta insert CD <code>“MAGS APPLICATION SYSTEM SW RCMS/LCMS GUI SW”</code> ketik enter, tunggu proses installnya</p>
+				<p><strong>13.</strong> Setelah itu diminta insert CD <code>“MAGS APPLICATION SYSTEM SW GS Application SW”</code> ketik enter, tunggu proses installnya.</p>
+				<p><strong>14.</strong> Setelah itu diminta insert CD Mags Configuration File, kita masuk cd-nya yang berlabel <code>“KICKSTART THALIX”</code> ketik enter dan tunggu proses installnya</p>
+				<p><strong>15.</strong> Setelah selesai PC akan reboot, setelah reboot ditemukan blank screen karena driver NVIDIA yang kita install tidak support dengan PC yang kita pakai, caranya masuk ke terminal dengan menekan tombol <code>“Ctrl + Alt + F2”</code></p>
+
+				<p><strong>16.</strong> Setelah masuk ke terminal, ketik login: “<code>supervisor</code>” password: “<code>12super21</code>”</p>
+				<p><strong>17.</strong> Masuk ke root dengan ketik “<code>su</code>” password: “<code>12rcms21</code>”</p>
+				<p><strong>18.</strong> Lalu masukan command sebagai berikut :<br>
+				<ul>
+				# <code>Xorg –configure</code><br>
+				# <code>mv /etc/X11/xorg.conf /etc/X11/xorg.conf.old</code><br>
+				# <code>cp ~/xorg.conf.new /etc/X11/xorg.conf</code></p>
+				</ul>
+				<p><strong>19.</strong> Setelah itu tampilan Login akan muncul, masukan username: “<code>supervisor</code>” password: “<code>12super21</code>” ketik enter, PC RCMS ADSB telah terinstall</p>
+				<p><strong>20.</strong> Permasalahan selanjutnya adalah MTSC dan TSD tidak bias terbuka karena LDAP Server belum terkonfigurasi dengan baik</p>
+				<p><strong>21.</strong> Caranya yaitu, masukkan CD <code>“MAGS Applications SW Software Pack 8”</code></p>
+				<p><strong>22.</strong> Buka terminal, masuk ke folder CD tersebut, didalam folder tersebut terdapat beberapa file : “<code>install.sh</code>”, “<code>installUI.sh</code>”, “<code>update.sh</code>”, “<code>installRCMSEXT.sh</code>”, dan “<code>updateRCMSEXT.sh</code>.”</p>
+				<p><strong>23.</strong> Ketik command “<code>./install.sh</code>” tekan enter</p>
+				<div class="foto-sop-container">
+					<img src="adsb4.JPG" class="foto-sop">
+						</div>
+				<p><strong>24.</strong> Tunggu prosesnya, jika ada pertanyaan tekan <code>Y atau yes</code> saja dan kalau ada skip tekan enter saja, jika diminta masukkan password, ketik passwornya lalu enter</p>
+				<p><strong>25.</strong> Setelah selesai, ketik command “<code>./installUI.sh</code>” tekan enter</p>
+				<div class="foto-sop-container">
+					<img src="adsb5.JPG" class="foto-sop">
+						</div>
+				<p><strong>26.</strong> Setelah selesai, ketik command “<code>./update.sh</code>” tekan enter</p>
+				<div class="foto-sop-container">
+					<img src="adsb6.JPG" class="foto-sop">
+						</div>
+				<p><strong>27.</strong> Ketik yes yes saja kalau ada pertanyaan, sampai muncul perintah <strong><em>“Enter configuration name to extract. Leave empty to extract pins-adsb-balikpapan-main.”</em></strong><br></p>
+				<div class="foto-sop-container">
+					<img src="adsb7.JPG" class="foto-sop">
+						</div>
+				<p><strong>28.</strong> Kita bisa cek nama konfigurasi tersebut dengan membuka tab baru pada terminal lalu ketik command “<code>cd /usr/local/ConfigurationRepository</code>” lalu kita list, nanti akan terlihat file konfigurasi bernama “<code>pins-adsb-balikpapan-main</code>”</p>
+				<div class="foto-sop-container">
+					<img src="adsb8.JPG" class="foto-sop">
+						</div>
+						
+						
+				<p><strong>29.</strong> Karena sudah sesuai tekan enter saja</p>
+				<p><strong>30.</strong> Tekan enter saja, Jika ada pertanyaan diminta password masukan password</p>
+				<p><strong>31.</strong> Nanti akan ada perintah <strong><em>“Please provide &lt;PROJECT&gt; name so that /usr/local/bin/init&lt;PROJECT&gt;.sh can be executed </em></strong>untuk tau nama projectnya buka tab baru pada terminal, ketik command “<code>cd /usr/local/bin</code>” lalu di list, nanti ada file “<code>initADSB-BALIKPAPAN.sh</code>”, berarti nama projectnya adalah ADSB-BALIKPAPAN</p>
+				<div class="foto-sop-container">
+					<img src="adsb9.JPG" class="foto-sop">
+					<span class="caption-foto"><code>PJOJECT Can't Execude</code></span>
+						</div>
+						
+						<div class="foto-sop-container">
+					<img src="adsb10.JPG" class="foto-sop">
+						</div>
+				<p><strong>32.</strong> Ketik <code>ADSB-BALIKPAPAN</code>, lalu enter</p>
+				<div class="foto-sop-container">
+					<img src="adsb11.JPG" class="foto-sop">
+						</div>
+				<p><strong>33.</strong> Setelah itu yes yes saja dan enter enter saja</p>
+				<p><strong>34.</strong> Setelah selesai ketik command “<code>./installRCMSEXT.sh</code>” tekan enter</p>
+				<div class="foto-sop-container">
+					<img src="adsb12.JPG" class="foto-sop">
+						</div>
+				<p><strong>35.</strong> Setelah itu ketik command “<code>./updateRCMSEXT.sh</code>” lalu tekan enter</p>
+				<div class="foto-sop-container">
+					<img src="adsb13.JPG" class="foto-sop">
+						</div>
+				<p><strong>36.</strong> Tekan yes yes saja, nanti sama seperti sebelumnya akan diminta ketik nama file konfigurasinya yaitu “<code>pins-adsb-balikpapan-main</code>” tekan enter saja</p>				
+				<p><strong>37.</strong> Nanti juga akan diminta masukan nama project sama seprti sebelumnya yaitu “<code>ADSB-BALIKPAPAN</code>” tekan enter</p>
+				<p><strong>38.</strong> Setelah selesai akan ada perintah reboot, ketik <code>reboot</code><br> 
+				<div class="foto-sop-container">
+					<img src="adsb14.JPG" class="foto-sop">
+						</div>
+				<p><strong>39.</strong> Setelah itu kita atur konfigurasi IP, pertama buka terminal, kita lihat dulu berapa IP yang digunakan saat ini dengan mengertik perintah “<code>ifconfig</code>”</p>
+				<div class="foto-sop-container">
+					<img src="adsb15.JPG" class="foto-sop">
+						</div>
+				<p><strong>40.</strong> Kita akan pakai <code>eth0</code>, biar tau caranya <code>eth0</code> itu port yang mana di belakang computer, dengan command “<code>ethtool -p eth0 120</code>” lampu indikator LAN akan menyala</p>
+				<div class="foto-sop-container">
+					<img src="adsb16.JPG" class="foto-sop">
+						</div>
+						<li> <p>Nanti akan ada port lan yang menyala, berarti itu eth0</p></li>
+						<div class="foto-sop-container">
+					<img src="adsb17.JPG" class="foto-sop">
+						</div>
+				<p><strong>41.</strong> Kita ubah ip nya dengan command “<code>ifconfig eth0 192.168.42.38 netmask 255.255.255.240</code>” enter</p>
+				<div class="foto-sop-container">
+					<img src="adsb18.JPG" class="foto-sop">
+						</div>
+				<p><strong>42.</strong> Kita cek lagi apakah ipnya sudah berubah dengan command “<code>ifconfig</code>”</p>
+				<p><strong>43.</strong> Setelah benar, lalu selanjutnya buka MTSC dan hasil normal (diluar UPS)</p>
+				<div class="foto-sop-container">
+					<img src="adsb19.JPG" class="foto-sop">
+						</div>
+				<p><strong>44.</strong> Tapi saat mencoba membuka TSD, gabisa dibuka, lewat terminal coba di buka, ada pemberitahuan seperti gambar dibawah Yang berarti display masih bermasalah karena terganggu driver NVIDIA</p>
+				<div class="foto-sop-container">
+					<img src="adsb20.JPG" class="foto-sop">
+						</div>
+				<p><strong>45.</strong> Caranya, masukkan command “<code>yum remove nvidia*</code>” untung menghapus segala file yang berhubungan dengan driver NVIDIA</p>
+				<p><strong>46.</strong> Setelah selesai, coba buka TSD, ada error seperti gambar dibawah :</p>
+				<div class="foto-sop-container">
+					<img src="adsb21.JPG" class="foto-sop">
+						</div>
+				<p><strong>47.</strong> Setelah di cek di <code>/usr/local/etc</code> memang filenya tidak ada</p>
+				<p><strong>48.</strong> Caranya kita bisa copy file diplay.xml di “<code>/usr/local/etc/pins/adsb-balikpapan/bpn_rcms</code></p>
+				<div class="foto-sop-container">
+					<img src="adsb22.JPG" class="foto-sop">
+						</div>
+				<p><strong>49.</strong> Masukan perintah <code>cp display.xml /usr/local/etc</code></p>
+				<div class="foto-sop-container">
+					<img src="adsb23.JPG" class="foto-sop">
+						</div>
+				<p><strong>50.</strong> Setelah itu buka TSD, alhamdulillah bisa dan muncul target</p>
+				<div class="foto-sop-container">
+					<img src="adsb24.JPG" class="foto-sop">
+						</div>
+				</div>
+				<button class="btn-kembali" onclick="kembaliKeHalaman()">← Kembali ke List Alat</button>
+			</div>
+						
+		
+		<div id="rinci-thales-fsck" class="tab-alat dokumen-sop">
+				<h2>RCMS ADSB RUN FSCK MANUALLY</h2>
+				<div class="isi-dokumen">		
+				<p> Biasanya diakibatkan karena RCMS tiba-tiba shutdown, Maka harus <CODE>"FSCK MANUALLY"</CODE></P>
+				<p> Tekan enter sampai display menginstrusikan untuk memasukkan password </p>
+				<div class="foto-sop-container">
+				<img src="fsck.JPG" class="foto-sop">
+						</div>
+				<p>Password : <code>12rcms21</code><br>
+				<p>1. Masuk<code>fsck /dev/mapper/VolGroup00-LogVol100</code><br>
+				<ul>
+				<li><strong><code>fsck</code>:</strong> Menjalankan program pemeriksaan sistem file.<br></li>
+				<li><strong><code>/dev/mapper/VolGroup00-Logo</code>:</strong> Target berupa Logical Volume (LVM) bernama Logo di dalam Volume Group VolGroup00.<br></li>
+				<li><strong>100:</strong> Angka prioritas atau pass number yang biasanya dibaca otomatis oleh sistem saat proses booting (konfigurasi dari /etc/fstab) untuk menentukan urutan pengecekan disk</p></li>
+				</ul>
+				
+				<p>2. Masukkan <code>fsck /dev/sda1</code></p>
+				<ul>
+				<li><p><strong><code>fsck</code>:</strong> Menjalankan program pemeriksaan sistem file.<br></li>
+				<li><strong><code>/dev/sda1</code>:</strong> Target berupa partisi pertama (1) pada hard disk atau SSD fisik pertama (sda) di komputer</p></li>
+				<li><p>Jika fsck memunculkan pesan <strong><em>FILE SYSTEM WAS MODIFIED</em></strong>, ketik<code>reboot</code></p></li>
+				</ul>
+				<p>3. RCMS ADSB harusnya sudah tampil Normal</p>
+				</div>
+				<button class="btn-kembali" onclick="kembaliKeHalaman()">← Kembali ke List Alat</button>
+			</div>
+			
+			
+			<!-- ADSB - INSTALL LAN CARD -->
+			<div id="rinci-thales-lancard" class="tab-alat dokumen-sop">
+				<h2>SOP INSTALL INTERFACE LAN CARD & PROBLEM SOLVING FAIL CONNECT PORT 50000</h2>
+				<div class="isi-dokumen">
+			<ol>
+			<li>Berikut merupakan langkah-langkah yang digunakan untuk koneksi RCMS ADSB ke GS ADSB menggunakan PCI Card LAN jika Port Lan On Board mengalami kerusakan: <code>ETHERNET COMPAQ NC3120 317606-001 10\100TX PCI</code>.</li>				
+			<div class="foto-sop-container">
+					<img src="lan.JPG" class="foto-sop">
+						</div>
+			<li>Setelah PCI Lan Card terpasang pada CPU, masuk terminal Linux pada RCMS ADSB lalu masuk sebagai super user, lalu ketik perintah untuk mendeteksi dan menampilkan informasi perangkat PCI LAN CARD:</li>
+			<pre class="code-box"><code>#su
+			# password : 12rcms21
+			# dmesg | grep eth </code></pre>
+				</li>
+				<div class="foto-sop-container">
+					<img src="lan2.JPG" class="foto-sop">
+						</div>
+				<li>Berikutnya menghubungkan MAC Address perangkat PCI LAN CARD dengan nama ethernet yang akan digunakan, untuk memudahkan kita menamakan <code>eth0</code>:</li>
+			<pre class="code-box"><code>vi /etc/udev/rules.d/70-persistent-net.rules</code></pre>
+				</li>
+				<div class="foto-sop-container">
+					<img src="lan1.JPG" class="foto-sop">
+						</div>
+				<li><p>Masukan MAC address dan pastikan Nama ethernet yang digunakan adalah <code>eth0</code>. Input pada <code>ATTR{address}=="00:50:8b:ad:0b:2e", NAME="eth0"</code> (MAC Address bisa dilihat pada langkah 2). Setelah edit MAC address save and quit dengan mengetik perintah <code>:wq</code>.</p></li>
+				<div class="foto-sop-container">
+					<img src="lan3.JPG" class="foto-sop">
+						</div>
+				<li>
+					<p>Selanjutnya konfigurasi jaringan pada <code>eth0</code> untuk dikenali oleh system:</p>
+			<pre class="code-box"><code>vi /etc/sysconfig/network-scripts/ifcfg-eth0</code></pre>
+				</li>
+				<div class="foto-sop-container">
+					<img src="lan4.JPG" class="foto-sop">
+						</div>
+				<li><p>Edit script sesuai dengan gambar di bawah ini, Setelah edit save and quit ketik perintah <code>:wq</code>.</p></li>
+				<div class="foto-sop-container">
+					<img src="lan5.JPG" class="foto-sop">
+						</div>
+				<li>
+					<p>Selanjutnya mengaktifkan <code>eth0</code> dan konfigurasi IP address:</p>
+			<pre class="code-box"><code>ifconfig eth0 up
+			ethtool -p eth0
+			ifconfig eth0 192.168.42.37 netmask 255.255.255.240</code></pre>
+				</li>
+
+				<li>
+					<p>Setelah langkah 1 sampai 7, lakukan tes koneksi ke Groundstation ADSB A dan B. Jika koneksi berhasil maka aplikasi <em>MTSC</em> sudah bisa terbuka untuk melihat status groundstation A dan B:</p>
+			<pre class="code-box"><code>ping 192.168.42.33
+			atau
+			ping 192.168.42.34</code></pre>
+				</li>
+
+				<li><p>Untuk aplikasi <em>TSD (Technical Situation Display)</em> belum bisa muncul target pesawat dikarenakan koneksi port <code>50000</code> dan IP multicast belum dikenali oleh Port LAN PCI.</p></li>
+
+				<li>
+					<p>Salah satu penyebab port <code>50000</code> fail connection ialah firewall pada motherboard ke PCI Lan CARD, untuk melewatkan port <code>50000</code> ketik perintah:</p>
+			<pre class="code-box"><code>sudo iptables -A INPUT -p udp --dport 50000 -j ACCEPT
+			sudo iptables -A INPUT -p tcp --dport 50000 -j ACCEPT</code></pre>
+				</li>
+
+				<li>
+					<p>Selanjutnya lakukan routing address multicast dan penambahan IP Multicast Port <code>50000</code>:</p>
+			<pre class="code-box"><code>route add -net 239.0.0.0 netmask 255.0.0.0 dev eth0
+			ip maddr add 239.71.30.2 dev eth0
+			more /etc/hosts</code></pre>
+				</li>
+				<div class="foto-sop-container">
+					<img src="lan6.JPG" class="foto-sop">
+						</div>
+				<li>
+					<p>Selanjutnya untuk memastikan traffic data multicast sudah masuk pada <code>eth0</code>, bisa execute perintah netstat:</p>
+			<pre class="code-box"><code>netstat -tulnp | grep 50000</code></pre>
+				</li>
+				<div class="foto-sop-container">
+					<img src="lan7.JPG" class="foto-sop">
+						</div>
+				<li>
+					<p>Gunakan tcpdump untuk melihat traffic data multicast yang masuk ke CPU melalui <code>eth0</code>:</p>
+			<pre class="code-box"><code>tcpdump -i eth0 host 239.71.30.2</code></pre>
+				</li>
+				<div class="foto-sop-container">
+					<img src="lan8.JPG" class="foto-sop">
+						</div>
+				<li><p>Sebelum disetting port <code>50000</code> dan IP Multicast pada tampilan interfaces <em>TSD (Technical Situation Display)</em> tidak dapat dicentang atau enabled, setelah langkah 10 sampai 13 settingan tersebut dapat dienabled pada interfaces <em>TSD (Technical Situation Display)</em>.</p></li>
+
+				<li><p>Tampilan pada Aplikasi Normal Operasi.</p></li>
+				<div class="foto-sop-container">
+					<img src="lan9.JPG" class="foto-sop">
+						</div>
+						<div class="foto-sop-container">
+					<img src="adsb24.JPG" class="foto-sop">
+						</div>
+			</ol>
+							</div>
+				<button class="btn-kembali" onclick="kembaliKeHalaman()">← Kembali ke List Alat</button>
+			</div>
+		
+	
+	    <!-- SUB-FACILITY: DATA PROCESSING -->
+	    <div id="halaman-merk-ATMAS" class="tab-alat">
+            <h2>SUB-FACILITY: ATMAS (ATC SYSTEM)</h2>
+            <div class="sub-grup-buttons">
+                <button class="btn-sub" onclick="pindahKeHalaman('halaman-sop-atmas-indra')">INDRA</button>
+            </div>
+            <button class="btn-kembali" onclick="kembaliKeHalaman()">← Kembali ke List Alat</button>
+	    </div>	
+		
+		<div id="halaman-sop-atmas-indra" class="tab-alat">
+            <h2>SOP FASILITAS: ATMAS INDRA</h2>
+            <div class="sub-grup-buttons">
+                <button class="btn-sub" onclick="pindahKeHalaman('rinci-atmas-restart')">GLOBAL RESTART ATMAS</button>
+                <button class="btn-sub" onclick="pindahKeHalaman('rinci-atmas-mount')">MOUNT & UNMOUNT DISK</button>
+                <button class="btn-sub" onclick="pindahKeHalaman('rinci-atmas-start-stop')">START AND STOP APPLICATION</button>
+                <button class="btn-sub" onclick="pindahKeHalaman('rinci-atmas-sectorization')">SECTORIZATION CWP</button>
+                <button class="btn-sub" onclick="pindahKeHalaman('rinci-atmas-switchover')">SWITCH OVER SERVER</button>
+                <button class="btn-sub" onclick="pindahKeHalaman('rinci-atmas-playback')">PLAYBACK, VIDEO RECORD, AND COMBINE AUDIO VIDEO</button>
+                <button class="btn-sub" onclick="pindahKeHalaman('rinci-atmas-export')">EXPORT FILE TO USB FROM CWP</button>
+                <button class="btn-sub" onclick="pindahKeHalaman('rinci-atmas-display')">DISPLAY CONFIGURATION</button>
+                <button class="btn-sub" onclick="pindahKeHalaman('rinci-atmas-password')">CREATE AND MODIFY USER PASSWORD IN DBM</button>
+                <button class="btn-sub" onclick="pindahKeHalaman('rinci-atmas-ssh')">REMOTE TOOLBOX AND DBM</button>
+                <button class="btn-sub" onclick="pindahKeHalaman('rinci-atmas-login')">LOGIN IN CMD & SETTINGS USER DBM ATMAS</button>
+                <button class="btn-sub" onclick="pindahKeHalaman('rinci-atmas-remote')">VNCVIEWER REMOTE</button>
+                <button class="btn-sub" onclick="pindahKeHalaman('rinci-atmas-aip')">ADD AIP DOCUMENT</button>
+                <button class="btn-sub" onclick="pindahKeHalaman('rinci-atmas-backup-config')">BACKUP AND RESTORE CONFIGURATION DBM</button>
+				<button class="btn-sub" onclick="pindahKeHalaman('rinci-atmas-cid')">CID MAINTENANCE</button>
+				<button class="btn-sub" onclick="pindahKeHalaman('rinci-atmas-h3c')">CONFIG SWITCH H3C</button>
+				<!-- <button class="btn-sub" onclick="pindahKeHalaman('rinci-atmas-manuals')">MANUALS ATMAS</button> -->
+            </div>
+            <button class="btn-kembali" onclick="kembaliKeHalaman()">← Kembali ke Pilihan Merk</button>
+		</div>
+
+        <div id="halaman-merk-AMSC" class="tab-alat">
+            <h2>MERK AMSC</h2>
+            <div class="sub-grup-buttons">
+                <button class="btn-sub" onclick="pindahKeHalaman('halaman-sop-elsa')">ELSA</button>
+            </div>
+            <button class="btn-kembali" onclick="kembaliKeHalaman()">← Kembali ke List Alat Data Processing</button>
+        </div>
+		
+		<div id="halaman-merk-IAIS" class="tab-alat">
+            <h2>MERK IAIS</h2>
+            <div class="sub-grup-buttons">
+                <button class="btn-sub" onclick="pindahKeHalaman('halaman-sop-iais')">ELSA</button>
+            </div>
+            <button class="btn-kembali" onclick="kembaliKeHalaman()">← Kembali ke List Alat Data Processing</button>
+        </div>
+		
+		<div id="halaman-sop-elsa" class="tab-alat">
+            <h2>SOP AMSC ELSA</h2>
+            <div class="sub-grup-buttons">
+                <button class="btn-sub" onclick="pindahKeHalaman('sop-amsc-pdai-copy-address')">COPY ADDRESS TABLE SERVER</button>
+				<button class="btn-sub" onclick="pindahKeHalaman('sop-aftn-cloning-hardisk')">CLONING HARDISK AFTN</button>
+				<button class="btn-sub" onclick="pindahKeHalaman('sop-amsc-gps-no-clock-signal')">GPS NO SIGNAL IN SERVER</button>
+				<button class="btn-sub" onclick="pindahKeHalaman('sop-amsc-init-pdai')">PROSEDUR INIT PDAI SERVER</button>
+            </div>
+            <button class="btn-kembali" onclick="kembaliKeHalaman()">← Kembali ke List Merk</button>
+        </div>
+		
+		<div id="sop-amsc-pdai-copy-address" class="tab-alat dokumen-sop">
+    <h2>TINDAKAN PDAI PADA SERVER AMSC HILANG (COPY ADDRESS TABLE)</h2>
+    <div class="isi-dokumen">
+        <p><em>*Apabila PDAI yang hilang pada server AMSC A, lakukan langkah-langkah meng-copy address table berikut pada server AMSC B dan sebaliknya.</em></p>
+
+        <ol class="sop-list">
+            <li>Masuk ke terminal melalui "X"</li>
+            <li>Ketik user: <code>ELSA</code> dan password: <code>ELSAELSA</code></li>
+            <li>Pada terminal ketik perintah :
+                <pre class="code-box"><code>#cp //2/amsc128cc/* //1/amsc128cc/</code></pre>
+            </li>
+            <li>Setelah itu restart kedua supervisi dan tunggu beberapa menit</li>
+            <li>Change ke server AMSC A (Server yang sebelumnya bermasalah)</li>
+            <li>Lakukan pengecekan dengan mengirim SVC TRAF, apabila pesan tersebut kembali maka server AMSC tersebut telah normal</li>
+            <li>Lakukan pengecekan pada sequence data TX/RX antar server AMSC, apabila belum sinkron maka restart server AMSC</li>
+            <li>Apabila masih belum sinkron maka lakukan sinkronisasi</li>
+        </ol>
+    </div>
+    <button class="btn-kembali" onclick="kembaliKeHalaman()">← Kembali ke List SOP</button>
+</div>
+
+
+			<div id="sop-aftn-cloning-hardisk" class="tab-alat dokumen-sop">
+				<h2>SOP KLONING HARDISK AFTN MENGGUNAKAN COMMAND</h2>
+				<div class="isi-dokumen">
+					<ol class="sop-list">
+						<li>Siapkan 2 hard disk IDE dimana salah satu menjadi master data yang akan di cloning</li>
+						<li>Ubah jumper hardisk
+							<ul>
+								<li>a. Master data sebagai master</li>
+								<li>b. Hardisk tujuan cloning sebagai slave</li>
+								 <div class="foto-sop-container">
+								<img src="cloning.JPG" class="foto-sop">
+							</div>
+							</ul>
+						</li>
+						<li>Siapkan cpu dan pasang kedua hard disk IDE dengan letak hard disk master di ujung kabel IDE dan hard disk slave di tengah kabel IDE</li>
+						<div class="foto-sop-container">
+								<img src="cloning1.jpg" class="foto-sop">
+							</div>
+						<li>Booting dengan cpu sampai proses pembacaan hardisk muncul di layar lalu tekan esp</li>
+						<li>Login : <code>root</code>
+							<br>Password : <em>kosong</em>
+						</li>
+						<li>Masukkan perintah:
+							<pre class="code-box"><code># ls (untuk melihat list folder)
+			# cd dev (untuk masuk ke folder dev)
+			# ls (untuk melihat file yang ada di folder dev)</code></pre>
+							Pastikan ada <code>hd0</code> (sebagai master data yang akan dikloning) dan <code>hd1</code> (sebagai hard disk data tujuan)
+						</li>
+						<li>Masukkan perintah untuk mengkloning
+							<pre class="code-box"><code># dd if=/dev/hd0 of=/dev/hd1 bs=32256</code></pre>
+						</li>
+						<li>Tunggu sampai proses cloning selesai</li>
+						<li>Layar monitor akan menunjukkan angka
+							<pre class="code-box"><code>Xxxxxxxx in
+			Xxxxxxxx out</code></pre>
+							Maka proses cloning selesai. Matikan CPU dan cabut salah satu hardisk kemudian test booting menggunakan hardisk master dan slave selama begantian untuk memastikan apakah proses cloning berhasil.
+						</li>
+					</ol>
+				</div>
+				<button class="btn-kembali" onclick="kembaliKeHalaman()">← Kembali ke List SOP</button>
+			</div>
+		
+		<div id="sop-amsc-gps-no-clock-signal" class="tab-alat dokumen-sop">
+			<h2>SOP PENANGANAN SERVER NO CLOCK SIGNAL (GPS AMSC)</h2>
+			<div class="isi-dokumen">
+				<ol class="sop-list" start="1">
+					<li>
+						<strong>Jika pada tampilan Server No Clock Signal</strong>
+						<p>GPS tidak dapat menerima signal (kemungkinan karena pengaruh posisi GPS) atau GPS rusak. Untuk memastikan rusak tidaknya GPS, lakukan langkah-langkah di bawah ini:</p>
+						<ul>
+							<li>a. Pilih X [Enter] &rarr; isikan USER: <code>ELSA</code> [Enter] PASSWORD: <code>ELSAELSA</code>, tekan tombol <CODE>Ctrl + Alt + 9</CODE>.</li>
+							<li>b. Tekan Enter sampai muncul tanda #, lalu ketik:
+								<pre class="code-box"><code>#stty &lt;/dev/bh1</code></pre>
+								(perintah ini digunakan untuk memeriksa kondisi kabel GPS), jika <STRONG>cts dan dsr nya +</STRONG> maka kabel OK dan sebaliknya.
+							</li>
+							<li>c. Jika kabel OK, tetapi masih No Clock Signal, lakukan pengecekan selanjutnya dengan cara mengetikkan perintah:
+								<pre class="code-box"><code>#qtalk -m /dev/bh1</code></pre>
+								(perintah ini digunakan untuk menanyakan status GPS ke GPS-nya), jika mendapat balasan artinya GPS masih dalam kondisi baik, hanya saja GPS tidak mendapatkan signal dengan baik.
+							</li>
+							<li>d. Jika tidak mendapatkan balasan sama sekali, maka kemungkinan GPS-nya rusak.</li>
+							<li>e. Untuk kembali pada tampilan 16 circuit, tekan tombol <code> Ctrl + Alt + 1</code>.</li>
+						</ul>
+					</li>
+				</ol>
+			</div>
+			<button class="btn-kembali" onclick="kembaliKeHalaman()">← Kembali ke List SOP</button>
+		</div>
+		
+		<div id="sop-amsc-init-pdai" class="tab-alat dokumen-sop">
+		<h2>PROSEDUR INIT PDAI</h2>
+		<div class="isi-dokumen">
+        <ol class="sop-list">
+            <li>Melakukan Changeover Server AMSC A ke B (AMSC Server B Main, AMSC Server A standby)</li>
+            
+            <li>Pada server AMSC A dilakukan init Database Address Table (format ulang Address Table (Database PDAI)).
+                <br>Pada Server A masuk ke mode X User <code>ELSA</code> Password <code>ELSAELSA</code> (Ctrl+alt+9)
+                <br>Script init (server A) :
+                <pre class="code-box"><code># //1/raima/bin/32/initdb /amsc128cc/adr
+					Tekan Y</code></pre>
+					<div class="foto-sop-container">
+								<img src="init.JPG" class="foto-sop">
+							</div>
+	
+									<div class="foto-sop-container">
+								<img src="init1.JPG" class="foto-sop">
+								<span>Jika init berhasil, maka akan muncul keterangan <code>/amsc128cc/adr initialized</code></span>
+							</div>
+								</li>
+								<li>Lepas koneksi LAN pada Server B agar input PDAI tidak masuk di Server B.</li>
+								<li>Pilih Server A pada saat log &ndash; in di Supervisor AMSC yang digunakan untuk menginput PDAI.</li>	
+								<li>Personel ACO melakukan input ulang PDAI pada Server A.</li>
+								<li>Mengaktifkan Address Table yang sudah diinput oleh Personel ACO menggunakan Supervisor AMSC.</li>
+								<div class="foto-sop-container">
+								<img src="init2.JPG" class="foto-sop">
+							</div>
+								<li>Changeover server AMSC ke A sebagai Main.</li>
+								<li>Cek PDAI yang telah ditambahkan pada server A dan monitor operasional AMSC server A.</li>
+								<li>Apabila Server A telah normal opersai, dilanjutkan prosedur Init Server B</li>
+								<li>Pasang LAN pada Server B.
+									<br>Pada Server B masuk ke mode X User <code>ELSA</code> Password <code>ELSAELSA</code> (Ctrl+alt+9)
+									<br>Script init (server B):
+									<pre class="code-box"><code># //2/raima/bin/32/initdb /amsc128cc/adr
+									Tekan Y</code></pre>
+									Jika init berhasil, maka akan muncul keterangan <code>/amsc128cc/adr initialized</code>
+									
+								</li>
+								<li>Copy database PDAI dari Server A ke Server B
+									<br>Prosedur copy database PDAI dari Server A ke Server B.
+									<br>Pada Server A masuk ke mode X User <code>ELSA</code> Password <code>ELSAELSA</code> (Ctrl+alt+9)
+									<br>Script Copy database PDAI Server A ke Server B:
+									<pre class="code-box"><code># cp //1/amsc128cc/* //2/amsc128cc/</code></pre>
+									<div class="foto-sop-container">
+									<img src="init3.JPG" class="foto-sop">
+									</div>
+								</li>
+								<li>Changeover Server A ke B. Server B AMSC Main.</li>
+								<li>Mengaktifkan Address Table yang sudah dicopy pada Server B menggunakan Supervisor AMSC.</li>
+								<li>Cek PDAI yang telah dicopy ke server B dan monitor operasional AMSC server B.</li>
+								<li>Back Up database Address Tabel Server AMSC.
+									<pre class="code-box"><code># mkdir /adr_backup150922
+									# cp /amsc128cc/* /adr_backup150922</code></pre>
+								</li>
+
+								<li>Cek dan pastikan file asli dan backup sama
+									<pre class="code-box"><code># ls -l /amsc128cc/
+									# ls -l /adr_backup150922/</code></pre>
+								</li>
+							</ol>
+						</div>
+						<button class="btn-kembali" onclick="kembaliKeHalaman()">← Kembali ke List SOP</button>
+					</div>
+		
+				<div id="halaman-sop-iais" class="tab-alat">
+				<h2>SOP IAIS ELSA</h2>
+				<div class="sub-grup-buttons">
+				<button class="btn-sub" onclick="pindahKeHalaman('sop-iais-kill-rcv-rqn')">SOP KILL APLIKASI RCV_RQN</button>
+            </div>
+            <button class="btn-kembali" onclick="kembaliKeHalaman()">← Kembali ke List Merk</button>
+        </div>
+
+			<div id="sop-iais-kill-rcv-rqn" class="tab-alat dokumen-sop">
+		<h2>SOP KILL APLIKASI RCV_RQN KETIKA REQUEST NOTAM, REPLY BANYAK DI APLIKASI IAIS</h2>
+		<div class="isi-dokumen">
+        <ol class="sop-list">
+            <li>Aplikasi ada di <code>"cd /var/www/html/ADPS"</code></li>
+            <li>Ketik <code>"./check"</code> untuk melihat aplikasi <code>"rcv_rqn"</code></li>
+			<div class="foto-sop-container">
+									<img src="iais.JPG" class="foto-sop">
+									</div>
+            <li>Ketik <code>"kill 12212"</code> sesuai angka di aplikasi <code>"rcv_rqn"</code> (angka tergantung pada saat aplikasi <code>"rcv_rqn"</code> di <code>"./check"</code>)</li>
+            <li>Ketik kembali <code>"./check"</code> untuk melihat aplikasi <code>"rcv_rqn"</code> masih ada apa sudah di tidak ada (tidak running)</li>
+				<div class="foto-sop-container">
+									<img src="iais1.JPG" class="foto-sop">
+									</div>
+		   <li>Setelah aplikasi <code>"rcv_rqn"</code> sudah hilang</li>
+            <li>Untuk mengembalikan kembali aplikasi <code>"rcv_rqn"</code> yang sudah di kill maka restart terlebih dahulu server IAIS</li>
+            <li>Masukkan username <code>"root"</code> dan password <code>"elsaelsa"</code></li>
+            <li>Masuk kembali <code>"cd /var/www/html/ADPS"</code>,</li>
+            <li>Ketik <code>"./check"</code> maka akan terdapat kembali aplikasi <code>"rcv_rqn"</code> tapi tidak dalam posisi running</li>
+								<div class="foto-sop-container">
+									<img src="iais2.JPG" class="foto-sop">
+									</div>
+            <li>Untuk merunningkan aplikasi <code>"rcv_rqn"</code> maka ketik
+                <pre class="code-box"><code>ps aux | grep rcv_rqn</code></pre>
+            </li>
+            <li>Maka akan muncul seperti tampilan di bawah</li>
+			<div class="foto-sop-container">
+									<img src="iais3.JPG" class="foto-sop">
+									</div>
+            <li>Ketikkan
+                <pre class="code-box"><code>/var/www/html/ADPS/rcv_rqn 0 1 2 A 0 /var/www/html/ADPS/config.text</code></pre>
+				<div class="foto-sop-container">
+									<img src="iais4.JPG" class="foto-sop">
+									</div>
+            </li>
+            <li>Kalau sudah muncul balasan <code>"binding datagram socket : Address already in use"</code> maka aplikasi rcv_rqn sudah kembali</li>
+			<div class="foto-sop-container">
+									<img src="iais5.JPG" class="foto-sop">
+									</div>
+		</ol>
+    </div>
+    <button class="btn-kembali" onclick="kembaliKeHalaman()">← Kembali ke List SOP</button>
+</div>
+
+        <div id="rinci-t6-vfp" class="tab-alat dokumen-sop">
+            <h2>SOP: PAE T6 - UPLOAD dan DOWNLOAD KONFIGURASI MENGGUNAKAN VFP</h2>
+            <div class="isi-dokumen">
+                <h3>A. PERSIAPAN PERANGKAT</h3>
+                <p>1. Siapkan laptop maintenance yang sudah terinstal software <strong>VFP (Virtual Front Panel)</strong> resmi dari Park Air Electronics.</p>
+                <p>2. Siapkan kabel VFP (Virtual Front Panel) </p>
+                <p>3. Siapkan USB to Serial (ATEN) </p>
+            
+                <h3>B. LANGKAH DOWNLOAD KONFIGURASI</h3>
+                <p>1. Hubungkan kabel VFP melalui port Michrophone atau Headset Radio dan connectkan ke laptop menggunakan USB to Serial (ATEN).</p>
+                <p>2. Periksa COM Port Detect di Laptop di Menu Device Manager(Contoh:COM1). </p>
+                <p>3. Buka software VFP pada laptop, lalu pada menu Serial Port pilih COM1.</p>
+                <p>4. Masuk menu <strong>Radio -> Retrieve -> All </strong>, maka akan tampak seperti gambar di bawah</p>
+                <div class="foto-sop-container">
+                    <img src="1. vfp.jpeg" class="foto-sop">
+                </div>
+                <p>5. Untuk menyimpan File <strong>File -> Save -> All </strong>.</p>
+                <div class="foto-sop-container">
+                    <img src="2. vfp.jpeg" class="foto-sop">
+                </div>
+                <p>6. Simpan file sesuai nama yang diinginkan Misal (118.1 MHz,txt).</p>
+                
+                <h3>C. LANGKAH UPLOAD KONFIGURASI</h3>
+                <p>1. Hubungkan kabel VFP melalui port Michrophone or Headset Radio dan connectkan ke laptop menggunakan USB to Serial (ATEN).</p>
+                <p>2. Periksa COM Port Detect di Laptop di Menu Device Manager(Contoh:COM1). </p>
+                <p>3. Buka software VFP pada laptop, lalu pada menu Serial Port pilih COM1.</p>
+                <p>4. Masuk ke <strong> File -> Open -> Settings </strong></p>
+                <p>5. Buka file konfigurasi yang sudah tersimpan, Misal (118.1 Mhz.txt)</p>
+                <p>6. Klik <strong>Radio -> Send -> Settings. </strong></p>
+                <div class="foto-sop-container">
+                    <img src="3. vfp.jpeg" class="foto-sop">
+                </div>
+                <p>7. Setelah Upload lakukan Restart Radio.</p>
+            </div>
+            <button class="btn-kembali" onclick="kembaliKeHalaman()">← Kembali ke Menu SOP</button>
+        </div>
+
+        <!-- RINCIAN: PAE T6 IP -->
+        <div id="rinci-t6-ip" class="tab-alat dokumen-sop">
+            <h2>SOP: PAE T6 - CARA SETTINGS IP RADIO</h2>
+            <div class="isi-dokumen">
+                <h3>A. PENGATURAN PADA RADIO PAE T6</h3>
+                <p>1. Masuk ke Settings masukkan <strong>IP Address 10.10.6.2, Subnet Mask 255.255.255.224, Gateway 10.10.6.1. </strong> </p>
+                <p>2. <strong> Subnet Mask 255.255.255.224 </strong> merupakan CIDR /27 sehingga memiliki alokasi IP Address dari <strong> 10.10.6.1 s/d 10.10.6.32.</strong></p>
+                
+                <h3>B. KONEKSI JARINGAN</h3>
+                <p>1. Hubungkan kabel LAN melalui port IP Radio PAE T6 menggunakan kabel strike ke laptop.</p>
+                <p>2. Ubah IP Address laptop menjadi satu subnet dengan IP radio yang masuk dalam alokai (Contoh : 10.10.6.30).</p>
+                <p>3. Ping IP radio dari laptop melalui CMD, jika ping reply maka settings IP sudah selesai.</p>
+            </div> 
+            <button class="btn-kembali" onclick="kembaliKeHalaman()">← Kembali ke Menu SOP</button>
+        </div> 
+			
+        <!-- RINCIAN: PAE SAPPHIRE -->
+        <div id="rinci-radio-s4" class="tab-alat dokumen-sop">
+            <h2>SOP: PAE SAPPHIRE - CONNECT RADIO TO S4</h2>
+            <div class="isi-dokumen">
+                <h3>KONFIGURASI IP KE S4</h3>
+                <p>1. Buka web browser (Google Chrome/Edge) lalu ketik IP address default atau IP address aktif perangkat.</p>
+                <p>2. Masuk (Login) menggunakan akun teknisi/administrator yang sah.</p>
+                <p>3. Navigasikan ke menu <strong>Network Settings -> IP Configuration</strong>.</p>
+                <p>4. Ubah parameter <strong>IP Address, Subnet Mask,</strong> dan <strong>Default Gateway</strong> sesuai dengan tabel alokasi IP lokal bandara/CNSD.</p>
+                <p>5. Klik tombol <strong>Apply / Save Settings</strong>.</p>
+                <p>6. Lakukan uji coba koneksi (Ping) menggunakan IP address baru untuk memastikan konfigurasi telah berhasil diaplikasikan.</p>
+            </div>
+            <button class="btn-kembali" onclick="kembaliKeHalaman()">← Kembali ke Menu SOP</button>
+        </div>
+
+        <!-- RINCIAN: ATMAS MOUNT -->
+		<div id="rinci-atmas-mount" class="tab-alat dokumen-sop">
+            <h2>SOP: ATMAS INDRA - MOUNT USB (COPY/BACKUP DATA)</h2>
+            <div class="isi-dokumen">
+                <h3>A. DESKRIPSI</h3>
+                <p>SOP ini dilakukan untuk melakukan penyalinan (copy) file data dari sistem ATMAS ke media USB flashdisk maupun sebaliknya untuk keperluan maintenance/investigasi.</p>
+                
+                <h3>B. LANGKAH-LANGKAH MOUNT USB</h3>
+                <p>1. Colokkan USB flashdisk ke port USB pada PC Master/Maintenance ATMAS.</p>
+                <p>2. Buka terminal sistem operasi dengan menekan kombinasi tombol <strong>(Alt + F5)</strong>.</p>
+                <p>3. Ketik perintah <code>sudo fdisk -l</code> untuk melihat daftar penyimpanan yang terdeteksi. Perhatikan lokasi flashdisk, umumnya berada di <code>/dev/sdb</code> atau <code>/dev/sdc</code>.</p>
+                <p>4. Buat koneksi direktori dengan mengetik perintah: <code>mount /dev/sdb /mnt</code>.</p>
+                <p>5. Lakukan penyalinan file ke dalam folder tujuan di <code>/mnt</code>.</p>
+                <p>6. Jika proses salin selesai, lepaskan koneksi flashdisk dengan mengetik: <code>umount /dev/sdb atau /dev/sdc</code>.</p>
+                <p>7. Cabut USB flashdisk dengan aman dari PC ATMAS.</p>
+            </div>
+            <button class="btn-kembali" onclick="kembaliKeHalaman()">← Kembali ke Menu SOP</button>
+		</div>
+		
+        <!-- RINCIAN: ATMAS START STOP -->
+		<div id="rinci-atmas-start-stop" class="tab-alat dokumen-sop">
+			<h2>SOP: ATMAS INDRA - PROSEDUR START AND STOP APPLICATION ATMAS</h2>
+			<div class="isi-dokumen">
+				<h3>A. Prosedur Start Subsystem via CMD</h3>
+				<p>1. Login ke <strong>CMD (Controller Maintenance Display)</strong> menggunakan perintah berikut:</p>
+				<ul>
+				<li><strong>User</strong> : STO / SUT</li>
+				<li><strong>Password</strong> : STO / SUT</li>
+				</ul>
+				<p>2. Pilih <strong>Subsystem</strong> yang akan dijalankan.</p>
+				<p>3. Klik kanan pada <strong>Subsystem</strong>, kemudian pilih <strong>Start Subsystem</strong>.</p>
+				<div class="foto-sop-container">
+					<img src="start.JPG" class="foto-sop">
+					<span class="caption-foto"><code>START APPLICATION</code></span>
+				</div>
+				<p>4. Tunggu hingga status <strong>Subsystem</strong> berubah menjadi <strong>Green</strong>, yang menandakan sistem telah beroperasi normal.</p>
+				
+				<h3>B. Prosedur Start Subsystem via SSH</h3>
+				<p>1. Buka <strong>Terminal</strong> untuk melakukan <strong>Remote SSH</strong> ke aplikasi yang akan dijalankan.</p>
+				<p>2. Login ke <strong>CWP</strong> yang akan diaktifkan. Contoh:</p>
+				<pre><code># ssh cwp21</code></pre>
+				<p>3. Setelah berhasil masuk ke <strong>cwp21</strong>, jalankan aplikasi dengan perintah:</p>
+				<pre><code># istart</code></pre>
+				<p>4. Pastikan direktori aktif berada pada lokasi berikut:</p>
+				<pre><code>/local/balikpapan/icwp/exec/runtime</code></pre>
+				<p>5. Tunggu pada tampilan CMD berubah menjadi hijau</p>
+				
+				<h3>C. Prosedur Stop Subsystem via CMD</h3>
+				<p>1. Login ke <strong>CMD (Controller Maintenance Display)</strong> menggunakan perintah berikut:</p>
+				<ul>
+				<li><strong>User</strong> : STO / SUT</li>
+				<li><strong>Password</strong> : STO / SUT</li>
+				</ul>
+				<p>2. Pilih <strong>Subsystem</strong> yang akan dimatikan <em>STOP</em>.</p>
+				<p>3. Klik kanan pada <strong>Subsystem</strong>, kemudian pilih <strong>Stop Subsystem</strong>.</p>
+				<div class="foto-sop-container">
+					<img src="stop.JPG" class="foto-sop">
+					<span class="caption-foto"><code>STOP APPLICATION</code></span>
+				</div>
+				<p>4. Tunggu hingga status <strong>Subsystem</strong> berubah menjadi <strong>Merah</strong>, yang menandakan aplikasi dalam keadaan off.</p>
+				<div class="foto-sop-container">
+					<img src="stop1.JPG" class="foto-sop">
+					<span class="caption-foto"><code>APPLICATION TELAH BERHENTI</code></span>
+				</div>
+				
+				<h3>D. Prosedur Stop Subsystem via SSH</h3>
+				<p>1. Buka <strong>Terminal</strong> untuk melakukan <strong>Remote SSH</strong> ke aplikasi yang akan dijalankan.</p>
+				<p>2. Login ke <strong>CWP</strong> yang akan diaktifkan. Contoh:</p>
+				<pre><code># ssh cwp21</code></pre>
+				<p>3. Setelah berhasil masuk ke <strong>cwp21</strong>, jalankan aplikasi dengan perintah:</p>
+				<pre><code># istop</code></pre>
+				<p>4. Pastikan direktori aktif berada pada lokasi berikut:</p>
+				<pre><code>/local/balikpapan/icwp/exec/runtime</code></pre>
+				<p>5. Tunggu pada tampilan CMD berubah menjadi merah</p>
+			</div> 
+            <button class="btn-kembali" onclick="kembaliKeHalaman()">← Kembali ke Menu SOP</button>
+		</div> 
+			
+        <!-- RINCIAN: ATMAS SECTORIZATION -->
+		<div id="rinci-atmas-sectorization" class="tab-alat dokumen-sop">
+			<h2>SOP: ATMAS INDRA - PROSEDUR SECTORIZATION CWP ATMAS</h2>
+			<div class="isi-dokumen">
+				<p><strong>1. Login CMD (Controller Maintenance Display)</strong></p>
+				<ul>
+				<li><strong>User</strong> : STO / SUO</li>
+				<li><strong>Password</strong> : STO / SUO</li>
+				</ul>
+				<p>2. Pada Main Menu, pilih menu <strong>Sectorization</strong>.</p>
+				<p>3. Klik menu <strong>Current Sectorization</strong> hingga muncul jendela <strong>Current Sector Configuration</strong>.</p>
+				<p>4. Pastikan ICWP Workstation yang dituju telah login and ikon <strong>Lock</strong> dalam kondisi terbuka (Unlock).</p>
+				<p>5. Klik dan tahan (drag and drop) sector pada daftar ICWP asal, kemudian pindahkan ke daftar ICWP tujuan.</p>
+				<p>6. Alternatif lain, pada ICWP asal klik <strong>Frequency</strong> lalu pilih <strong>FREE</strong>, kemudian klik <strong>OpsSector</strong> dan pilih <strong>FREE</strong>.</p>
+				<p>7. Klik <strong>OK</strong>, kemudian pada jendela <strong>Confirmation</strong> klik <strong>OK</strong> kembali.</p>
+				<p>8. Lakukan restart CMD. Pastikan seluruh CWP dalam satu Sectorization telah login and ikon Lock dalam kondisi Unlock.</p>
+				<p>9. Setelah proses Sectorization ICWP selesai, laporkan kegiatan kepada ATS Operator and lakukan pencatatan pada Logbook Pemeliharaan.</p>
+			</div> 
+            <button class="btn-kembali" onclick="kembaliKeHalaman()">← Kembali ke Menu SOP</button>
+		</div>
+			
+        <!-- RINCIAN: ATMAS SWITCHOVER -->
+		<div id="rinci-atmas-switchover" class="tab-alat dokumen-sop">
+			<h2>SOP: ATMAS INDRA - SWITCH OVER SERVER</h2>
+			<div class="isi-dokumen">
+				<h3>Prosedur Switchover Server</h3>
+				<p>1. Pastikan jaringan <strong>LAN</strong> beroperasi dengan normal.</p>
+				<p>2. Pastikan data <strong>Surveillance</strong> dan data <strong>Flight</strong> berfungsi dengan normal.</p>
+				<p>3. Informasikan kepada <strong>ATS Operator</strong> mengenai perkiraan waktu pelaksanaan <strong>Switchover Server</strong>.</p>
+				<p>4. Login ke <strong>CMD (Controller Maintenance Display)</strong> menggunakan perintah berikut:</p>
+				<ul>
+				<li><strong>User</strong> : STO / SUO</li>
+				<li><strong>Password</strong> : STO / SUO</li>
+				</ul>
+				<p>5. Pilih dan klik tombol <strong>Server</strong> yang akan dilakukan <strong>Switchover</strong>.</p>
+				<p>6. Klik kanan pada <strong>Server A</strong> atau <strong>Server B</strong> yang akan dilakukan <strong>Switchover</strong>. Sistem akan menampilkan beberapa pilihan kontrol:</p>
+				<ul>
+				<li><strong>Start Subsystem</strong></li>
+				<li><strong>Stop Subsystem</strong></li>
+				<li><strong>Reboot Subsystem</strong></li>
+				<li><strong>Switchover</strong></li>
+				</ul>
+				<p>7. Pilih menu <strong>Switchover</strong>. Sistem akan menampilkan jendela <strong>Confirmation</strong> untuk mengonfirmasi tindakan.</p>
+				<p>8. Klik <strong>OK</strong> untuk menjalankan proses <strong>Switchover</strong>, atau klik <strong>Cancel</strong> untuk membatalkan proses.</p>
+				<p>9. Setelah proses <strong>Switchover Server</strong> selesai, pastikan server aktif beroperasi dengan normal.</p>
+				<p>10. Laporkan pelaksanaan kegiatan kepada <strong>ATS Operator</strong> dan lakukan pencatatan pada <strong>Logbook Pemeliharaan</strong>.</p>
+			</div> 
+            <button class="btn-kembali" onclick="kembaliKeHalaman()">← Kembali ke Menu SOP</button>
+		</div>
+
+        <!-- RINCIAN: ATMAS GLOBAL RESTART -->
+		<div id="rinci-atmas-restart" class="tab-alat dokumen-sop">
+			<h2>SOP: ATMAS INDRA - GLOBAL RESTART ATMAS</h2>
+			<div class="isi-dokumen">
+                <h3>Prosedur Global Restart</h3>
+                <p>1. Sebelum melaksanakan <strong>Global Restart</strong>, lakukan <strong>Backup Flight Plan (FPL)</strong> pada <strong>FDP 1</strong> dan <strong>FDP 2</strong>.</p>
+                <p>2. Buka <strong>Terminal</strong> dengan menekan <code>Alt + F5</code>.</p>
+                <p>3. Login ke salah satu <strong>FDP</strong> menggunakan perintah:</p>
+                <div class="login-box"> <code># ssh fdp1</code></div>
+                <p>4. Pastikan direktori aktif berada pada:</p>
+                <code>/local/balikpapan/fdp/exec/runtime</code>
+                <p>5. Jalankan perintah untuk menyimpan <strong>Flight Plan (FPL)</strong>:</p>
+                <div class="foto-sop-container">
+                        <img src="p_save_kfpl.JPG" class="foto-sop">
+                        <span class="caption-foto"><code> # p_save_kfpls</code></span>
+                    </div>
+                <p>6. Tunggu hingga proses penyimpanan <strong>FPL</strong> selesai.</p>
+                <div class="foto-sop-container">
+                        <img src="1. p_safe_kfpl.JPG" class="foto-sop">
+                    </div>
+                <p>7. Lakukan proses <strong>Backup FPL</strong> yang sama pada <strong>FDP 2</strong>.</p>
+                <p>8. Jika telah selesai <strong>Backup FPL pada FDP 2</strong>, Lakukan <strong>Global Restart</strong> melalui <strong>CMD</strong> dengan langkah berikut:</p>
+                <ul><li>Pilih menu <strong>Control</strong>.</li><li>Pilih <strong>System Stop</strong>.</li><li>Masukkan <strong>STO</strong> sebagai konfirmasi tindakan.</li><li>Tunggu hingga tampilan <strong>CMD</strong> mati (off).</li></ul>
+                <p>9. Saat layar <strong>CMD</strong> kosong (<em>Blank Screen</em>), tekan <strong>ENTER</strong> and login menggunakan:</p>
+                <ul>
+                <li><code><strong>User</strong> : balikpapan</code></li>
+                <li><code><strong>Password</strong> : balikpapan</code></li>
+                </ul>
+                <p>10. Setelah berhasil login, hidupkan <strong>FDP</strong> terlebih dahulu menggunakan mode <strong>Warm</strong>.</p>
+                <ul><li>Klik <strong>Subsystem FDP 1</strong> atau <strong>FDP 2</strong>.</li><li>Klik kanan dan pilih <strong>Start Subsystem</strong>.</li><li>Pilih mode <strong>Warm</strong>.</li><li>Tunggu hingga status <strong>Green</strong> sebagai <strong>Operational</strong> dan <strong>Amber</strong> sebagai <strong>Standby</strong>.</li><li>Pastikan seluruh <strong>External Link (UCA dan VCA)</strong> berstatus <strong>Green</strong>.</li></ul>
+                <p>11. Selanjutnya lakukan <strong>System Start</strong> melalui menu:</p>
+                <ul><li>Pilih <strong>Control</strong>.</li><li>Pilih <strong>System Start</strong>.</li><li>Masukkan <strong>STO</strong> sebagai konfirmasi tindakan.</li></ul>
+                <p>12. Apabila terdapat <strong>System</strong> atau <strong>Subsystem</strong> yang tidak aktif atau mengalami anomali:</p>
+                <ul><li>Pilih <strong>System</strong> atau <strong>Subsystem</strong> yang bermasalah.</li><li>Pilih <strong>Reboot</strong>.</li><li>Tunggu hingga seluruh <strong>Subsystem</strong> berstatus <strong>Green</strong>.</li></ul>
+                <p>13. Proses <strong>Global Restart</strong> telah selesai.</p>
+                <p><code><strong>Catatan: Jika Global Restart dijalankan menggunakan mode Cold, maka seluruh Flight Plan (FPL) akan hilang.</strong></code></p>
+                <p>14. Untuk mengembalikan <strong>Flight Plan (FPL)</strong>, lakukan langkah berikut:</p>
+                <p>15. Login ke salah satu <strong>FDP</strong> menggunakan perintah:</p>
+                <code># ssh fdp1 atau ssh fdp2</code>
+                <p>16. Masuk ke direktori:</p>
+                <code>/local/balikpapan/fdp/exec/runtime</code>
+                <p>17. Jalankan perintah untuk mengembalikan <strong>FPL</strong>:</p>
+                <div class="foto-sop-container">
+                        <img src="p_load_kfpl.JPG" class="foto-sop">
+                        <span class="caption-foto"><code># p_load_kfpls</code></span>
+                    </div>
+                <p>18. File backup <strong>FPL</strong> berada pada direktori:</p>
+                <code>/local/balikpapan/fdp/exec/runtime/fallback_KFPL</code>
+                <p>19. Pilih nomor backup terakhir pada menu <strong>Select Number to be Restore</strong>.</p>
+                <p>20. Setelah proses <strong>Restore</strong> selesai, seluruh <strong>Flight Plan (FPL)</strong> akan muncul kembali.</p>
+			</div> 
+            <button class="btn-kembali" onclick="kembaliKeHalaman()">← Kembali ke Menu SOP</button>
+		</div>
+		
+        <!-- RINCIAN: ATMAS TOOLBOX DBM -->
+		<div id="rinci-atmas-ssh" class="tab-alat dokumen-sop">
+			<h2>SOP: ATMAS INDRA - REMOTE TOOLBOX AND DBM</h2>
+			<div class="isi-dokumen">
+                <h3>A. Remote Toolbox</h3>
+                <p>1. Pastikan Jaringan LAN beroperasi normal</p>
+                <p>2. Open Terminal <code>(Alt+F5)</code></p>
+                <p>3. Ketik command</p>
+                <pre><code>#ssh dbm -l root -X</code></pre>
+                <pre><code>#cd /toolbox /CONFIG</code></pre>
+                <pre><code>#./TOOLBOX.exe</code></pre>
+                <p>4. Akan muncul tampilan aplikasi <strong>TOOLBOX</strong> pada display</p>
+
+                <h3>B. Remote DBM</h3>
+                <p>1. Pastikan Jaringan LAN beroperasi normal</p>
+                <p>2. Open Terminal <code>(Alt+F5)</code></p>
+                <p>3. Ketik command</p>
+                <pre><code>#ssh dbm -l postgres -X</code></pre>
+                <pre><code>#cd /local/balikpapan/adap/exec/tcl_tk</code></pre>
+                <pre><code>#./dbsman.tcl</code></pre>
+                <p><strong>Atau Setelah perintah <code>#ssh dbm -l postgres -X</code></strong> ketik <code>istart</code></p>
+                <p>4. Akan muncul tampilan aplikasi <strong>DBM</strong> pada display</p>
+			</div> 
+            <button class="btn-kembali" onclick="kembaliKeHalaman()">← Kembali ke Menu SOP</button>
+		</div>		
+					
+        <!-- RINCIAN: ATMAS PLAYBACK -->
+		<div id="rinci-atmas-playback" class="tab-alat dokumen-sop">
+            <h2>SOP: ATMAS INDRA - PLAYBACK ATMAS</h2>
+            <div class="isi-dokumen">
+                <h3>A. Prosedur Video Playback Recorder CWP Display ATMAS</h3>
+                <p>1. Login ke <strong>CMD (Controller Maintenance Display)</strong> menggunakan perintah berikut:</p>
+                <ul>
+                    <li><strong>User</strong> : STO / SUO</li>
+                    <li><strong>Password</strong> : STO / SUO</li>
+                </ul>
+
+                <p>2. Matikan CWP 21 (Playback) untuk masuk ke Mode <strong><em>Playback</em></strong>. Sistem akan menampilkan beberapa pilihan kontrol:</p>
+                <ul>
+                    <li><strong>Pada CMD klik Subsystem CWP</strong></li>
+                    <li><strong>Klik Kanan di CWP 21</strong></li>
+                    <li><strong>Stop System</strong></li>
+                </ul>
+                
+                <div class="foto-sop-container">
+                    <img src="stop.JPG" class="foto-sop">
+                    <span class="caption-foto">STOP APPLICATION</span>
+                </div>
+                <ul>
+                    <li><strong>Maka CWP 21 akan berwarna merah dengan status Manual OFF</strong></li>
+                </ul>
+                <div class="foto-sop-container">
+                    <img src="stop1.JPG" class="foto-sop">
+                    <span class="caption-foto">APPLICATION DALAM KEADAAN OFF</span>
+                </div>
+                <ul>
+                    <li><strong>Klik Kanan Start System</strong></li>
+                </ul>
+                <div class="foto-sop-container">
+                    <img src="start.JPG" class="foto-sop">
+                    <span class="caption-foto">MENGHIDUPKAN APPLICATION</span>
+                </div>
+
+                <ul>
+                    <li><strong>Maka ada Pilihan Operasional dan Playback</strong></li>
+                    <li><strong>Pilih Playback</strong></li>
+                </ul>
+
+                <div class="foto-sop-container">
+                    <img src="playback.JPG" class="foto-sop">
+                    <span class="caption-foto">PILIHAN OPERASIONAL MODE DAN PLAYBACK MODE</span>
+                </div>
+                <ul>
+                    <li><strong>Tunggu sampai CWP 21 berubah menjadi Biru (Mode Playback) di CMD</strong></li>
+                </ul>
+                <div class="foto-sop-container">
+                    <img src="playback1.JPG" class="foto-sop">
+                    <span class="caption-foto">PLAYBACK MODE</span>
+                </div>
+                <p>3. Pada CWP 21 akan berubah menjadi <strong>PBK-CWP 21</strong>.</p>
+                <div class="foto-sop-container">
+                    <img src="playback2.PNG" class="foto-sop">
+                    <span class="caption-foto">PBK-CWP 21</span>
+                </div>
+                <p>4. Klik <strong>PBK atau F4</strong> untuk membuka menu Playback.</p>
+                <div class="foto-sop-container">
+                    <img src="playback0.png" class="foto-sop">
+                    <span class="caption-foto">PBK-CWP 21</span>
+                </div>
+                <p>5. Klik icon speaker sekali untuk membuka button <strong>LOCAL dan REMOTE</strong> (akan ada log VRP disable)</p>
+                <ul>
+                    <li>Tombol LOCAL digunakan untuk playback local di CWP21</li>
+                    <li>Tombol REMOTE digunakan untuk playback remote CWP lain</li>
+                </ul>
+                <p>6. Import File sesuai dengan waktu yang diinginkan.</p>
+                <ul>
+                    <li>Klik File kemudian Import</li>
+                </ul>
+                <div class="foto-sop-container">
+                    <img src="playback4.png" class="foto-sop">
+                    <span class="caption-foto">IMPORT FILE</span>
+                </div>
+                <ul>
+                    <li>Pilih DRF / CWP</li>
+                    <li>Button DRF/CWP mengambil file .Z langsung menggunakan jaringan interkoneksi ATMAS</li>
+                    <li>Button USB mengambil rekaman .Z Manual dari CWP atau DRF menggunakan USB</li>
+                </ul>
+                <p>7. Akan muncul Menu untuk mengambil file <strong>.Z</strong></p>
+                <ul>
+                    <li>Pilih CWP atau DRF kemudian Pilih DATA</li>
+                    <li>DRF = Remote Copy (90 Hari)</li>
+                    <li>CWP = Current Copy (30 Hari)</li>
+                </ul>
+                <div class="foto-sop-container">
+                    <img src="playback55.png" class="foto-sop">
+                    <span class="caption-foto">IMPORT CWP OR DRF</span>
+                </div>
+                <p>8. Pilih CWP yang akan diambil file .Z</p>
+                <ul>
+                    <li>Tunggu beberapa saat setelah memilih CWP, sampai angka CWPx berubah menjadi CWP yang diremote</li>
+                    <li>Atur From Date dan To Date dengan format:</li>
+                </ul>
+                <div class="foto-sop-container">
+                    <img src="playback555.png" class="foto-sop">
+                    <span class="caption-foto">Tahun, Bulan, Hari dan Jam (File .Z) merupakan file rekaman yang menyimpan per jam</span>
+                </div>
+                <ul>
+                    <li>Klik Remote Copy atau Current Copy</li>
+                    <li>Tunggu sampai import file.Z status COPIED FROM OK</li>
+                </ul>
+                <div class="foto-sop-container">
+                    <img src="playback6.png" class="foto-sop">
+                </div>
+                <p>9. Klik Button <strong>TO PBK</strong></p>
+                <p>10. Klik Button <strong>REMOTE</strong> untuk playback CWP lain di CWP21, akan muncul di kanan atas pilihan cwp yang akan diremote</p>   
+                <div class="foto-sop-container">
+                    <img src="playback77.png" class="foto-sop">
+                </div>
+                <p>11. Tentukan Waktu Playback:</p>
+                <ul>
+                    <li>Begin Date dengan format Tahun, Bulan, Hari, Jam, Menit dan Detik</li>
+                    <li>End Date dengan format Tahun, Bulan, Hari, Jam, Menit dan Detik</li>
+                </ul>
+                <p>12. Klik button Speaker 1 kali sampai berubah menjadi kuning dan muncul log <strong>“VRP SYNCHRONIZED ENABLE”</strong></p>
+                <div class="foto-sop-container">
+                    <img src="playback7.png" class="foto-sop">
+                </div>
+                <p>13. Klik button Play</p>
+                <div class="foto-sop-container">
+                    <img src="playback88.JPG" class="foto-sop">
+                </div>
+                <ul>
+                    <li>Jika muncul notifikasi <strong>“Restart CWP to link Playback”</strong> Klik <strong>Yes</strong> saja</li>
+                </ul>
+                <p>14. Tunggu sampai CWP yang diremote berubah menjadi kuning</p>
+                <div class="foto-sop-container">
+                    <img src="playback888.png" class="foto-sop">
+                </div>
+                <ul>
+                    <li>Jika Playback berhasil maka waktu/time di cwp akan berjalan disebelah kanan atas dan log akan menampilkan <strong>“Merge Audio successfully”</strong></li>
+                </ul>
+                <div class="foto-sop-container">
+                    <img src="playback8.png" class="foto-sop">
+                </div>
+                <ul>
+                    <li>Jika Playback gagal maka akan muncul notifikasi “VRP RESPONSE TIMEOUT”, maka otomatis playback akan berhenti</li>
+                </ul>
+                <div class="foto-sop-container">
+				<img src="playback10.JPG" class="foto-sop">
+			</div>
+                <p>15. Jika Playback berhasil audio dan video combine maka, Tekan <strong>F4</strong> untuk memunculkan kembali Menu Playback</p>
+                <p>16. Klik button <strong>“STOP”</strong> untuk menghentikan playback</p>
+                <p>17. Untuk Memulai Screen Record dengan playback yang sudah berhasil, maka Tekan Button <strong>“VIDEO”</strong> untuk memulai Screen Record CWP</p>
+                <div class="foto-sop-container">
+                    <img src="playback11.png" class="foto-sop">
+                </div>
+                <p>18. Tekan kembali button <strong>“PLAY”</strong> untuk menjalankan Playback, Tunggu sampai waktu yang dibutuhkan record screen tercapai.</p>
+                <p>19. Klik button <strong>“VIDEO”</strong> lagi untuk menghentikan screen record. Atau tunggu sampai waktu selesai, maka otomatis screen record akan berhenti secara otomatis.</p>
+                <p>20. File screen record berada di directory: <code>/local/balikpapan/fdp/exec/runtime/captures/</code> dengan extention <code>.mkv</code></p>
+                 <div class="foto-sop-container">
+                    <img src="playback12.JPG" class="foto-sop">
+                </div>
+                <ul><li><p>Untuk menjalankan file .mkv maka ketik: <code>mplayer (name_file).mkv</code> atau <code>/local/balikpapan/icwp/exec/playback/vrp</code></p></li></ul>
+                <p>21. File audio berada di 2 directory</p>
+                <pre><code>/local/balikpapan/icwp/exec/runtime/playback/vrp</code></pre>
+                <pre><code>/local/balikpapan/icwp/exec/playback/vrp</code></pre>
+                <p>22. Dengan nama <code>vrp_pbk_audio.wav</code></p>
+                <p>23. Untuk menjalankan file .mkv maka ketik:</p>
+                <pre><code>aplay vrp_pbk_audio.wav</code></pre>
+                <p>24. Konfigurasi Channel playback yang terkoneksi dengan Recorder Neptuno ada di direktori</p>
+                <pre><code>#local/balikpapan/icwp/exec/runtime/</code></pre>
+                <p>25. Ketik command berikut untuk melihat konfigurasi:</p>
+                <pre><code>#more ICWP_ADM_VRP_CFG</code></pre>
+                <p>26. Untuk mengatur volume, buka terminal ketik</p>
+                <pre><code>#alsamixer</code></pre>
+                
+                <h3>B. Menggabungkan File Audio dan Video</h3>
+                <p>1. Pindahkan kedua file audio dan video diatas menjadi 1 folder. Contoh di folder <strong>/HASILRECORD</strong>.</p>
+                <p>2. Masuk ke folder dengan akses root (<code>sudo -i</code>)</p>
+                <pre><code>cd /local/balikpapan/icwp/exec/runtime/playback/vrp</code></pre>
+                <pre><code>cd /local/balikpapan/icwp/exec/playback/vrp</code></pre>
+                <p>3. Copy file</p>
+                <pre><code>cp -r vrp_pbk_audio.wav /HASILRECORD</code></pre>
+                <p>4. Masuk ke folder dengan akses root (<code>sudo -i</code>)</p>
+                <pre><code>cd /local/balikpapan/icwp/exec/runtime/captures/</code></pre>
+                <p>5. Copy file</p>
+                <pre><code>cp -r nama_file.mkv /HASILRECORD</code></pre>
+                <p>6. Buka folder <strong>/HASILRECORD</strong>, maka akan muncul 2 file <strong>nama_file.mkv</strong> dan <strong>vrp_pbk_audio.wav</strong>.</p>	
+                <div class="foto-sop-container">
+                  <img src="playback113.JPG" class="foto-sop">
+                </div>
+                <p>7. Jalankan command dibawah untuk menggabungkan file video dan audio.</p>
+                <pre><code>ffmpeg -i nama_file.mkv -i vrp_pbk_audio.wav -c copy play.mkv</code></pre>
+                <p><em>Catatan:</em> <strong>play.mkv</strong> merupakan nama file hasil output dan dapat diganti sesuai kebutuhan.</p>
+                <div class="foto-sop-container">
+                  <img src="playback15.JPG" class="foto-sop">
+                </div>
+                <p>8. Tunggu proses combine file audio dan video</p>
+                <div class="foto-sop-container">
+                  <img src="playback14.JPG" class="foto-sop">
+                </div>
+                <p>9. Pastikan file combine audio dan video sudah ada</p>
+                
+                <h3>C. Memutar Playback di Device Lain</h3>
+                <p>1. Masukkan Disk pada PC CWP 21 untuk mengambil rekaman.</p>
+                <p>2. Buka terminal (Alt + F5).</p>
+                <p>3. Masuk ke akses root (<code>sudo -i</code>).</p>
+                <p>4. Jalankan command dibawah untuk melihat device (biasanya dengan nama <strong>sdb</strong>, <strong>sdc</strong>, <strong>sde</strong>, atau <strong>sdf</strong>).</p>
+                <pre><code>fdisk -l</code></pre>
+                <p>5. Mount disk.</p>
+                <pre><code>mount /dev/sdb1 /mnt</code></pre>
+                <p>6. Buka folder <strong>/mnt</strong> dan pastikan isinya sudah merupakan disk yang sudah dimasukkan.</p>
+                <p>7. Masuk ke folder <strong>/HASILRECORD</strong> dan pastikan terdapat file <strong>play.mkv</strong>.</p>
+                <p>8. Copy file <strong>play.mkv</strong>.</p>
+                <pre><code>cp -r play.mkv /mnt</code></pre>
+                <p>9. Masuk kembali ke folder <strong>/mnt</strong> dan pastikan file <strong>play.mkv</strong> sudah tercopy.</p>
+                <p>10. Keluar folder dan jalankan command dibawah untuk mengeluarkan disk.</p>
+                <pre><code>umount /dev/sdb1</code></pre>
+                <p>11. Masukkan disk ke device ekternal jalankan file <strong>play.mkv</strong> dengan aplikasi <strong>VLC</strong>, <strong>GNOME</strong>, <strong>MPLAYER</strong> untuk memutar rekaman playback.</p>
+            </div> 
+            <button class="btn-kembali" onclick="kembaliKeHalaman()">← Kembali ke Menu SOP</button>
+		</div>
+
+        <!-- RINCIAN: ATMAS EXPORT TO USB -->
+		<div id="rinci-atmas-export" class="tab-alat dokumen-sop">
+            <h2>SOP: ATMAS INDRA - EXPORT DIRECT PLAYBACK TO USB</h2>
+            <div class="isi-dokumen">
+                <h3>Export Record File to USB Disk</h3>
+                <p>1. Plug USB Disk.</p>
+                <p>2. Login ke CMD dengan,</p>
+                <ul>
+                <li><strong>User</strong> : STO / SUT</li>
+                <li><strong>Password</strong> : STO / SUT</li>
+                </ul>
+                <p>3. Sebelum memulai proses export file, ICWP non-sectorised (ICWP Playback) harus distop/dihentikan melalui CMD.</p>
+                <p>4. Setelah dihentikan (Manual OFF-Mode), ICWP non-sectorised harus dijalankan kembali dalam mode Playback dengan cara pilih/klik <strong>"startup mode: playback"</strong> pada CMD. Kemudian klik <strong>OK</strong>.</p>
+                <p>5. Klik <strong>"PBK"</strong> button untuk menampilkan jendela kontrol playback CWP.</p>
+                <p>6. Klik <strong>"File"</strong> button.</p>
+                <p>7. Pilih dan Klik <strong>"EXPORT"</strong>.</p>
+                <p>8. Terdapat beberapa pilihan data rekaman yang dapat di export, antara lain:</p>
+                <ul>
+                <p>a. <strong>Local</strong>, yaitu untuk menampilkan dan export data rekaman yang terdapat pada CWP local.</p>
+                <p>b. <strong>Remote</strong>, yaitu untuk menampilkan dan export data rekaman yang terdapat pada DRF, CWP dan USB yang sebelumnya telah di Load terlebih dahulu.</p>
+                <p>c. <strong>Capture</strong>, yaitu untuk menampilkan dan export data screen capture SDD (PNG) yang dioperasikan dalam playback mode.</p>
+                <p>d. <strong>Video</strong>, yaitu untuk menampilkan dan export data rekaman dalam bentuk video recording (mkv) yang dioperasikan dalam playback mode.</p>
+                </ul>
+                <p>9. Pilih file yang diinginkan, kemudian Klik <strong>"OK"</strong>.</p>
+                <p>10. Pada area log, akan muncul pesan <strong>"Nama File" Copied To Stick OK</strong> yang berarti proses export file to USB Disk berhasil dilakukan.</p>
+                <p>11. Unplug USB Disk.</p>
+                <p>12. Setelah melakukan kegiatan, lakukan pencatatan pada Logbook.</p>
+            </div> 
+            <button class="btn-kembali" onclick="kembaliKeHalaman()">← Kembali ke Menu SOP</button>
+		</div>
+
+        <!-- RINCIAN: ATMAS DISPLAY CONFIGURATION -->
+		<div id="rinci-atmas-display" class="tab-alat dokumen-sop">
+            <h2>SOP: ATMAS INDRA - DISPLAY CONFIGURATION</h2>
+            <div class="isi-dokumen">
+                <h3>A. DISPLAY CONFIGURATION</h3>
+                <p>1. Buka terminal <code>Alt + F5</code></p>
+                <p>2. Masukan perintah <code>nvidia-settings</code></p>
+                <ul>
+                    <div class="foto-sop-container">
+                      <img src="nvidia1.jpg" class="foto-sop">
+                      <span class="caption-foto">Tampilan monitor 24” Dual Screen Monitor menggunakan 1 PC CWP</span>
+                    </div>
+                    <div class="foto-sop-container">
+                      <img src="nvidia2.jpg" class="foto-sop">
+                      <span class="caption-foto">Tampilan monitor 24” Single Screen Monitor</span>
+                    </div>
+                    <div class="foto-sop-container">
+                      <img src="nvidia3.jpg" class="foto-sop">
+                      <span class="caption-foto">Tampilan monitor 4Kx2K</span>
+                    </div>
+                </ul>
+                <p>3. Pilih <strong>X Server Display Configuration</strong>.</p>
+                <p>4. Adjust screens resolution dan adjust screens position, sesuai keinginan.</p>
+                <p>5. Checklist pada <strong>make this the primary display for the screen</strong>.</p>
+                <p>6. Klik <strong>Apply</strong>.</p>
+                <p>7. Klik <strong>Save to X Configuration File</strong>.</p>
+                <p>8. Penting untuk menghapus 2 <strong>DISPLAY INFO.CFG</strong> (atau setting default) agar setting terbaru dapat di launch.</p>
+                <p>9. Untuk menemukan 2 <code>DISPLAY INFO.CFG</code> dapat menggunakan command berikut:</p>
+                <pre><code>#find /local/balikpapan/ -name ICWP_ADM_DISPLAY_INFO.CFG</code></pre>
+                <p>10. Untuk menghapus <code>display info.CFG</code>, gunakan command berikut:</p>
+                <pre><code>#rm /local/balikpapan/icwp/exec/runtime/ICWP_ADM_DISPLAY_INFO.CFG</code></pre>
+                <pre><code>#rm /local/balikpapan/fdd/exec/runtime/ICWP_ADM_DISPLAY_INFO.CFG</code></pre>
+                <p>11. Edit script <strong> /local/balikpapan/icwp/exec/runtime</strong>.</p>
+                <pre><code>#vi ICWP_ADM_DISPLAY_INFO.CFG</code></pre>
+                <p>Ikuti resolution mapping berikut:</p>
+
+                <table>
+                    <tr>
+                        <th>Monitor Size</th>
+                        <th>Resolution</th>
+                    </tr>
+                    <tr>
+                        <td>20"</td>
+                        <td>1280x1024</td>
+                    </tr>
+                    <tr>
+                        <td>21"</td>
+                        <td>1600x1200</td>
+                    </tr>
+                    <tr>
+                        <td>22"</td>
+                        <td>1680x1050</td>
+                    </tr>
+                    <tr>
+                        <td>24"</td>
+                        <td>1920x1200</td>
+                    </tr>
+                    <tr>
+                        <td>28"</td>
+                        <td>2048x2048</td>
+                    </tr>
+                    <tr>
+                        <td>30"</td>
+                        <td>2560x1600</td>
+                    </tr>
+                </table>
+                <p>Contoh:</p>
+                <pre><code>vi /local/balikpapan/icwp/exec/runtime/ICWP_ADM_DISPLAY_INFO.CFG</code></pre>
+                <p>Untuk mengubah tampilan monitor ke 21",</p>
+                <pre><code>Data.display.x:0</code></pre>
+                <pre><code>Data.display.y:0</code></pre>
+                <pre><code>Data.display.width:1600</code></pre>
+                <pre><code>Data.display.height:1200</code></pre>
+                <p>Tekan: <code>Esc</code></p>
+                <p>Ketik: <code>:wq</code> (Keluar dari editing script).</p>
+                <p>Hapus <code>xorg.conf</code> file di <code>/etc/X11</code> directory.</p>
+                <p>12. istop dan istart maka display akan berubah sesuai settingan</p> 				
+            </div> 
+            <button class="btn-kembali" onclick="kembaliKeHalaman()">← Kembali ke Menu SOP</button>
+		</div>
+	
+        <!-- RINCIAN: ATMAS USER PASSWORD DBM -->
+		<div id="rinci-atmas-password" class="tab-alat dokumen-sop">
+            <h2>SOP: ATMAS INDRA - CREATE AND MODIFY USER PASSWORD</h2>
+            <div class="isi-dokumen">
+                <h3>Pembuatan User dan Password DBM</h3>
+                <p>1. Login DBM dengan User: <code>DBM</code> dan Password: <code>DBM</code>.</p>
+                <p>2. Pilih <code>Adaptation</code>.</p>
+                <p>3. Pada menu <code>system configuration</code>, pilih:</p>
+                <ul>
+                <li>Subsystem Configuration</li>
+                <li>User Passwords</li>
+                </ul>
+                <p>4. Pada jendela <code>USER PASSWORDS</code> terdapat beberapa menu, antara lain:</p>
+                <ul>
+                <li>a. <code>Exit (ESC)</code>, untuk keluar dari jendela <code>USER PASSWORDS</code>.</li>
+                <li>b. <code>Report (F4)</code>, untuk mengekspor file user dan passwords.</li>
+                <li>c. <code>Rename (F6)</code>, untuk mengubah nama user dan passwords.</li>
+                <li>d. <code>Delete (F8)</code>, untuk menghapus user dan passwords yang sudah ada.</li>
+                <li>e. <code>Create (F9)</code>, untuk menambahkan user dan password baru.</li>
+                </ul>
+                <p>5. Klik menu <code>Create (F9)</code>, kemudian isi data user dan password yang diinginkan:</p>
+                <ul>
+                <li>a. <strong>User</strong>, beriisikan nama user dan maksimal 8 karakter.</li>
+                <li>b. <strong>Password</strong>, berisikan password yang diinginkan dan maksimal 8 karakter.</li>
+                <li>c. <strong>Confirm Password</strong>, berisikan password yang sama untuk konfirmasi.</li>
+                <li>d. <strong>Alias</strong>, berisikan nama yang akan tampil pada CWP atau subsystem dan maksimal 30 karakter.</li>
+                <li>e. <strong>Role</strong>, berisikan list rol fungsinya sebagai apa, misalnya:</li>
+                <ul>
+                <li>Controller</li>
+                <li>Assistant</li>
+                <li>Tech.Supervisor</li>
+                <li>Oper.Supervisor</li>
+                <li>Tech.Oper.Supervisor</li>
+                </ul>
+                </ul>
+                <p>6. Klik <code>Create</code> untuk menyimpan settingan.</p>
+                <p>7. Kembali ke Jendela <code>Adaptation</code>, pilih menu data distribution kemudian pilih dan klik <code>Load Adaptation Data</code>.</p>
+                <p>8. Pada Jendela <code>Load Adaptation</code> pilih/centang <code>Operational</code>, kemudian pilih <code>Load</code> ke hostnamenya (dapat memilih 1 hostname atau semua hostname).</p>
+                <p>9. Klik <code>OK</code>.</p>
+                <p>10. Stop and Start Aplikasi.</p>
+                <p>11. Setelah melakukan kegiatan, lakukan pencatatan pada Logbook.</p>
+            </div> 
+            <button class="btn-kembali" onclick="kembaliKeHalaman()">← Kembali ke Menu SOP</button>
+		</div>
+			
+        <!-- RINCIAN: ATMAS CMD SETTING USER -->
+		<div id="rinci-atmas-login" class="tab-alat dokumen-sop">
+            <h2>SOP: ATMAS INDRA - LOGIN IN CMD & SETTINGS USER DBM ATMAS</h2>
+            <div class="isi-dokumen">
+                <h3>A. Login ke CMD</h3>
+                <p>Login ke CMD dengan,</p>
+                <p>1. SUO : Operational User Supervision</p>
+                <ul>
+                <p><li>User : <code>SUO</code></li></p>
+                <p><li>Password : <code>SUO</code></li></p>
+                </ul>
+                <p><strong>Bisa mengatur beberapa menu di CMD seperti Sectorization tetapi tidak bisa start dan stop aplikasi (disable function)</strong></p>
+
+                <p>2. SUT : Technical User Supervisor</p>
+                <ul>
+                <p><li>User : <code>SUT</code></li></p>
+                <p><li>Password : <code>SUT</code></li></p>
+                </ul>
+                <p><strong>Bisa melakukan start dan stop subsystem di CMD tetapi tidak bisa melakukan Sectorization</strong></p>
+                
+                <p>3. STO : Operational Technical Supervisor</p>
+                <ul>
+                <p><li>User : <code>STO</code></li></p>
+                <p><li>Password : <code>STO</code></li></p>
+                </ul>
+                <p><strong>Digunakan untuk akses seluruh system (Konfigurasi dan Kontrol)</strong></p>
+            
+                <h3>B. Membuat User CMD</h3>
+                <ul>
+                <p>User yang digunakan untuk login pada ATM Automation selain DBM dan Toolbox</p>
+                <p>Pada PC DBM tampilan awal hanya tulisan <code>balikpapan</code> dan ketika di klik hanya beberapa sub-menu DBM yang terbuka, untuk memunculkan menu <code>DBM</code> dan <code>TOOLBOX</code></p>
+                </ul>
+                <p>1. Klik <code>balikpapan</code> &raquo; <code>Maintenance</code> &raquo; Masukkan password <code>indraroot</code></p>
+                <p>2. Maka akan muncul seluruh sub-menu DBM</p>
+                <ul><p>Klik <code>DBM</code></p></ul>
+                <ul>
+                <p>- Username : <code>DBM</code></p>
+                <p>- Password : <code>DBM</code></p>
+                </ul>
+                <p>3. Masuk pada Database Selection :</p>
+                <p>- Pilih Database Selection yang digunakan</p>
+                <p>Contoh : <code>bpnops</code></p>
+                <ul>
+                <p>- Klik <code>Subsystem Configuration</code></p>
+                <p>- Klik <code>Databases Manipulations</code></p>
+                <p>- Klik <code>Users Password</code></p>
+                </ul>
+
+                <p>4. Membuat User dan Password</p>
+                <p>Klik <code>Create</code>, dan Masukkan</p>
+                <ul>
+                <p>a. User = Diisi Nama User</p>
+                <p>b. Password = Diisi Password User</p>
+                <p>c. Confirm Password = Ketik ulang Password User</p>
+                <p>d. Alias = Diisi terserah saja</p></ul>
+                <ul>
+                <p>Pilih Role yang diinginkan yaitu :</p>
+                </ul>
+                <ul>
+                <p>- STO = Operasional Technical Supervisor</p>
+                <p>- SUT = Technical User Supervisor</p>
+                <p>- SUO = Operasional User Supervisor</p>
+                <p>- CON = Controller</p>
+                <p>- ASS = Assistant</p>
+                </ul>
+
+                <p>5. Setelah selesai Klik <code>Create/Modify</code></p>
+                <p>6. Kembali ke MENU UTAMA DBM, pilih <code>Generate All Data Files</code> &raquo; Klik <code>Start</code></p>
+                <p>7. Kemudian Klik <code>Load Adaptation Data</code> &raquo; Checklist <code>Operational &amp; Maps</code> &raquo; Pilih Hostname yang akan di load / seluruhnya</p>
+                <p>8. Stop dan Start kembali aplikasi pada CMD</p>
+            </div> 
+            <button class="btn-kembali" onclick="kembaliKeHalaman()">← Kembali ke Menu SOP</button>
+		</div>
+			
+        <!-- RINCIAN: ATMAS VNCVIEWER REMOTE -->
+		<div id="rinci-atmas-remote" class="tab-alat dokumen-sop">
+            <h2>SOP: ATMAS INDRA - REMOTE MENGGUNAKAN VNCVIEWER ATMAS</h2>
+            <div class="isi-dokumen">
+                <h3>A. Remote WS Lain</h3>
+                <p>1. Open Terminal (<code>Alt+F5</code>)</p>
+                <p>2. Pilih Workstation apa yang mau diremote menggunakan <code>vncviewer</code></p>
+                <ul><p>Contoh : <code>cmd1</code></p>
+                <p><li>Ketik command <pre><code>#ssh cmd1</code></pre></li></p>
+                <p><li>Jalankan aplikasi <code>vncviewer</code> dengan command :<pre><code>#/usr/bin/x11vnc</code></pre></li></p>
+                <p><li>tekan <code>Enter</code></li></p></ul>
+                <p>Atau langsung saja</p>
+                <ul>
+                <li><pre><code>#x11vnc</code></pre></li>
+                <li><p>Tunggu sampai terdapat tulisan <code>1 2 3 4</code></p></li></ul>
+                <p>3. Open Terminal lagi (<code>ALT + F5</code>) dan ketik <pre><code>#vncviewer cmd1</code></pre></p>
+                <p>4. Akan muncul tampilan aplikasi <code>CMD1</code></p>
+
+                <h3>B. Remote WS Lain/Server dengan Graphic View Yang Lebih Bagus</h3>
+                <p>1. Pilih Workstation apa yang mau diremote menggunakan <code>vncviewer</code></p>
+                <ul><p>Contoh : <code>drf1</code></p></ul>
+                <p>2. Open Terminal (<code>Alt+F5</code>)</p>
+                <ul>
+                <li><p>Jalankan aplikasi <code>vncviewer</code> dengan command :<pre><code>#x11vnc --scale 1.20 --display :0.0</code></pre></p></li>
+                <li><p>Tunggu sampai terdapat tulisan <code>1 2 3 4</code></p></li></ul>
+            
+                <p>3. Open Terminal lagi (<code>ALT + F5</code>) dan ketik :</p>
+                <ul>
+                <pre><code>#vncviewer drf1</code></pre>
+                <p>Akan muncul tampilan aplikasi <code>DRF1</code></p></ul>
+                
+                <h3>C. Remote WS Lain dengan Button Bisa Klik</h3>
+                <p>1. Open Terminal (<code>Alt+F5</code>)</p>
+                <p>2. Pilih Workstation apa yang mau diremote menggunakan <code>vncviewer</code></p>
+                <ul><p>Contoh : <code>cwp1</code></p></ul>
+                <p>3. Ketik command <pre><code>#ssh cwp1</code></pre></p>
+                <p>4. Jalankan aplikasi <code>vncviewer</code> dengan command :<pre><code>#/x11vnc</code></pre></p>
+                <p>tekan <code>Enter</code></p>
+                <ul>
+                <p><li> Tunggu sampai terdapat tulisan <code>The VNC desktop is: balikpapan101:1</code></li></p>
+                <p><li>The VNC desktop <code>balikpapan101:1</code> bisa berubah-ubah sesuai dengan cwp.</li></p>
+                <div class="foto-sop-container">
+                          <img src="vnc.jpg" class="foto-sop">
+                        </div>			
+                    </ul>
+                <p>5. Buka kembali terminal baru (<code>Alt + F5</code>)</p>
+                <p>6. Ketik <pre><code>vncviewer cwp1:1</code></pre></p>
+                <div class="foto-sop-container">
+                          <img src="vnc1.jpg" class="foto-sop">
+                        </div>
+            </div> 
+            <button class="btn-kembali" onclick="kembaliKeHalaman()">← Kembali ke Menu SOP</button>
+		</div>
+	
+        <!-- RINCIAN: ATMAS TAMBAH AIP DOKUMEN -->
+		<div id="rinci-atmas-aip" class="tab-alat dokumen-sop">
+            <h2>SOP: ATMAS INDRA - MENAMBAH DOKUMEN AIP KE SYSTEM ATMAS</h2>
+            <div class="isi-dokumen">
+                <h3>Menambah Document AIP pada CWP</h3>
+                <p>Pada menu INFO di CWP terdapat fungsi untuk membuka dokumen extention <code>.pdf</code> (AIP Document)</p>
+                <p>1. Siapkan file Document PDF yang akan ditampilkan. Copy Document ke directory</p>
+                <pre><code>#/local/balikpapan/adap/exec/AIP/others/document</code></pre>
+                <p>2. Jika ingin modifikasi untuk menambah folder di tampilan Paged Information Presentation, Buka di direktory :</p>
+                <pre><code>#cd /local/balikpapan/adap/exec/AIP/aip.php-files/</code></pre>
+                <ul><p><li>Untuk edit ketik</li></p>
+                <pre><code>#vi index.html</code></pre></ul>
+                <p>3. Tekan tombol <code>I</code> di keyboard untuk Insert.</p>
+                <p>Modifikasi di baris</p>
+                <pre><code>&lt;TR&gt;&lt;TD&gt;&lt;A TITLE = Others Documents”HREF=”.AIP/others/document”&gt;Documents&lt;/A&gt;</code></pre>
+                <ul>
+                <p><li>Others Documents Nama direktory tampilan</li></p>
+                <p><li>.AIP/others/document merupakan Direktory files yang tersimpan di <code>/local/balikpapan/adap/exec/AIP/others/document</code></li></p>
+                <p><li>Documents itu tampilan awal Paged Information Presentation</li></p>
+                </ul>
+                <p>4. Jika menambah tab menu di tampilan Paged Information Presentation, maka copy paste command :</p>
+                <pre><code>&lt;TR&gt;&lt;TD&gt;&lt;A TITLE = Others Documents”HREF=”.AIP/others/document”&gt;Documents&lt;/A&gt;</code></pre>
+                <ul><p><li>Modifikasi dan pastikan pada direktori <code>AIP/others/document”&gt;Documents</code></li></p>
+                <p><li>Buat folder sesuai dengan keinginan</li></p>
+                <p><li>Contoh :</li></p>
+                <pre><code>&lt;TR&gt;&lt;TD&gt;&lt;A TITLE = Training”HREF=”.AIP/others/manuals”&gt;Manuals&lt;/A&gt;</code></pre></ul>
+                <p>5. Jika sudah selesai modifikasi, tekan <code>ESC</code></p>
+                <ul>
+                <p>Ketik</p>
+                <p><li><code>:wq</code> = Keluar dengan save</li></p>
+                <p><li><code>:q</code> = Keluar tanpa save</li></p>
+                </ul>
+                <p>6. Masuk ke DBM</p>
+                <ul>
+                <p><li>Username &amp; Password : <code>DBM</code></li></p>
+                <p><li>Pilih Database Selection</li></p>
+                <p><li>Pilih Load Adaptation Data</li></p>
+                <p><li>Checklist AIP &raquo; Klik OK</li></p>
+                </ul>			
+            </div> 
+            <button class="btn-kembali" onclick="kembaliKeHalaman()">← Kembali ke Menu SOP</button>
+		</div>
+	
+        <!-- RINCIAN: ATMAS BACKUP RESTORE DBM -->
+	    <div id="rinci-atmas-backup-config" class="tab-alat dokumen-sop">
+            <h2>SOP: ATMAS INDRA - MENAMBAH BACKUP DAN RESTORE CONFIGURATION IN ATMAS SYSTEM</h2>
+            <div class="isi-dokumen">
+                <h3>DBM Backup and Restore Database Selection</h3>
+                <p>1. Pada PC DBM</p>
+                <ul><p>Klik <code>balikpapan</code>, kemudian <code>DBM</code></p></ul>
+                <p>2. Masuk ke DBM</p>
+                <ul>
+                <li>Username : <code>DBM</code></li>
+                <li>Password : <code>DBM</code></li>
+                </ul>
+                <p>3. Pada tampilan Database Selection terdapat beberapa menu</p>
+                <ul>
+                <li><code>Backup</code></li>
+                <p>Digunakan untuk backup Database Adaptation</p>
+                <p>1. Pilih 1 Adaptation Database yang akan di backup</p>
+                <p>2. Klik button <strong>Backup</strong>, maka tampilan DBM akan blinking</p>
+                <p>3. File backup terdapat di direktori</p>
+                <ul><pre><code>#local/balikpapan/adap/exec/tcl_tk/databases/nama_adaption_database/backup</code></pre></ul>
+                <p>4. Pada direktori tersebut akan muncul file dengan extention <code>.bck</code> lengkap dengan waktu backupnya</p>
+                <p>5. Rename file <code>.bck</code> jika ingin nama Adaptation Database sesuai keinginan sebelum di restore</p>
+                
+                <li><code>Copy</code></li>
+                <p>Digunakan untuk copy Database Adaptation</p>
+                <p>1. Pilih 1 Adaptation Database yang akan di copy</p>
+                <p>2. Klik Button <strong>Copy</strong></p>
+                <p>3. Masukkan nama Adaptation Database di menu New Adaption Creation sesuai keinginan</p>
+                <p>4. Klik OK</p>
+                <p>5. Tunggu sampai di menu Database Selection muncul Adaptation Database yang baru sesuai nama yang di buat</p>
+
+                <li><code>Destroy</code></li>
+                <p>Digunakan untuk menghapus Database Adaptation</p>
+
+                <li><code>Select</code></li>
+                <p>Digunakan untuk masuk pada Database Adaptation (Sama dengan Klik 2 kali)</p>
+
+                <li><code>Restore</code></li>
+                <p>Digunakan untuk merestore file yang telah di backup dengan extention <code>.bck</code>.</p>
+                <p>Menu ini akan otomatis membuat database adaptation baru di menu Database Selection</p>
+                <p>1. Klik <strong>Restore</strong> (Tidak memilih salah satu Adaptation Database)</p>
+                <p>2. Pilih file <code>.bck</code> yang akan di restore</p>
+                <p>3. File <code>.bck</code> ini merupakan file yang sudah di backup sebelumnya yang berada di direktori</p>
+                <pre><code>#local/balikpapan/adap/exec/tcl_tk/databases/nama_adaption_database/backup</code></pre>
+                <p>4. Klik Open</p>
+                <p>5. Tunggu sampai muncul Adaptation Database baru di menu Database Selection dengan nama sesuai dengan file <code>.bck</code></p>
+
+                <li><code>Import DB</code></li>
+                <p>Sama dengan Button Restore yang Digunakan untuk merestore file yang telah di backup dengan extention <code>.bck</code> tetapi perbedaannya, Button Import DB ini akan mereplace existing database yang dipilih.</p>
+                <p>1. Pilih 1 Adaptation Database</p>
+                <p>2. Klik <strong>Import DB</strong></p>
+                <p>3. Akan muncul <code>Notifikasi Importing Please Wait</code></p>
+                <p>4. Tunggu sampai muncul tab menu Summary Import</p>
+                </ul>
+                
+                <p>4. Jika sudah ada file backup <code>.bck</code> maka langsung saja pilih button Restore (Lihat menu Restore di atas)</p>
+                <p>5. Buka Adaptation Database baru yang telah di restore</p>
+                <ul>
+                <li>Subsystem Configuration</li>
+                <li>Database Manipulation</li>
+                <li>Generate and Load CONFIG_COM</li>
+                </ul>
+                <p>Jika Perubahan pada</p>
+                <ul>
+                <li>Host Subsystem Nodes,</li>
+                <li>Hosts Device IP Configuration,</li>
+                <li>System LAN Configuration</li>
+                <li>Import CONFIG_COM Body</li>
+                </ul>
+                <p>6. Buka Adaptation Database baru yang telah di restore,</p>
+                <p>Jika perubahan selain menu 4 di atas maka langsung ke menu</p>
+                <ul>
+                <li>Generate All Data Files</li>
+                <li>Load Adaptation Data</li>
+                <li>Checklist Operational &amp; Maps</li>
+                </ul>
+                <p>7. Stop and Start Aplikasi</p>
+            </div> 
+            <button class="btn-kembali" onclick="kembaliKeHalaman()">← Kembali ke Menu SOP</button>
+		</div>
+		
+		
+		<!-- RINCIAN: CONFIGURATION H3C SWITCH -->
+	    <div id="rinci-atmas-h3c" class="tab-alat dokumen-sop">
+    <h2>SOP: ATMAS INDRA - CONFIGURATION H3C SWITCH</h2>
+    <div class="isi-dokumen">
+        <ol class="sop-list">
+            <li>Masuk console SW menggunakan PUTTY, HYPERTERMINAL, MOBAXTREAM, pilih serial dan COM yang digunakan pada interface console</li>
+            <li>Tekan Enter 3x, Jika sudah terbuka</li>
+            <li>Masuk ke mode konfigurasi global yang digunakan untuk mengubah pengaturan utama perangkat.
+		<pre class="code-box"><code>&lt;H3C&gt;system-view, 
+		<p> maka simbol &lt;H3C&gt akan berubah menjadi [H3C] </p>
+		[H3C]display interface brief</code></pre>
+					</li>
+					<li>Buat VLAN dengan command
+		<pre class="code-box"><code>[H3C]vlan 30 
+		[H3C] interface Vlan-intervace 30
+		[H3C-Vlan-Interface30] ip address 192.168.2.221 255.255.255.0
+		[H3C-Vlan-Interface30] description RCSU MER
+		[H3C-Vlan-Interface30] quit</code></pre>
+					</li>
+					<li>Setting port yang digunakan untuk dikoneksikan ke device, disini kita akan setting port 23 dan 24 untuk dimasukan ke grup vlan 30 :
+		<pre class="code-box"><code>[H3C]interface range GigabitEthernet1/0/23 to GigabitEthernet1/0/24
+		[H3C-if-range] port link-type access
+		[H3C-if-range] port access vlan 30
+		[H3C-if-range] quit</code></pre>
+					</li>
+					<li>Jika hanya ingin membuka 1 port, misal hanya GigabitEthernet1/0/23 masuk ke grup vlan 30 :
+		<pre class="code-box"><code>[H3C]interface GigabitEthernet1/0/23 
+		[H3C-GigabitEthernet1/0/23] port link-type access
+		[H3C-GigabitEthernet1/0/23] port access vlan 30
+		[H3C-GigabitEthernet1/0/23] quit</code></pre>
+					</li>
+					<li>Berikutnya setting vlan 30 untuk dimasukan ke trunk port sfp agar vlan 30 bisa terhubung ke Switch lainnya :
+		<pre class="code-box"><code>[H3C]interface TenGigabitEthernet 1/0/25
+		[H3C-Ten-GigabitEthernet1/0/25] port link-type trunk
+		[H3C-Ten-GigabitEthernet1/0/25] port trunk permit vlan 1 10 20 30 <em>(Mengizinkan vlan 1, 10, 20, 30 untuk melewati port Ten-GigabitEthernet1/0/25)</em>
+		[H3C-Ten-GigabitEthernet1/0/25] save force <em>(menyimpan settingan)</em></code></pre>
+					</li>
+					<li>Selanjutnya setting Switch kedua dengan command settingan yang sama, hanya host ip address yang dibedakan
+		<pre class="code-box"><code>[H3C]vlan 30 
+		[H3C] interface Vlan-intervace 30
+		[H3C-Vlan-Interface30] ip address 192.168.2.222 255.255.255.0
+		[H3C-Vlan-Interface30] description RCSU MER
+		[H3C-Vlan-Interface30] quit</code></pre>
+		<pre class="code-box"><code>[H3C]interface range GigabitEthernet1/0/23 to GigabitEthernet1/0/24
+		[H3C-if-range] port link-type access
+		[H3C-if-range] port access vlan 30
+		[H3C-if-range] quit</code></pre>
+					</li>
+					<li>Jika hanya ingin membuka 1 port, misal hanya GigabitEthernet1/0/23 masuk ke grup vlan 30 :
+		<pre class="code-box"><code>[H3C]interface GigabitEthernet1/0/23 
+		[H3C-GigabitEthernet1/0/23] port link-type access
+		[H3C-GigabitEthernet1/0/23] port access vlan 30
+		[H3C-GigabitEthernet1/0/23] quit</code></pre>
+					</li>
+					<li>Berikutnya setting vlan 30 untuk dimasukan ke trunk port sfp agar vlan 30 bisa terhubung ke Switch lainnya :
+		<pre class="code-box"><code>[H3C]interface TenGigabitEthernet 1/0/25
+		[H3C-Ten-GigabitEthernet1/0/25] port link-type trunk
+		[H3C-Ten-GigabitEthernet1/0/25] port trunk permit vlan 1 10 20 30 <em>(Mengizinkan vlan 1, 10, 20, 30 untuk melewati port Ten-GigabitEthernet1/0/25)</em>
+		[H3C-Ten-GigabitEthernet1/0/25] save force <em>(menyimpan settingan)</em></code></pre>
+					</li>
+					
+					<li>Untuk memastikan jaringan sudah terkoneksi, ping IP Address pada kedua perangkat yang sudah tersettings </li>
+				</ol>
+			</div> 
+			<button class="btn-kembali" onclick="kembaliKeHalaman()">← Kembali ke Menu SOP</button>
+		</div>
+		
+		<!-- RINCIAN: CONFIGURATION H3C SWITCH -->
+	    <div id="rinci-atmas-cid" class="tab-alat dokumen-sop">
+    <h2>SOP: ATMAS INDRA - CONTROLLER INFORMATION DISPLAY (CID) MAINTENANCE</h2>
+    <div class="isi-dokumen">
+	<li><P> CID menggunakan Mode Kiosk yaitu konfigurasi yang mengunci sistem agar hanya menjalankan, satu aplikasi spesifik (seperti browser web)  dalam mode layar penuh (layar penuh).</p></li>
+	<li><p> Pada kasus CID ini, jaringan harus terkoneksi dengan AirNav Net, Dimana untuk settings jaringannya harus berpindah dari user Kiosk ke user CID </P></li>
+        <ol class="sop-list">
+		<li><p>Untuk masuk pada system CID, tekan <code>Ctrl</code> + <code>Alt</code> + <code>Fn</code> + <code>F1/F2</code> untuk berpindah user</p></li>
+    <li><p>Masuk ke user CID seperti <code><em>(cid_sim1)</em></code></p></li>
+	<li><p>Masukkan username dan password sesuai dengan user client cid atau kiosk</p>
+        <ul>
+            <li><p>a. username <code>cid_sim1</code> dan password <code>cid_sim1</code></p></li>
+            <li><p>b. username <code>kiosk</code> dan password <code>kiosk</code></p></li>
+        </ul>
+    </li>
+    <li><p>Ketika sudah masuk user client <code>cid_sim1</code>, buka terminal dengan klik kanan dan ping ke jaringan CID berikut ini</p></li>
+	<div class="foto-sop-container">
+                          <img src="cid.JPG" class="foto-sop">
+                        </div>
+	<li><p>Periksa settingan IP address client CID pada display desktop kanan atas gambar LAN, <code>Network</code> → <code>Wired</code> → <code>Profile</code>, konfigurasi IPv4 <em>Manual</em> sesuai dengan IP Address, Netmask dan Gateway pada table gambar di atas</p></li>
+    <li><p>Pastikan settingan IP Address, Netmask dan Gateway sesuai dengan gambar pada point 4</p></li>
+	<div class="foto-sop-container">
+                          <img src="cid1.JPG" class="foto-sop">
+                        </div>
+    <li><p>Jika bisa ping ke <code>8.8.8.8</code> maka internet sudah terkoneksi dengan client CID</p></li>
+    <li><p>Pindah ke user <code>kiosk</code> untuk melihat apakah aplikasi CID sudah normal apa belum</p></li>
+    <li><p>Jika belum normal tampilan akan seperti ini</p></li>
+	<div class="foto-sop-container">
+                          <img src="cid2.JPG" class="foto-sop">
+                        </div>
+    <li><p>Pindah user lagi ke client CID, Ganti konfigurasi IP Address dari <em>Manual</em> menjadi <em>Automatic (DHCP)</em></p></li>
+    <li><p>Konfigurasi IP Address, Netmask dan Gateway sesuai IP DHCP yang didapatkan</p></li>
+    <li><p>Ping kembali ke semua jaringan client CID dan Server dan ping ke internet atau <code>8.8.8.8</code></p></li>
+    <li><p>Jika sudah bisa ping, pindah user kembali ke <code>kiosk</code></p></li>
+    <li><p>Maka tampilan akan berubah menjadi normal seperti berikut</p></li>
+		<div class="foto-sop-container">
+                          <img src="cid3.JPG" class="foto-sop">
+                        </div>
+			</ol>
+			</div> 
+			<button class="btn-kembali" onclick="kembaliKeHalaman()">← Kembali ke Menu SOP</button>
+		</div>
+		
+		
+		<!-- RINCIAN: CONFIGURATION H3C SWITCH -->
+	    <div id="rinci-atmas-h3c" class="tab-alat dokumen-sop">
+            <h2>MANUAL BOOKS ATMAS</h2>
+            <div class="isi-dokumen">
+		<div class="wrapper-download">
+			<a href="SOP ROUTING PORT SWITCH H3C.pdf" download="SOP-ELDIS-UPDATE.pdf" class="btn-download">
+			📄 ROUTING PORT SWITCH H3C
+    		</a>
+			</div>
+		 </div> 
+            <button class="btn-kembali" onclick="kembaliKeHalaman()">← Kembali ke Menu SOP</button>
+		</div>
+
+<!--VCSS GAREX 300 -->
+        <div id="rinci-garex-us" class="tab-alat dokumen-sop">
+            <h2>SOP: VSCS GAREX 300 - USER, PASSWORD AND SSH</h2>
+            <div class="isi-dokumen">
+			<h3> A. TMCS LOGIN </h3>
+			<ul>
+			<li> User : gscv </li>
+			<li> Pasword : Houston </li>
+			<CODE>TMCS for Accsess Configuration, Supervision and Sectorization</CODE>
+				</ul>
+			<h3> B. TMCS LOGIN </h3>
+			<ul>
+			<li> User : root </li>
+			<li> Pasword : root </li>
+			<CODE>TMCS for Accsess Administration</CODE>
+				</ul>
+			<h3> C. TMCS Puesto </h3>
+			<ul>
+			<li> User : Puesto </li>
+			<li> Pasword : Puesto </li>
+			</ul>
+			
+			<h3> D. CISCO WEB GUI </h3>
+			<ul>
+			<li> User : admin </li>
+			<li> Pasword : sdcxxi1 </li>
+			</ul>
+			
+			<h3> E. CISCO CLI CONSOLE (CISCO ROUTER C8200, CISCO SWITCH MER CATALYST 9200) </h3>
+			<ul>
+			<li> Tekan <strong>ENTER</strong>  </li>
+			<li> Ketik <code>enable</code> </li>
+			<li> Pasword : Houston1., </li>
+			</ul>
+			
+			<h3> F. CISCO CLI CONSOLE (CISCO VHF 2911) </h3>
+			<ul>
+			<li> Tekan <strong>ENTER</strong>  </li>
+			<li> Ketik <code>enable</code> </li>
+			<li> Pasword : admin </li>
+			</ul>
+			
+			<h3> G. SSH CWP via TMCS </h3>
+			<p> Bisa ssh melalui puesto atau masuk dulu ke root, yang penting ssh ip cwpnya</p>
+			<ul>
+			<li><p>1. Puesto</p></li>
+			<p><code>ssh 172.31.53.xxx </code></p>
+			<p>maka akan masuk <code>[puesto@cwpxx]$</code></p>
+			<li><p>2. ROOT</p></li>
+			<p><code>sudo -i</code></p>
+			<p><code>ssh 172.31.53.xxx </code></p>
+			<p>Masukkan Password <code>Houston1.,</code></p>
+			<p>maka akan masuk [root@cwpxx]#</p>
+			</ul>
+			
+			
+			<h3> H. SSH NEPTUNO via TMCS </h3>
+			<ul>
+			<li><p>Masuk dengan akses user ROOT</p></li>
+			<p><code>sudo -i</code></p>
+			<ul>
+			<li><p><code>ssh neptuno-admin@172.31.53.151 </code><Strong>Untuk Server Neptuno 1</strong></p></li> 
+			<li><p><code>ssh neptuno-admin@172.31.53.152 </code><Strong>Untuk Server Neptuno 2</strong></p></li>
+			</ul>
+			<p>Masukkan Password <code>ad-neptuno-1.</code></p>
+			</ul>
+			
+			<h3> I. COPY FILE NEPTUNO via TMCS </h3>
+			<ul>
+			<li><p>Masuk dengan akses user ROOT</p></li>
+			<p><code>sudo -i</code></p>
+			<ul>
+			<li><p><code>ssh neptuno-admin@172.31.53.151 </code><Strong>Untuk Server Neptuno 1</strong></p></li> 
+			<li><p><code>ssh neptuno-admin@172.31.53.152 </code><Strong>Untuk Server Neptuno 2</strong></p></li>
+			</ul>
+			<p>Masukkan Password <code>ad-neptuno-1.</code></p>
+			</li><p> Setelah menemukan file yang akan di copy, maka selanjutnya</p></li>
+			<p><code>scp -r <i>file_copy</i> 172.31.53.11 /mnt/(Buat Directory)</code></p>
+			<li><p> 172.31.53.11 merupakan IP TMCS </p></li>
+			<p><code> Catatan : saat scp dan mengetikkan IP TMCS tidak akan bisa di <code>Tab</code> tapi normal untuk copy </code></p>
+			<li><p>Masukkan Password <code>Houston1.,</code><p></li>
+			</ul>
+
+			
+			</div>
+			<button class="btn-kembali" onclick="kembaliKeHalaman()">← Kembali ke Menu SOP</button>
+        </div>
+			
+			
+			
+		<div id="rinci-garex-analog" class="tab-alat dokumen-sop">
+            <h2>SOP: VSCS GAREX 300 - MENAMBAH RADIO ANALOG</h2>
+            <div class="isi-dokumen">
+			<h3>SOP Menambah Radio Analog</h3>
+			<h4>A. Settings Pada Radio</h4>
+			<p>1. Pastikan Analog dari Radio sudah siap dimasukkan ke VSCS berupa : </p>
+			<h5>Park Air Electronic (PAE)</h5>
+			<table border="1" cellspacing="0" cellpadding="8">
+				<tr>
+					<th>Pin</th>
+					<th>Transmitter</th>
+					<th>Receiver</th>
+					<th>Transceiver</th>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>Audio +</td>
+					<td>Audio +</td>
+					<td>Audio RX+</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>Audio -</td>
+					<td>Audio -</td>
+					<td>Audio RX-</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>-</td>
+					<td>-</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td>-</td>
+					<td>-</td>
+					<td>Audio TX+</td>
+				</tr>
+				<tr>
+					<td>5</td>
+					<td>-</td>
+					<td>-</td>
+					<td>Audio TX-</td>
+				</tr>
+				<tr>
+					<td>6</td>
+					<td>PTT</td>
+					<td>PTT</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td>7</td>
+					<td>GND</td>
+					<td>GND</td>
+					<td>PTT</td>
+				</tr>
+				<tr>
+					<td>8</td>
+					<td>-</td>
+					<td>-</td>
+					<td>GND</td>
+				</tr>
+			</table>
+			<p>2. Sambungkan kabel output radio ke krone Gatevox VSCS dengan interkoneksi berikut : </p>
+			<div class="foto-sop-container">
+                      <img src="gatevox.jpg" class="foto-sop">
+                    </div>
+					<ul>
+					<li> Untuk konfigurasi Radio Analog di Gatevox adalah : </li>
+						<table border="1" cellspacing="0" cellpadding="8">
+				<tr>
+					<th>Pin Gatevox Krone</th>
+					<th>Keterangan</th>
+				</tr>
+				<tr>
+					<td>TX+</td>
+					<td>Audio + From Transmitter</td>
+				</tr>
+				
+				<tr>
+					<td>TX-</td>
+					<td>Audio - From Transmitter</td>
+				</tr>
+				
+				</tr>
+				<tr>
+					<td>RX+</td>
+					<td>Audio + From Receiver</td>
+				</tr>
+				
+				<tr>
+					<td>RX-</td>
+					<td>Audio - From Receiver</td>
+				</tr>
+				
+				<tr>
+					<td>M1</td>
+					<td>PTT from Transmitter</td>
+				</tr>
+				
+				<tr>
+					<td>SB1</td>
+					<td>GROUND from Transmitter</td>
+				</tr>
+				</table>
+					</ul>
+			<h4>B. Settings Pada TMCS</h4>
+			<p><strong>Copy dahulu configuration eksisting sebagai backup.</strong></p>
+			<p><strong>Buka configuration yang akan diedit.</strong></p>
+			<li><h5>HW Configuration</h5></li>
+			<p>1. Pilih <strong>Gatevox</strong>.</p>
+			<p>2. Klik Gatevox 1 maka akan muncul <strong>Interface Card</strong> </p>
+			<p>3. Pilih Interface Card sesuai dengan Channel Gatevox misalnya <code>RC1_4-1</code></p>
+			<p>4. Klik 2 kali pada Interface Card untuk membuka <strong>Card Configuraion</strong></p>
+			<p>5. Untuk konfigurasi Analog Radio sesuaikan dengan gambar berikut :</p>
+			<div class="foto-sop-container">
+                      <img src="gatevoxaudio.jpg" class="foto-sop">
+                    </div>			
+			<li><h5>Logical Configuration<h5></li>
+			<p>1. Pilih <strong>Logical Configuration – External Network and Centres</strong>.</p>
+			<p>2. Klik Kanan dan Pilih <strong>New Site</strong> untuk menambahkan Radio Baru.</p>
+			<p>3. Klik kanan pada kolom <strong>List of Radio Union</strong> dan pilih <strong>Analog radio union</strong>.</p>
+			<p>4. Isi data pada kolom <strong>Radio Union Data</strong>.</p>
+			<ul>
+				<p>a. Pilih Topology <code> TxRx = Transmitter dan Receiver </code></p>
+				<p>b. Isi kolom <strong>TX Link</strong> sesuai dengan Channel Gatevox, RX Link akan mengikuti karena tersettings Topology <Strong>TxRx</strong></p>
+			<p>c. Atur <Strong>Radio Union Parameters</strong> seperti pada gambar </p>
+			<div class="foto-sop-container">
+                      <img src="linkparameters.jpg" class="foto-sop">
+                    </div>	
+			</ul>
+			<p>5. Setelah isi semua data, klik <strong>Accept</strong>.</p>
+			<p>6. Setelah membuat External Network, Pilih <strong>Radio Keys</strong> untuk membuat radio button pada CWP.</p>
+			<ul>
+			<li><p>Pilih Kolok Radio Key dan Klik kanan, pilih new untuk radio baru.</p></li>
+			<li><p>Pilih kolom <strong>Radio Unions</strong> untuk Assign Radio baru dan klik <strong>Accept</strong>.</p></li>
+			</ul>
+			<p>7. Setelah itu pilih <strong>Radio Template</strong> untuk penempatan assign Radio baru.</p>
+			
+			<li>
+			<p>8. Pilih source radio dari Analog.</p></li>
+			<li><p>9. Klik kanan untuk assign dan klik <strong>Accept</strong> ketika sudah selesai.</p></li></ul>
+			<p>10. Kemudian Pilih <strong>Roles</strong>.</p>
+			<ul>
+			<li><p>Pilih <strong>Standart</strong> – Pilih name roles mana yang akan di assign.</p></li>
+			<li><p>Pilih <strong>Radio Resources</strong> untuk Assign Radio baru dengan cara klik kanan, pilih assign dan klik <strong>Accept</strong>.</p></li>
+			<li><p>Pilih <strong>Sector</strong> - Pilih name sector mana yang akan di assign.</p></li>
+			<li><p>Pilih <strong>Radio Resources</strong> untuk Assign Radio baru dengan cara klik kanan, pilih assign dan klik <strong>Accept</strong>.</p></li>
+			</ul>
+			</div>
+			
+            <button class="btn-kembali" onclick="kembaliKeHalaman()">← Kembali ke Menu SOP</button>
+        </div>
+        <div id="rinci-garex-ip" class="tab-alat dokumen-sop">
+            <h2>SOP: VSCS GAREX 300 - MENAMBAH RADIO IP</h2>
+            <div class="isi-dokumen">
+			<h3>A. Setting pada radio</h3>
+			<ul>
+			<li><p>1. IP</p></li>
+			<li><p>2. Gateway</p></li>
+			<li><p>3. Subnetmask</p></li>
+			<li><p>4. SIP Port (5060)</p></li>
+			<li><p>5. Own URI (URI Radio)</p></li>
+			<li><p>6. Allowed URI (URI VSCS = garex300) pada radio</p></li>
+			</ul>
+
+			<h3>B. Settingan pada TMCS</h3>
+			<p>1. Copy dahulu configuration eksisting sebagai backup.</p>
+			<p>2. Buka configuration yang akan diedit.</p>
+			<p>3. Pilih <strong>Logical Configuration – External Network and Centres</strong>.</p>
+			<p>4. Klik Kanan dan Pilih <strong>New Site</strong> untuk menambahkan Radio Baru.</p>
+			<p>5. Klik kanan pada kolom <strong>List of Radio Union</strong> dan pilih <strong>Create radio union trough IPRN</strong>.</p>
+			<p>6. Isi data pada kolom <strong>Radio Union Data</strong>.</p>
+			<ul>
+			<p>a. Pillih Topology yang digunakan.</p>
+			<ul>
+			<li><p>TxRx = Transmitter</p>
+			<li><p> Tx + Rx = Transmitter &amp; Receiver</p></li>
+			<li><p> Main: TxRx / Stby: TxRx</p></li>
+			<li><p> Main: TxRx / Stby: Tx+Rx</p></li>
+			<li><p> Main: Tx+Rx / Stby: TxRx</p></li>
+			<li><p> Main: Tx+Rx / Stby: Tx+Rx</p></li>
+			</ul>
+			<p>b. Isi kolom <strong>SIP URI</strong> dengan IP radio.</p>
+			</ul>
+			<p>7. Setelah isi semua data, klik <strong>Accept</strong>.</p>
+			<p>8. Setelah membuat External Network, Pilih <strong>Radio Keys</strong> untuk membuat radio button pada CWP.</p>
+			<ul>
+			<li><p>Pilih Kolok Radio Key dan Klik kanan, pilih new untuk radio baru.</p></li>
+			<li><p>Pilih kolom <strong>Radio Unions</strong> untuk Assign Radio baru dan klik <strong>Accept</strong>.</p></li>
+			</ul>
+			<ul>
+			<p>9. Setelah itu pilih <strong>Radio Template</strong> untuk penempatan assign Radio baru.</p>
+			<li><p>- Pilih source radio dari IP.</p></li>
+			<li><p>- Klik kanan untuk assign dan klik <strong>Accept</strong> ketika sudah selesai.</p></li>
+			</ul>
+			
+			<p>10. Kemudian Pilih <strong>Roles</strong>.</p>
+			<ul>
+			<li><p>Pilih <strong>Standart</strong> – Pilih name roles mana yang akan di assign.</p></li>
+			<li><p>Pilih <strong>Radio Resources</strong> untuk Assign Radio baru dengan cara klik kanan, pilih assign dan klik <strong>Accept</strong>.</p></li>
+			<li><p>Pilih <strong>Sector</strong> - Pilih name sector mana yang akan di assign.</p></li>
+			<li><p>Pilih <strong>Radio Resources</strong> untuk Assign Radio baru dengan cara klik kanan, pilih assign dan klik <strong>Accept</strong>.</p></li>
+						</div>
+            <button class="btn-kembali" onclick="kembaliKeHalaman()">← Kembali ke Menu SOP</button>
+        </div>
+        <div id="rinci-garex-ds" class="tab-alat dokumen-sop">
+            <h2>SOP: VSCS GAREX 300 - MENAMBAH TELEPON ANALOG / DIRECT SPEECH</h2>
+            <div class="isi-dokumen">
+			<h3>A. Settingan pada TMCS</h3>
+
+			<p>1. Copy dahulu configuration eksisting sebagai backup.</p>
+			<p>2. Buka configuration yang akan diedit.</p>
+			<p>3. Pilih <strong>Logical Configuration – External Network and Centres</strong>.</p>
+			<p>4. Klik Kanan dan Pilih:</p>
+			<ul>
+			<li><p><strong>New External Center</strong> = Direct Speech</p></li>
+			<li><p><strong>New External Network</strong> = SLJJ / PABX Internal</p></li>
+			</ul>
+
+			<p>5. Klik kanan pada kolom <strong>Trunk</strong> dan pilih <strong>New</strong>.</p>
+			<ul>
+			<li><p>Pilih Gatevox 1 / 2.</p></li>
+			<li><p>Pilih Link Type yang digunkan FXO, FXS, CBS (FXO), CBC (FXS).</p></li>
+			<p><code>Catatan : SLJJ menggunakan FXO / FXS.</code></p>
+			<p><code>DS menggunakan CBS / CBC.</code></p> 
+			</ul>
+			<p>6. Pilih kolom <strong>Destination</strong> dan klik kanan, pilih <strong>New</strong>.</p>
+			<ul>
+			<li><p>Untuk SLJJ / PABX, masukkan nomor tujuan.</p></li>
+			<li><p>Untuk DS,</p></li>
+			<ul>
+			<li><p>masukkan data nama DS,</p></li>
+			<li><p>Pada kolom <strong>Destination Link Configuration</strong>, klik kanan dan pilih <strong>new</strong>, pilih Gatevox yang digunakan dan pilih <strong>accept</strong>.</p></li>
+			<li><p>Pada kolom <strong>Destination Link Data</strong>, Pilih Link Type dan Link Name yang digunakan.</p></li>
+			<li><p>Pada Kolom <strong>Destination Role List</strong>, Assign DS ke Role mana saja yang akan menggunakan.</p></li>
+			<li><p>Klik <strong>Accept</strong> jika semua settingan data data sesuai.</p></li>
+			</ul>
+			</ul>
+
+			<p>7. Setelah membuat External Network, Pilih <strong>Telephony Template</strong> untuk penempatan assign Telephone SLJJ/PABX/DS baru, Pilih pada Roles mana yang akan ditempatkan Telephone SLJJ/PABX/DS, Setelah itu pilih Klik kanan untuk assign dan klik <strong>Accept</strong> ketika sudah selesai.</p>
+			<p>8. Kemudian Pilih <strong>Roles – Telephony Resources</strong> untuk Assign DS/PABX baru dengan cara klik kanan, pilih assign dan klik <strong>Accept</strong>.</p>
+			<p>9. Kemudian Pilih <strong>Roles – Network Access</strong> untuk Assign Telephone SLJJ baru dengan cara klik kanan, pilih assign dan klik <strong>Accept</strong>.</p>
+			<p><code>Catatan : Aktifkan Accessible Network ke all network.</code></p>
+			
+			</div>
+            <button class="btn-kembali" onclick="kembaliKeHalaman()">← Kembali ke Menu SOP</button>
+        </div>
+		
+		
+		<div id="rinci-garex-backuptmcs" class="tab-alat dokumen-sop">
+            <h2>SOP: VSCS GAREX 300 - BACKUP TMCS</h2>
+            <div class="isi-dokumen">
+			
+			<h3>A. MENGGUNAKAN APLIKASI</h3>
+				<ul>
+						<li>Pilih Database</li>
+						<li>Pilih Manual Backup</li>
+						<li>Pilih Penyimpanan Dimana</li>
+					</ul>
+					<ul>
+					<li>Buka Terminal </li>
+					<li>Beri Permission untuk membuka file backup</li>
+					<p><code>chmod -R 777 namafilebackup.gz</code></p>
+					<p><code>ls -lart </code>(untuk memastikan sudah diberi permission)</p>
+					<li>Extract file backup</li>
+					<p><code>gunzip namafilebackup.gz</code></p>
+					<p><code>ls -lart</code></p>
+					<li>Execute file backup</li>
+					<p><code>../scr/TMCS_DBTM_scr_unix_encrypt.sh -d </code> <code> namafilebackup.sqil.enc</code><Strong>(file yang akan dicopy)</Strong> <code>namafilebackup.sql</code><Strong>(file yang sudah dicopy dan akan diexecute)</strong></code></p>
+				</ul>
+				
+				<h3>B. MENGGUNAKAN TERMINAL</h3>
+					<ul>
+						<li>Buka terminal</li>
+						<p><code>mysqldump -u root tmcs &gt; Balikpapan.sql</code></p>
+						<li>Lanjutkan cara permission, extract dan execute seperti langkah menggunakan aplikasi</li>
+					</ul>
+
+					<h3>C. CARA UPLOAD DAN MENGGUNAKAN FILE BACKUP DI USB/FLASHDISK</h3>
+					<ul>
+						<li>Buka terminal</li>
+						<p><code>sudo su</code></p>
+						<p><code>fdisk -l</code></p>
+						<LI><p>Biasanya untuk flasdisk atau disk berada pada <strong>sdb atau sdc</Strong></p></LI>
+						<p><code>mount /dev/sdb1 /mnt</code></p>
+						<li>Cek file backup pada usb/flasdisk</li>
+						<p><code>cd /run/media/puesto/namafd (umount di directory <code> /mnt</code>)</code></p>
+						<li>Shutdown semua aplikasi TMCS</li>
+						<li>Copy filebackup dari flashdisk ke aplikasi TMCS</li>
+						<p><code>scp -r namafile.sql /tmp/</code></p>
+						<li>Cek file yang sudah dicopy di folder tujuan</li>
+						<p><code>cd /tmp/</code></p>
+						<li>Execute file backup</li>
+						<p><code>mysql -u root tmcs &lt; namafilebackup.sql</code></p>
+						<li>Umount FLASDISK 
+						<p><code>umount /dev/sdb1 </code></p>
+					</ul>
+				</div>
+			<button class="btn-kembali" onclick="kembaliKeHalaman()">← Kembali ke Menu SOP</button>
+			</div>
+			
+			
+			<div id="rinci-garex-ipcwp" class="tab-alat dokumen-sop">
+            <h2>SOP: VSCS GAREX 300 - CONFIG IP CWP VSCS GAREX</h2>
+            <div class="isi-dokumen">			
+					<h3>A. Config untuk CWP</h3>
+					<ul>
+						<li>1. Masuk terminal</li>
+						<p><code>sudo su</code></p>
+						<li>2. Masuk ke CWP yang dituju</li>
+						<p><code>ssh puesto@172.31.0.107</code></p>
+						<p><code>sudo su</code></p>
+						<p><code>vi /etc/hostname</code></p>
+						<li>3. Ganti nama CWP dengan press <code>i</code>, setelah Ganti nama, tekan <code>Esc</code></li>
+						<li>4. Save config</li>
+						<p><code>wq!</code></p>
+						<p><code>cd /etc/sysconfig/network-scripts</code></p>
+						<li>5. Ganti IP dengan press <code>i</code>, setelah Ganti, <code>Esc</code></li>
+						<p><code>vi ifcfg-bond0</code></p>
+						<p><code>wq!</code></p>
+						<li>6. Ganti IP dan nama CWP dengan press <code>i</code>setelah Ganti, tekan<code>Esc</code></li>
+						<p><code>vi etc/hosts</code></p>
+						<p><code>wq!</code></p>
+						<li>7. Ganti instancia sesuai dengan CWP dengan press <code>i</code>setelah Ganti, tekan <code>Esc</code></li>
+						<p><code>vi /vcs/runtime/Etiqueta_hw</code></p>
+						<p><code>wq!</code></p>
+						<li>8. Reboot</li>
+					</ul>
+
+					<h3>B. Config Hardware di TMCS Main</h3>
+					<ul>
+						<li>1. Buat CWP pada HW Configuration</li>
+						<ul>
+							<li>a. Nama CWP</li>
+							<li>b. IP CWP</li>
+						</ul>
+						<p>2. Buat Line dalam room di Supervision dan buat line HW CWP di semua room</p>
+						<p>3. Setelah Ganti IP Address CWP dan Config hardware di TMCS Main</p>
+						<p>4. Copy file.txt ke dat, tmp dan emergency</p>
+						<p><code>scp -r config sdcxxi_*.txt puesto@172.x.x.x:/vcs/runtime/dat</code><strong>(IP CWP yang dituju)</strong></p>
+						<p><code>scp -r config sdcxxi_*.txt puesto@172.x.x.x:/vcs/runtime/tmp</code><strong>(IP CWP yang dituju)</strong></p>
+						<p><code>scp -r config sdcxxi_*.txt puesto@172.x.x.x:/vcs/runtime/emergency</code><strong>(IP CWP yang dituju)</strong></p>
+					</ul>
+
+					<p><code>Catatan :</code></p>
+					<ul>
+						<li>- Jika ubah IP dari TMCS, auto reboot CWP</li>
+						<li>- Jika ubah IP dari CWP, harus command reboot</li>
+						<li>- Password : Houston1.,</li>
+					</div>
+
+					
+			<button class="btn-kembali" onclick="kembaliKeHalaman()">← Kembali ke Menu SOP</button>
+			</div>
+			
+			
+			<div id="rinci-garex-stuck" class="tab-alat dokumen-sop">
+            <h2>SOP: VSCS GAREX 300 - CWP STUCK </h2>
+            <div class="isi-dokumen">		
+			<p>1. Restart system/hardware via TMCS dengan remote admin</p>
+			<ul>
+			<LI><p>Username : root</p></li>
+			<li><p>Password : root</p></li>
+			</ul>
+			<p>2. Klik kanan pada CWP yang akan direstart, tunggu hingga proses selesai</p>
+			<p>3. Apabila masih stuck, remote CWP yang stuck melalu terminal di TMCS</p>
+			<p>4. Buka terminal dan ketik </p>
+			<p><code>ssh puesto@172.31.53.xxx</code><strong>IP CWP yang stuck (yang akan diremote)</strong></p>
+			<p>5. Masuk ke root dengan ketik </p>
+			<p><code>sudo su</code>Masukan password <code>Houston1.,</code></p>
+			<p>6. Restart CWP yang stuck dengan masuk ke <code>/vcs/runtime</code> dan jalankan command</p>
+			<p><code>./shutdown.sh</code> kemudian <code>./startup.sh</code></p>
+			<p>7. Lihat hasil errornya, contoh error pada <code>/vcs/runtime/dat/emergency/config_sdcxxi_hw.txt</code></p>
+			<p>8. Lanjutkan proses startup selesai hingga line CWP hijau</p>
+			<p>9. Buka terminal baru untuk membandingkan folder/file yang hilang pada CWP yang normal</p>
+			<p>10. Copy folder/file yang hilang dari CWP yang normal di directory</p>
+			<p><code>/vcs/runtime/dat/emergency</code></p>
+			<p><code>scp -r config_sdcxxi_hw.txt puesto@172.31.53.xxx:/vcs/runtime/dat/emergency</code><strong>IP CWP yang stuck/tujuan</strong></p>
+			<p><code>scp -r config_sdcxxi_log_sect_a.txt puesto@172.31.53.xxx:/vcs/runtime/dat/emergency</code><strong>IP CWP yang stuck/tujuan</strong></p>
+			<p><code>scp -r config_sdcxxi_log_sect_b.txt puesto@172.31.53.xxx:/vcs/runtime/dat/emergency</code><strong>IP CWP yang stuck/tujuan</strong></p>
+			<p>12. Setelah berhasil copy folder”/file” tersebut, jalankan perintah</p>
+			<ul>
+			<li><p><code>./shutdown.sh</code></p></li>
+			<li><p><code>./startup.sh</code></p></li>
+			</ul>
+			<p>13. Hasil line dan CWp yang stuck akan normal</p>
+				</div>
+			<button class="btn-kembali" onclick="kembaliKeHalaman()">← Kembali ke Menu SOP</button>
+			</div>
+		
+     
+	 <div id="rinci-garex-tmcs" class="tab-alat dokumen-sop">
+            <h2>SOP: VSCS GAREX 300 - RESTORE DATABASE DARI TMCS 1 KE TMCS 2 </h2>
+            <div class="isi-dokumen">
+			<p>1. Buka terminal</p>
+			<p><code>sudo su</code></p>
+			<p>2. Shutdown semua TMCS</p>
+			<ul>
+			<p><code>/vcs/runtime/shutdown.sh</code></p>
+			<p><code>cd /vcs/runtime/dat</code></p>
+			<p><code>ls -lart</code></p>
+			<p><code>mysql -u root tmcs &lt; namafile.sql</code></p>
+			</ul>
+			<p>3. Startup TMCS 1</p>
+			<p><code>/vcs/runtime/startup.sh</code></p>
+			<p>4. Masuk ke SPV, pastikan status TMCS 2 (bila masih merah), startup TMCS 2 via terminal PC</p>
+			<p>TMCS 2 (tunggu max.5 menit hingga indicator green)</p>
+			<p>5. Bila masih merah</p>
+			<p><code>ssh-copy-id IPTMCS2</code></p>
+			<p>6. Bila masih merah</p>
+			<p><code>ssh-copy-id puesto@IPTMCS2</code></p>
+			<p>7. Bila masih merah</p>
+			<p><code>ssh-copy-id root@IPTMCS2</code></p>
+			<p>8. Apabila 3 langkah di atas masih gagal, reboot TMCS yang fail</p>
+			<p>9. Bila masih gagal</p>
+			<p><code>mount -o remount /var</code></p>
+			</div>
+			<button class="btn-kembali" onclick="kembaliKeHalaman()">← Kembali ke Menu SOP</button>
+			</div>
+	 
+	 
+	 
+			<div id="rinci-neptuno-us" class="tab-alat dokumen-sop">
+            <h2>SOP: NEPTUNO - USER, PASSWORD AND SSH </h2>
+            <div class="isi-dokumen">	
+			
+			<h3> A. NEPTUNO LOGIN </h3>
+			<ul>
+			<li> <code>User : neptuno-admin </code></li>
+			<li> <code>Pasword : ad-neptuno-1.</code> </li>
+			</ul>
+			
+			<h3> B. WEB NEPTUNO LOGIN </h3>
+			<ul>
+			<li> <code>User : root </code></li>
+			<li> <code>Pasword : root </code></li>
+			</ul>
+			
+			<h3> C. COPY FILE NEPTUNO TO ATMAS VIA PLAYBACK NEPTUNO</h3>
+			<ul>
+			<li><p>Masuk dengan akses user ROOT</p></li>
+			<p><code>sudo -i</code></p>
+			<li><p> Cari file yang akan di copy pada Playback Neptuno, maka selanjutnya</p></li>
+			<p><code>scp -r <i>file_copy</i> cwp21:/mnt/(Buat Directory)</code></p>
+			<p><code> Catatan : saat scp dan mengetikkan Playback Neptuno tidak akan bisa di <code>Tab</code> tapi normal untuk copy </code></p>
+			<li><p>Masukkan Password <code>indraroot</code></p></li>
+			<div class="foto-sop-container">
+                    <img src="neptunocopy.JPG" class="foto-sop">
+                </div>
+				
+				<li><p> Maka file dari Playback Neptuno akan tercopy di CWP21</p></li>
+				<div class="foto-sop-container">
+                    <img src="neptunocwp21.JPG" class="foto-sop">
+                </div>
+			</ul>			
+			</div>
+			<button class="btn-kembali" onclick="kembaliKeHalaman()">← Kembali ke Menu SOP</button>
+        </div>
+		
+		
+		<div id="rinci-neptuno-alarm" class="tab-alat dokumen-sop">
+            <h2>SOP: NEPTUNO - VRP ALARM  </h2>
+            <div class="isi-dokumen">	
+			<h3> A. REBOOT SERVICE NEPTUNO</h3>
+			<p>1. Via TMCS, buka terminal dan ketik command</p>
+			<ul>
+			<li><code>ssh neptuno-admin@172.31.53.151</code></p></li>
+			<li><p>password: <code>ad-neptuno-1.</code></p></li>
+			</ul>
+			<p>2. masuk root</p>
+			<code>sudo -i</code>
+			<p>3. Cek service mana yang alarm</p>
+			<code>monit summary</code>
+			<p>4. Restart service yang alarm, contoh:</p>
+			<div class="foto-sop-container">
+                    <img src="neptunoalarm.JPG" class="foto-sop">
+                </div>
+				
+			<p><code>restart systemctl nepAirCmdSrv</code></p>
+			<p>5. Jika belum bisa, reboot server neptuno</p>
+			
+			<p><code>CATATAN : APABILA SERVER NEPTUNO SUDAH DI REBOOT MAKA OTOMATIS HARDISK EXTERNAL AKAN UMOUNT, MAKA PERLU DILAKUKAN MOUNT MANUAL DI WEB </code></p>
+			<h3> B. MOUNT EXTERNAL DISK WEB</h3>
+			<p>1. Apabila menemukan alarm <code>“New media is needed on backup unit 1,2”</code></p>
+			<p>2. Mount kembali via web di server yang alarm</p>
+			<ul>
+			<p><code>Username : root</code></p>
+			<p><code>Password : root</code></p>
+			</ul>
+			<p>3. Pilih menu Backup, Lihat Backup Status dan akan tertampil 2 hardisk (HD 1 dan HD 2) dengan status EMPTY</p>
+			<p>4. Centang 2 Hardisk External tersebut dan pilih icon <code>Mount</code></p>
+			<p>5. Maka 2 hardisk tersebut sudah otomatis terbackup dan alarm akan hilang</p>
+			
+			</div>	 
+			<button class="btn-kembali" onclick="kembaliKeHalaman()">← Kembali ke Menu SOP</button>
+        </div>
+	 
+	 
+        
+
+
+
+
+
+    </div> 
+    <script src="script.js"></script>
+</body>
+</html>
