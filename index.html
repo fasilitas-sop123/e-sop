@@ -202,7 +202,7 @@
 								</ul>
 								<li>Masuk di IP &#8594; Firewall &#8594; NAT </li>
 								<ul>
-								<li>Klik +(Add) -> Pada Tab General</li>
+								<li>Klik +(Add) &#8594; Pada Tab General</li>
 								<li> Chain : srcnat </li>
 								<li> Out. Interface : ether1 </li>
 								<p> Pada tab Action </p>
@@ -213,14 +213,14 @@
 								<li>Buka VCMS melalui Browser dengan IP <code>172.18.20.18</code>
 								<ul>
 								<li> Pastikan untuk settings IP Laptop </li>
-								<li> IP Address : <code>172.18.17.25 </code> atau IP yang tidak digunakan Jaringan HF</li>
-								<li> Subnet Mask : <code>255.255.255.0 </code> </li>
+								<li> IP Address : <code>172.18.17.25</code> atau IP yang tidak digunakan Jaringan HF</li>
+								<li> Subnet Mask : <code>255.255.255.0</code> </li>
 								<li> Gateway : <code>172.18.17.1 </code> Gateway Harus diisi sesuai ini</li>
 								</ul>
 									
 									<li>Username : <code>admin</code> | Password : <code>99admin11</code>
 								</li>
-								<li>Pilih System &ndash; NTP Sources</li>
+								<li>Pilih System &#8594; NTP Sources</li>
 								<li>Klik di menu IP Name Balikpapan_ dan setting IP menjadi <code>192.168.1.234</code></li>
 								</ol>
 							</ol>
@@ -235,6 +235,7 @@
 							<div class="foto-sop-container">
 									<img src="ntphf.JPG" class="foto-sop">
 								</div>
+							<li> (Tidak Usah dimasukkan kembali untuk cek sinkronisasi manual NTP) <code>Skip This Step </code> Masukkan route IP NTP pada CWP HF <code> ip route add 192.168.1.0/24 via 172.18.17.33 </code></li>
 							<li>Lakukan stop running NTP Server dengan perintah:
 								<pre class="code-box"><code>/etc/init.d/ntpd stop</code></pre>
 								<div class="foto-sop-container">
@@ -243,7 +244,7 @@
 								<li>tunggu sampai ada keterangan OK</li>
 							</li>
 							
-							<li> Masukkan route IP NTP pada CWP HF <code> ip route add 192.168.1.0/24 via 172.18.17.33 </code> </li>
+							
 							<li> Lakukan perintah <code> ntpdate 192.168.1.234</code> untuk sinkronisasi NTP </li> 
 							
 							<li>Lakukan start NTP server dengan perintah:
@@ -256,7 +257,7 @@
 							<li>Cek kembali sinkronisasinya dengan perintah:
 	
 								</li>
-							<li>Pastikan IP NTP sudah bertanda <code>* </code>
+							<li>Pastikan IP NTP sudah bertanda <code>*</code>
 							<pre class="code-box"><code>ntpq -pn</code></pre>
 								<div class="foto-sop-container">
 									<img src="ntphf4.JPG" class="foto-sop">
@@ -306,13 +307,13 @@
 					
 		
 					<div id="rinci-sop-addradio" class="tab-alat dokumen-sop">
-					<h2>SOP MENAMBAHKAN FREQUENCY RADIO CWP RS DI FIS</h2>
+					<h2>SOP MENAMBAHKAN FREQUENCY RADIO CWP RS DI FIC</h2>
 					<div class="isi-dokumen">
 					<H3>Settings IP Laptop </H3>
 					<ol>
-								<li> IP Address : <code>172.18.17.25 </code> atau IP yang tidak digunakan Jaringan HF</li>
-								<li> Subnet Mask : <code>255.255.255.0 </code> </li>
-								<li> Gateway : <code>172.18.17.1 </code> Gateway Harus diisi sesuai ini</li>
+								<li> IP Address : <code>172.18.17.25</code> atau IP yang tidak digunakan Jaringan HF</li>
+								<li> Subnet Mask : <code>255.255.255.0</code> </li>
+								<li> Gateway : <code>172.18.17.1</code> Gateway Harus diisi sesuai ini</li>
 							</ol>			
 					<H3>Langkah Pengecekan </H3>
 					<ol>
@@ -322,10 +323,10 @@
 					<li> Masuk ke Menu <strong> Radio &#8594; Configure Radio Network &#8594; New Radio Network &#8594; Add Radio </strong></li>
 					<li> Isi Parameter Berikut : <code> Contoh </code></li>
 					<ul> 
-					<li>  Name : KNO_3340 </li>
-					<li> Radio Network Group : RS FF Plain </li>
+					<li>  Name : <strong>KNO_3340 </strong> </li>
+					<li> Radio Network Group : <strong> RS FF Plain </strong> </li>
 					<li> Handle PTT : <code> None </code> </li>
-					<li> Physical Frequency : 3440000 (Tambahkan <strong> 0 3x </strong> sesuai frequency aslinya) </li>
+					<li> Physical Frequency : <strong> 3440000 </strong> (Tambahkan <strong> 0 3x </strong> sesuai frequency aslinya) </li>
 					<li> Klik <strong> Submit </strong> </li>
 					</ul>
 					<li> Buka CWP otomatis akan bertambah di kolom <Strong> FREQ </Strong> </li>
